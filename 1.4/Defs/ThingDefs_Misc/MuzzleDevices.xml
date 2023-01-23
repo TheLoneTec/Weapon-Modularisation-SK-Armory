@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="GunPartBase">
+		<defName>Module_Silencer</defName>
+		<label>silencer</label>
+		<description>An complex muzzle device that muffles gun shot sound.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Muzzle_Suppresor</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle_Suppresor</uiIconPath>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_Muffler</PartTexPath>
+				<verbPropertiesObjectPatch>
+					<li>
+						<soundCast>Shot_Silenced</soundCast>
+						<soundCastTail IsNull="true"/>
+					</li>
+				</verbPropertiesObjectPatch>
+				<statMultiplier>
+					<AccuracyTouch>1.15</AccuracyTouch>
+					<AccuracyShort>1.15</AccuracyShort>
+				</statMultiplier>
+				<statOffset>
+					<HuntingStealth>.5</HuntingStealth>
+				</statOffset>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="GunPartBase">
+		<defName>Module_MuzzleBrake</defName>
+		<label>muzzle brake</label>
+		<description>A muzzle device that reduces recoil.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Muzzle_Brake</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle_Brake</uiIconPath>
+		<statBases>
+			<Mass>0.1</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_MuzzleBrake</PartTexPath>
+				<statMultiplier>
+					<AccuracyMedium>1.125</AccuracyMedium>
+					<AccuracyLong>1.125</AccuracyLong>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="GunPartBase">
+		<defName>Module_MuzzleCompensator</defName>
+		<label>muzzle compensator</label>
+		<description>A muzzle device that reduces muzzle jump.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Muzzle_Compensator</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle_Compensator</uiIconPath>
+		<statBases>
+			<Mass>0.1</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_MuzzleCompensator</PartTexPath>
+				<statMultiplier>
+					<AccuracyTouch>1.2</AccuracyTouch>
+					<AccuracyShort>1.2</AccuracyShort>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="GunPartBase">
+		<defName>Module_FlashHider</defName>
+		<label>flash hider</label>
+		<description>A muzzle device that reduces muzzle flash.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Muzzle_FlashHider</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle_FlashHider</uiIconPath>
+		<statBases>
+			<Mass>0.1</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_FlameDamper</PartTexPath>
+				<verbPropertiesMultiplier>
+					<li>
+						<muzzleFlashScale>0</muzzleFlashScale>
+					</li>
+				</verbPropertiesMultiplier>
+				<statMultiplier>
+					<AccuracyTouch>1.1</AccuracyTouch>
+					<AccuracyShort>1.1</AccuracyShort>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="GunPartBase">
+		<defName>Module_Bayonet</defName>
+		<label>bayonet</label>
+		<description>A muzzle device that reduces muzzle flash.</description>
+		<stackLimit>1</stackLimit>
+		<graphicData>
+			<texPath>Things/WeaponPart/Gun/AssaultRifle/Bayonet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/WeaponPart/Gun/AssaultRifle/Bayonet</uiIconPath>
+		<statBases>
+			<Mass>0.1</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		</recipeMaker>
+		<equipmentType>Primary</equipmentType>
+		<costStuffCount>30</costStuffCount>
+		<techLevel>Industrial</techLevel>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<tools>
+			<li>
+				<label>blade</label>
+				<capacities>
+				<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>      
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			<li Class="CompProperties_Styleable"></li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>     
+			<li>
+				<compClass>CompQuality</compClass>
+			</li> 
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_Bayonet</PartTexPath>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
