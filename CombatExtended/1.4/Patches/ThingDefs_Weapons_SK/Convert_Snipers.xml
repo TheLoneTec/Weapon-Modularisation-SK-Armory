@@ -185,7 +185,7 @@
 						<id>ModMP_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.435,0.1,0.042)</postion>
+						<postion>(0.435,0.1,0.08)</postion>
 						<scale>(0.75,0,0.75)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>

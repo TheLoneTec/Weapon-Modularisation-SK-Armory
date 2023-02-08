@@ -18,7 +18,8 @@
 						<id>ModAR_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(-0.005,0.1,0.03)</postion>
+						<postion>(-0.005,-0.1,0.06)</postion>
+						<scale>(0.9,0,0.9)</scale>
 						<defultThing>Module_AR_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
