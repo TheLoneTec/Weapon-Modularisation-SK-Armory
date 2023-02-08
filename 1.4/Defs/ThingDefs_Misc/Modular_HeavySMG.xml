@@ -25,10 +25,14 @@
 			<WorkToMake>500</WorkToMake>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>GasOperation</researchPrerequisite>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
 		<costList>
-			<Steel>20</Steel>
+			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
@@ -55,11 +59,14 @@
 			<WorkToMake>2500</WorkToMake>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>GasOperation</researchPrerequisite>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
 		<costList>
-			<Steel>30</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
@@ -97,11 +104,14 @@
 			<Mass>0.1</Mass>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>GasOperation</researchPrerequisite>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
 		<costList>
-			<Steel>30</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
@@ -133,9 +143,16 @@
 			<Mass>0.1</Mass>
 			<WorkToMake>500</WorkToMake>
 		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
 		<costList>
-			<Steel>10</Steel>
+			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		</recipeMaker>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMG_Stock</PartTexPath>
@@ -166,10 +183,14 @@
 			<Mass>0.3</Mass>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<researchPrerequisite>SMG_C2</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
 		<costList>
-			<Steel>30</Steel>
+			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">

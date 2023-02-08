@@ -21,18 +21,18 @@
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
 						<postion>(-0.17,0.1,-0.08)</postion>
-						<defultThing>Module_AP_MagClip</defultThing>
+						<defultThing>Module_Light_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<!--<li>Module_AP_MagClip</li>-->
-								<li>Module_HvySNG_MagDrum</li>
+								<li>Module_Light_MagClip</li>
+								<li>Module_Light_MagDrum</li>
 							</thingDefs>
-						</filter>
+						</filter><!--
 						<randomThingDefWeights>
-							<!--<Module_AP_MagClip>1</Module_AP_MagClip>-->
-							<Module_HvySNG_MagDrum>1</Module_HvySNG_MagDrum>
-						</randomThingDefWeights>
+							<Module_Light_MagClip>1</Module_Light_MagClip>
+							<Module_Light_MagDrum>1</Module_Light_MagDrum>
+						</randomThingDefWeights>-->
 						<verbPropertiesObjectPatchByChildPart Default="false" />
 					</li>
 					<li>
@@ -113,18 +113,18 @@
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
 						<postion>(-0.18,0.1,-0.08)</postion>
-						<defultThing>Module_AP_MagClip</defultThing>
+						<defultThing>Module_Light_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<!--<li>Module_AP_MagClip</li>-->
-								<li>Module_HvySNG_MagDrum</li>
+								<li>Module_Light_MagClip</li>
+								<li>Module_Light_MagDrum</li>
 							</thingDefs>
-						</filter>
+						</filter><!--
 						<randomThingDefWeights>
-							<!--<Module_AP_MagClip>1</Module_AP_MagClip>-->
-							<Module_HvySNG_MagDrum>1</Module_HvySNG_MagDrum>
-						</randomThingDefWeights>
+							<Module_Light_MagClip>1</Module_Light_MagClip>
+							<Module_Light_MagDrum>1</Module_Light_MagDrum>
+						</randomThingDefWeights>-->
 						<verbPropertiesObjectPatchByChildPart Default="false" />
 					</li>
 					<li>
@@ -205,18 +205,18 @@
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
 						<postion>(-0.19,0.1,-0.08)</postion>
-						<defultThing>Module_AP_MagClip</defultThing>
+						<defultThing>Module_Light_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<!--<li>Module_AP_MagClip</li>-->
-								<li>Module_HvySNG_MagDrum</li>
+								<li>Module_Light_MagClip</li>
+								<li>Module_Light_MagDrum</li>
 							</thingDefs>
-						</filter>
+						</filter><!--
 						<randomThingDefWeights>
-							<!--<Module_AP_MagClip>1</Module_AP_MagClip>-->
-							<Module_HvySNG_MagDrum>1</Module_HvySNG_MagDrum>
-						</randomThingDefWeights>
+							<Module_Light_MagClip>1</Module_Light_MagClip>
+							<Module_Light_MagDrum>1</Module_Light_MagDrum>
+						</randomThingDefWeights>-->
 						<verbPropertiesObjectPatchByChildPart Default="false" />
 					</li>
 					<li>
@@ -295,18 +295,18 @@
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
 						<postion>(-0.18,0.1,-0.08)</postion>
-						<defultThing>Module_AP_MagClip</defultThing>
+						<defultThing>Module_Light_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<!--<li>Module_AP_MagClip</li>-->
-								<li>Module_HvySNG_MagDrum</li>
+								<li>Module_Light_MagClip</li>
+								<li>Module_Light_MagDrum</li>
 							</thingDefs>
-						</filter>
+						</filter><!--
 						<randomThingDefWeights>
-							<!--<Module_AP_MagClip>1</Module_AP_MagClip>-->
-							<Module_HvySNG_MagDrum>1</Module_HvySNG_MagDrum>
-						</randomThingDefWeights>
+							<Module_Light_MagClip>1</Module_Light_MagClip>
+							<Module_Light_MagDrum>1</Module_Light_MagDrum>
+						</randomThingDefWeights>-->
 						<verbPropertiesObjectPatchByChildPart Default="false" />
 					</li>
 					<li>
@@ -385,18 +385,18 @@
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
 						<postion>(-0.15,0.1,-0.06)</postion>
-						<defultThing>Module_AP_MagClip</defultThing>
+						<defultThing>Module_Light_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<!--<li>Module_AP_MagClip</li>-->
-								<li>Module_HvySNG_MagDrum</li>
+								<li>Module_Light_MagClip</li>
+								<li>Module_Light_MagDrum</li>
 							</thingDefs>
-						</filter>
+						</filter><!--
 						<randomThingDefWeights>
-							<!--<Module_AP_MagClip>1</Module_AP_MagClip>-->
-							<Module_HvySNG_MagDrum>1</Module_HvySNG_MagDrum>
-						</randomThingDefWeights>
+							<Module_Light_MagClip>1</Module_Light_MagClip>
+							<Module_Light_MagDrum>1</Module_Light_MagDrum>
+						</randomThingDefWeights>-->
 						<verbPropertiesObjectPatchByChildPart Default="false" />
 					</li>
 					<li>

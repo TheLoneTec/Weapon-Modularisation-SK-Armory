@@ -28,8 +28,12 @@
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
 		<costList>
-			<Steel>25</Steel>
+			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
@@ -58,9 +62,12 @@
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
 		<costList>
-			<Steel>50</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
@@ -101,9 +108,12 @@
 		<recipeMaker>
 			<researchPrerequisite>GasOperation</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
 		<costList>
-			<Steel>30</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
@@ -134,8 +144,12 @@
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
 		<costList>
-			<Steel>30</Steel>
+			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">

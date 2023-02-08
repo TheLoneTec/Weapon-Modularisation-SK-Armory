@@ -29,9 +29,12 @@
 		<recipeMaker>
 			<researchPrerequisite>ChargedShot</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
 		<costList>
-			<Steel>25</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Charged_Component>1</Charged_Component>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
@@ -61,9 +64,13 @@
 		<recipeMaker>
 			<researchPrerequisite>ChargedShot</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
 		<costList>
-			<Steel>50</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Charged_Component>1</Charged_Component>
+			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
@@ -101,8 +108,13 @@
 		<recipeMaker>
 			<researchPrerequisite>ChargedShot</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
 		<costList>
-			<Plasteel>30</Plasteel>
+			<Charged_Component>1</Charged_Component>
+			<Weapon_Parts>2</Weapon_Parts>
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<comps>

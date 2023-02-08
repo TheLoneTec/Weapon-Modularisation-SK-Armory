@@ -87,6 +87,85 @@
 		</comps>
 	</ThingDef>
 
+	<ThingDef ParentName="HvySMGGunPartBase">
+		<defName>Module_Light_MagClip</defName>
+		<label>light magazine</label>
+		<description>Standard 30 round clip magazine designed for smaller guns.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Pistol</uiIconPath>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>Gunsmithing</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/HSK/Pistol_ExtendedMag</PartTexPath>
+				<verbPropertiesObjectPatch>
+					<li>
+						<burstShotCount>3</burstShotCount>
+					</li>
+				</verbPropertiesObjectPatch>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="HvySMGGunPartBase">
+		<defName>Module_Light_MagDrum</defName>
+		<label>light drum magazine</label>
+		<description>100 round drum magazine provides better sustained firepower, at the cost of reload speed. It also affects the center of gravity of the gun, making it unwieldy.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Drum</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Drum</uiIconPath>
+		<statBases>
+			<Mass>0.6</Mass>
+			<WorkToMake>2500</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>Gunsmithing</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Mechanism>1</Mechanism>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/HSK/Pistol_CartridgeDrum</PartTexPath>
+				<verbPropertiesObjectPatch>
+					<li>
+						<burstShotCount>5</burstShotCount>
+					</li>
+				</verbPropertiesObjectPatch>
+				<verbPropertiesMultiplier>
+					<li>
+						<warmupTime>1.1</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<statMultiplier>
+					<AccuracyTouch>0.9</AccuracyTouch>
+					<AccuracyShort>0.9</AccuracyShort>
+					<AccuracyMedium>0.8</AccuracyMedium>
+					<AccuracyLong>0.8</AccuracyLong>
+					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
 
 	<ThingDef ParentName="CRGunPartBase">
 		<defName>Module_CR_A2_Mag</defName>
