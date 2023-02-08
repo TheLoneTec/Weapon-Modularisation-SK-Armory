@@ -2,28 +2,104 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>*/ThingDef[defName="MechWeaponCraftingWorkTable" or defName="AdvToolBench" or defName="HeavyArmsBench"
+		<xpath>Defs/ThingDef[defName="MechWeaponCraftingWorkTable" or defName="AdvToolBench" or defName="HeavyArmsBench"
 		or defName="AdvWeaponCraftingWorkTable" or defName="WeaponCraftingWorkTable"]/comps</xpath>
 		<value>
 			<li Class="RW_ModularizationWeapon.CompProperties_CustomWeaponPort">
 				<filter>
 					<thingDefs>
-						<li>Gun_ModularAssaultRifle</li>
-						<li>Gun_ModularHeavySMG</li>
-						<li>Gun_ModularChainShotgun</li>
-						<li>Gun_ModularPumpShotgun</li>
-						<li>Gun_ModularMachinePistol</li>
-						<li>Gun_ModularSniperRifle</li>
-						<li>Gun_ModularBoltActionRifle</li>
-						<li>Gun_ModularAutoPistol</li>
-						<li>Gun_ModularRevolver</li>
-						<li>Gun_ModularChargeRifle</li>
+						<!-- Rifles -->
+						<li>Gun_AssaultRifle</li>
+						<li>RF_Gun_XMeight</li>
+						<li>Gun_FAMAS</li>
+						<li>Gun_AK47Gun</li>
+						<li>Gun_MarineSturmRifle</li>
+						<li>Gun_TacticalCombatRifle</li>
+						<li>Gun_SG553Gun</li>
+						<li>Gun_AUG</li>
+						<li>Gun_SCAR_H</li>
+						<!-- SMG -->
+						<li>RF_Gun_Tecnine</li>
+						<li>RF_Gun_GreaseGun</li>
+						<li>Gun_MachinePistol</li>
+						<li>RF_Gun_TMP</li>
+						<li>RF_Gun_Skorpion</li>
+						<li>RF_Gun_Vector</li>
+						<li>Gun_MP5Gun</li>
+						<li>Gun_UMP45Gun</li>
+						<li>Gun_HeavySMG</li>
+						<!-- Pistols -->
+						<li>Gun_Revolver</li>
+						<li>RF_Gun_AT2K</li>
+						<li>RF_Gun_93R</li>
+						<li>RF_Gun_VektorCP</li>
+						<li>Gun_Autopistol</li>
+						<!-- Shotguns -->
+						<li>Gun_M37A2_USCM</li>
+						<li>Gun_PumpShotgun</li>
+						<li>Gun_ChainShotgun</li>
+						<li>Gun_TacticalShotgun</li>
+						<li>Gun_AssaultShotgun</li>
+						<li>Gun_TacticalAutoShotgun</li>
+						<!-- Blasters -->
+						<li>Gun_Phalanx</li>
+						<li>Gun_BlackWidow</li>
+						<li>Gun_Harrier</li>
+						<li>Gun_Predator</li>
+						<li>Gun_Hurricane</li>
+						<li>Gun_AvengerA</li>
+						<!-- ChargeBlasters -->
+						<li>Gun_ChargeRifle</li>
+						<li>Gun_Splitter</li>
+						<!-- Sniper Rifles -->
+						<li>Gun_SniperRifle</li>
+						<li>Gun_M42A_USCM</li>
+						<li>RF_Gun_WA2K</li>
+						<!-- Sniper Rifles Advanced -->
+						<li>RF_Gun_ARFifty</li>
+						<li>RF_Gun_HecateII</li>
+						<li>Gun_ATR</li>
+						<li>Gun_TAMSR</li>
+						<li>Gun_M82Gun</li>
+						<!-- Lasers -->
+						<li>Gun_Mantis</li>
+						<li>LaserRifle</li>
+						<li>HeavyLasergun</li>
+						<li>BurstLasergun</li>
+						<!-- Plasma -->
+						<li>Gun_PlasmaPistol</li>
+						<li>Gun_PlasmaPrecision</li>
+						<li>Gun_PlasmaCarbine</li>
+						<li>Gun_PlasmaShotgun</li>
+						<li>Gun_PlasmaRifle</li>
+						<!-- Railgun -->
+						<li>Gun_RailgunMKI</li>
 					</thingDefs>
 				</filter>
 			</li>
 		</value>
 		<order>Append</order>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_ATR"]/graphicData</xpath>
+		<value>
+			<drawSize>(1.8,1.8)</drawSize>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RF_Gun_HecateII"]/graphicData</xpath>
+		<value>
+			<drawSize>(1.5,1.5)</drawSize>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_Phalanx"]/graphicData</xpath>
+		<value>
+			<drawSize>(1.2,1.2)</drawSize>
+		</value>
 	</Operation>
 
 </Patch>

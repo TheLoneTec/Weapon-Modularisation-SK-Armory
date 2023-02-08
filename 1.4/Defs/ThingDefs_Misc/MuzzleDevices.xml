@@ -12,12 +12,24 @@
 			<WorkToMake>3000</WorkToMake>
 			<Mass>0.5</Mass>
 		</statBases>
-		<recipeMaker>
-			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
-		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
 		<costList>
-			<Steel>40</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Plastic>10</Plastic>
+			<Rubber>15</Rubber>
 		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+				<li>AdvWeaponCraftingWorkTable</li>
+				<li>AdvToolBench</li>
+				<li>HeavyArmsBench</li>
+			</recipeUsers>
+			<researchPrerequisite>Pistols_C2</researchPrerequisite>
+		</recipeMaker>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_Muffler</PartTexPath>
@@ -49,12 +61,23 @@
 		<statBases>
 			<Mass>0.1</Mass>
 		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Rubber>6</Rubber>
+		</costList>
 		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+				<li>AdvWeaponCraftingWorkTable</li>
+				<li>AdvToolBench</li>
+				<li>HeavyArmsBench</li>
+			</recipeUsers>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
-		<costList>
-			<Steel>20</Steel>
-		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_MuzzleBrake</PartTexPath>
@@ -77,12 +100,23 @@
 		<statBases>
 			<Mass>0.1</Mass>
 		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Rubber>6</Rubber>
+		</costList>
 		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+				<li>AdvWeaponCraftingWorkTable</li>
+				<li>AdvToolBench</li>
+				<li>HeavyArmsBench</li>
+			</recipeUsers>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
-		<costList>
-			<Steel>20</Steel>
-		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_MuzzleCompensator</PartTexPath>
@@ -105,12 +139,23 @@
 		<statBases>
 			<Mass>0.1</Mass>
 		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Rubber>6</Rubber>
+		</costList>
 		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+				<li>AdvWeaponCraftingWorkTable</li>
+				<li>AdvToolBench</li>
+				<li>HeavyArmsBench</li>
+			</recipeUsers>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
-		<costList>
-			<Steel>20</Steel>
-		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_FlameDamper</PartTexPath>
@@ -140,15 +185,23 @@
 		<statBases>
 			<Mass>0.1</Mass>
 		</statBases>
-		<recipeMaker>
-			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
-		</recipeMaker>
-		<equipmentType>Primary</equipmentType>
-		<costStuffCount>30</costStuffCount>
-		<techLevel>Industrial</techLevel>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+				<li>AdvWeaponCraftingWorkTable</li>
+				<li>AdvToolBench</li>
+				<li>HeavyArmsBench</li>
+			</recipeUsers>
+			<researchPrerequisite>Rifles_C1</researchPrerequisite>
+		</recipeMaker>
+		<techLevel>Industrial</techLevel>
 		<tools>
 			<li>
 				<label>blade</label>

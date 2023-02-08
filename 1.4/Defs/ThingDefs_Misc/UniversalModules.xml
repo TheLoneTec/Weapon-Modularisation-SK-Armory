@@ -23,9 +23,6 @@
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>
-			<recipeUsers>
-				<li>TableMachining</li>
-			</recipeUsers>
 			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
 			<researchPrerequisite>Gunsmithing</researchPrerequisite>
 			<skillRequirements>
@@ -66,13 +63,23 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_ACOG</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope_acog</uiIconPath>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
 		<costList>
-			<Plasteel>10</Plasteel>
-			<Steel>25</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
+			<Glass>5</Glass>
+			<Silicon>5</Silicon>
+			<Plastic>10</Plastic>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+				<li>AdvWeaponCraftingWorkTable</li>
+				<li>AdvToolBench</li>
+			</recipeUsers>
+			<researchPrerequisite>Rifles_C1</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -108,13 +115,23 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_Holo</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope_Holo</uiIconPath>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
 		<costList>
-			<Plasteel>20</Plasteel>
-			<Steel>10</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<ElectronicComponents>1</ElectronicComponents>
+			<Glass>5</Glass>
+			<Plastic>5</Plastic>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+				<li>AdvWeaponCraftingWorkTable</li>
+				<li>AdvToolBench</li>
+			</recipeUsers>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -142,11 +159,21 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope_RedDot</uiIconPath>
 		<recipeMaker>
-			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+				<li>AdvWeaponCraftingWorkTable</li>
+				<li>AdvToolBench</li>
+			</recipeUsers>
+			<researchPrerequisite>Pistols_C2</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
 		<costList>
-			<Steel>25</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
+			<Glass>5</Glass>
+			<Plastic>5</Plastic>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
@@ -178,11 +205,23 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_Sniper</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope_Sniper</uiIconPath>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
 		<costList>
-			<Steel>35</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
+			<Glass>10</Glass>
+			<Silicon>10</Silicon>
+			<Plastic>10</Plastic>
 		</costList>
 		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+				<li>AdvWeaponCraftingWorkTable</li>
+				<li>AdvToolBench</li>
+				<li>HeavyArmsBench</li>
+			</recipeUsers>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
@@ -242,10 +281,24 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Underbarrel_Bipod</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel_Bipod</uiIconPath>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
 		<costList>
-			<Steel>50</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Plastic>10</Plastic>
+			<Rubber>15</Rubber>
 		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+				<li>AdvWeaponCraftingWorkTable</li>
+				<li>AdvToolBench</li>
+				<li>HeavyArmsBench</li>
+			</recipeUsers>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		</recipeMaker>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/Armrack</PartTexPath>
@@ -276,10 +329,22 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel_VertiGrip</uiIconPath>
 		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+				<li>AdvWeaponCraftingWorkTable</li>
+				<li>AdvToolBench</li>
+				<li>HeavyArmsBench</li>
+			</recipeUsers>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
 		<costList>
-			<Steel>40</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Plastic>5</Plastic>
+			<Rubber>5</Rubber>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
@@ -306,12 +371,23 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel_AngledGrip</uiIconPath>
 		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+				<li>AdvWeaponCraftingWorkTable</li>
+				<li>AdvToolBench</li>
+				<li>HeavyArmsBench</li>
+			</recipeUsers>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
 		<costList>
-			<Steel>40</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Plastic>5</Plastic>
+			<Rubber>5</Rubber>
 		</costList>
-
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/TriangleGrip</PartTexPath>

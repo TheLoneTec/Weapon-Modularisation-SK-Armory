@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ARGunPartBase">
+		<defName>Module_ATR_MagClip</defName>
+		<label>ATR magazine</label>
+		<description>Standard 6 round clip magazine designed for Large caliber bullet used by many heavy machine guns and anti-materiel rifles.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Generic</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>0.3</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/HSK/ATR_Mag</PartTexPath>
+				<verbPropertiesObjectPatch>
+					<li>
+						<burstShotCount>2</burstShotCount>
+					</li>
+				</verbPropertiesObjectPatch>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ARGunPartBase">
+		<defName>Module_ATR_MagDrum</defName>
+		<label>ATR C-Mag</label>
+		<description>16 round drum magazine provides better sustained firepower, at the cost of reload speed. It also affects the center of gravity of the gun, making it unwieldy.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Drum</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Drum</uiIconPath>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>0.7</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Mechanism>2</Mechanism>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/HSK/ATR_DrumMag</PartTexPath>
+				<verbPropertiesObjectPatch>
+					<li>
+						<burstShotCount>4</burstShotCount>
+					</li>
+				</verbPropertiesObjectPatch>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>16</magazineSize>
+					</il>
+				</compPropertiesObjectPatch>
+				<verbPropertiesMultiplier>
+					<li>
+						<warmupTime>1.1</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<statMultiplier>
+					<AccuracyTouch>0.9</AccuracyTouch>
+					<AccuracyShort>0.9</AccuracyShort>
+					<AccuracyMedium>0.8</AccuracyMedium>
+					<AccuracyLong>0.8</AccuracyLong>
+					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+	<ThingDef ParentName="CRGunPartBase">
+		<defName>Module_CR_A2_Mag</defName>
+		<label>A2 charge battery</label>
+		<description>Standard blaster clip magazine designed for various charge weaponry.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Gun/ChargeRifle/Item_ChargeRifle_Battery</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>0.3</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite Inherit="False">ChargedShot</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<ElectronicComponents>2</ElectronicComponents>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/HSK/ChargeRifle_Battery_Reverse_Dark</PartTexPath>
+				<verbPropertiesObjectPatch>
+					<li>
+						<burstShotCount>3</burstShotCount>
+					</li>
+				</verbPropertiesObjectPatch>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="CRGunPartBase">
+		<defName>Module_CR_A2_MagExt</defName>
+		<label>A2 extended charge battery</label>
+		<description>40 round extended cartridge for various charge weaponry, provides better sustained firepower, at the cost of reload speed. It also affects the center of gravity of the gun, making it unwieldy.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Gun/ChargeRifle/Item_ChargeRifle_LargeBattery</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>0.7</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite Inherit="False">ChargedShot</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Mechanism>1</Mechanism>
+			<ElectronicComponents>3</ElectronicComponents>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/HSK/ChargeRifle_LargeBattery_Reverse_Dark</PartTexPath>
+				<verbPropertiesObjectPatch>
+					<li>
+						<burstShotCount>4</burstShotCount>
+					</li>
+				</verbPropertiesObjectPatch>
+				<verbPropertiesMultiplier>
+					<li>
+						<warmupTime>1.1</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>40</magazineSize>
+					</il>
+				</compPropertiesObjectPatch>
+				<statMultiplier>
+					<AccuracyTouch>0.9</AccuracyTouch>
+					<AccuracyShort>0.9</AccuracyShort>
+					<AccuracyMedium>0.9</AccuracyMedium>
+					<AccuracyLong>0.9</AccuracyLong>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="CRGunPartBase">
+		<defName>Module_CR_A3_MagExt</defName>
+		<label>A3 charge battery</label>
+		<description>40 round extended cartridge for various charge weaponry, provides better sustained firepower, at the cost of reload speed. It also affects the center of gravity of the gun, making it unwieldy.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Gun/ChargeRifle/Item_ChargeRifle_LargeBattery</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>0.7</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite Inherit="False">ChargedShot</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Mechanism>1</Mechanism>
+			<ElectronicComponents>3</ElectronicComponents>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/HSK/ChargeRifle_Cartridge_Dark</PartTexPath>
+				<verbPropertiesObjectPatch>
+					<li>
+						<burstShotCount>5</burstShotCount>
+					</li>
+				</verbPropertiesObjectPatch>
+				<verbPropertiesMultiplier>
+					<li>
+						<warmupTime>1.1</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>40</magazineSize>
+					</il>
+				</compPropertiesObjectPatch>
+				<statMultiplier>
+					<AccuracyTouch>0.9</AccuracyTouch>
+					<AccuracyShort>0.9</AccuracyShort>
+					<AccuracyMedium>0.8</AccuracyMedium>
+					<AccuracyLong>0.8</AccuracyLong>
+					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="CRGunPartBase">
+		<defName>Module_CR_A3X_MagExt</defName>
+		<label>A3X charge battery</label>
+		<description>80 round extended cartridge for various charge weaponry, provides better sustained firepower, at the cost of reload speed. It also affects the center of gravity of the gun, making it unwieldy.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Gun/ChargeRifle/Item_ChargeRifle_LargeBattery</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>0.7</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite Inherit="False">ChargedShot</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Mechanism>1</Mechanism>
+			<ElectronicComponents>3</ElectronicComponents>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/HSK/ChargeRifle_Cartridge_Dark</PartTexPath>
+				<verbPropertiesObjectPatch>
+					<li>
+						<burstShotCount>5</burstShotCount>
+					</li>
+				</verbPropertiesObjectPatch>
+				<verbPropertiesMultiplier>
+					<li>
+						<warmupTime>1.1</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>80</magazineSize>
+					</il>
+				</compPropertiesObjectPatch>
+				<statMultiplier>
+					<AccuracyTouch>0.9</AccuracyTouch>
+					<AccuracyShort>0.9</AccuracyShort>
+					<AccuracyMedium>0.8</AccuracyMedium>
+					<AccuracyLong>0.8</AccuracyLong>
+					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="CRGunPartBase">
+		<defName>Module_CR_MagExt_ARX</defName>
+		<label>ARX charge battery</label>
+		<description>100 round cartridge for various charge weaponry, provides better sustained firepower, at the cost of reload speed. It also affects the center of gravity of the gun, making it unwieldy.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Gun/ChargeRifle/Item_ChargeRifle_LargeBattery</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>0.7</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite Inherit="False">ChargedShot</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Mechanism>1</Mechanism>
+			<ElectronicComponents>4</ElectronicComponents>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/HSK/ChargeRifle_Cartridge_Aventrum</PartTexPath>
+				<verbPropertiesMultiplier>
+					<li>
+						<warmupTime>1.1</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>100</magazineSize>
+					</il>
+				</compPropertiesObjectPatch>
+				<statMultiplier>
+					<AccuracyTouch>0.9</AccuracyTouch>
+					<AccuracyShort>0.9</AccuracyShort>
+					<AccuracyMedium>0.8</AccuracyMedium>
+					<AccuracyLong>0.8</AccuracyLong>
+					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Pistol -->
+	
+	<ThingDef ParentName="GunPartBase">
+		<defName>Module_AP_MagClipExt</defName>
+		<label>Type-A extended magazine</label>
+		<description>extended 14 round magazine for smaller calibers.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Pistol</uiIconPath>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/HSK/Pistol_ExtendedMag</PartTexPath>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>14</magazineSize>
+					</il>
+				</compPropertiesObjectPatch>
+				<verbPropertiesObjectPatch>
+					<li>
+						<burstShotCount>3</burstShotCount>
+					</li>
+				</verbPropertiesObjectPatch>
+				<statMultiplier>
+					<AccuracyTouch>0.9</AccuracyTouch>
+					<AccuracyShort>0.9</AccuracyShort>
+					<AccuracyMedium>0.9</AccuracyMedium>
+					<AccuracyLong>0.9</AccuracyLong>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="GunPartBase">
+		<defName>Module_AP_MagClipDrum</defName>
+		<label>Type-A drum magazine</label>
+		<description>extended 32 round drum for smaller calibers.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Pistol</uiIconPath>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Mechanism>1</Mechanism>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/HSK/Pistol_CartridgeDrum</PartTexPath>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>32</magazineSize>
+					</il>
+				</compPropertiesObjectPatch>
+				<verbPropertiesObjectPatch>
+					<li>
+						<burstShotCount>4</burstShotCount>
+					</li>
+				</verbPropertiesObjectPatch>
+				<statMultiplier>
+					<AccuracyTouch>0.9</AccuracyTouch>
+					<AccuracyShort>0.9</AccuracyShort>
+					<AccuracyMedium>0.8</AccuracyMedium>
+					<AccuracyLong>0.8</AccuracyLong>
+					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

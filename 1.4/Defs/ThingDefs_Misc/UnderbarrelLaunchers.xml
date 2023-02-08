@@ -10,13 +10,28 @@
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel_UBGL</uiIconPath>
 		<statBases>
 			<WorkToMake>3000</WorkToMake>
-			<Mass>0.5</Mass>
+			<Mass>0.8</Mass>
 		</statBases>
 		<soundInteract>Interact_Autopistol</soundInteract>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
 		<costList>
-			<Steel>75</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Heavy_Component>1</Heavy_Component>
+			<Weapon_Parts>2</Weapon_Parts>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Plastic>15</Plastic>
 		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+				<li>AdvWeaponCraftingWorkTable</li>
+				<li>AdvToolBench</li>
+				<li>HeavyArmsBench</li>
+			</recipeUsers>
+			<researchPrerequisite>Grenade_launchers_C2</researchPrerequisite>
+		</recipeMaker>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -77,11 +92,25 @@
 			<Mass>0.5</Mass>
 		</statBases>
 		<soundInteract>Interact_Autopistol</soundInteract>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
 		<costList>
-			<Steel>75</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<Weapon_GrenadeFrag>1</Weapon_GrenadeFrag>
+			<Heavy_Component>1</Heavy_Component>
+			<Weapon_Parts>2</Weapon_Parts>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Plastic>10</Plastic>
 		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+				<li>AdvWeaponCraftingWorkTable</li>
+				<li>AdvToolBench</li>
+				<li>HeavyArmsBench</li>
+			</recipeUsers>
+			<researchPrerequisite>Grenade_launchers_C1</researchPrerequisite>
+		</recipeMaker>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -149,8 +178,8 @@
 
 	<ThingDef ParentName="GunPartBase">
 		<defName>Module_UBGL_Farg</defName>
-		<label>Farg grenade</label>
-		<description>Standard clip magazine</description>
+		<label>Underbarrel Farg grenade</label>
+		<description>grenades for the underbarrel launcher.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Ammo_HE</texPath>
 		</graphicData>
@@ -159,10 +188,7 @@
 			<WorkToMake>60</WorkToMake>
 			<Mass>0.2</Mass>
 		</statBases>
-		<costList>
-			<Steel>20</Steel>
-			<Chemfuel>80</Chemfuel>
-		</costList>
+		<recipeMaker Inherit="False"/>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/none</PartTexPath>
@@ -177,8 +203,8 @@
 
 	<ThingDef ParentName="GunPartBase">
 		<defName>Module_UBGL_EMP</defName>
-		<label>EMP grenade</label>
-		<description>Standard clip magazine</description>
+		<label>underbarrel EMP grenade</label>
+		<description>grenades for the underbarrel launcher.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Ammo_EMP</texPath>
 		</graphicData>
@@ -187,10 +213,7 @@
 			<WorkToMake>60</WorkToMake>
 			<Mass>0.2</Mass>
 		</statBases>
-		<costList>
-			<Steel>20</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
-		</costList>
+		<recipeMaker Inherit="False"/>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/none</PartTexPath>
@@ -205,8 +228,8 @@
 
 	<ThingDef ParentName="GunPartBase">
 		<defName>Module_UBGL_Inc</defName>
-		<label>incendiary grenade</label>
-		<description>Standard clip magazine</description>
+		<label>underbarrel incendiary grenade</label>
+		<description>grenades for the underbarrel launcher.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Ammo_Inc</texPath>
 		</graphicData>
@@ -215,10 +238,7 @@
 			<WorkToMake>60</WorkToMake>
 			<Mass>0.1</Mass>
 		</statBases>
-		<costList>
-			<Steel>25</Steel>
-			<Chemfuel>80</Chemfuel>
-		</costList>
+		<recipeMaker Inherit="False"/>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/none</PartTexPath>
@@ -233,8 +253,8 @@
 
 	<ThingDef ParentName="GunPartBase">
 		<defName>Module_UBGL_Smoke</defName>
-		<label>smoke grenade</label>
-		<description>Standard clip magazine</description>
+		<label>underbarrel smoke grenade</label>
+		<description>grenades for the underbarrel launcher.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Ammo_Smoke</texPath>
 		</graphicData>
@@ -243,10 +263,7 @@
 			<WorkToMake>60</WorkToMake>
 			<Mass>0.1</Mass>
 		</statBases>
-		<costList>
-			<Steel>15</Steel>
-			<Chemfuel>80</Chemfuel>
-		</costList>
+		<recipeMaker Inherit="False"/>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/none</PartTexPath>
@@ -271,10 +288,25 @@
 			<Mass>0.5</Mass>
 		</statBases>
 		<soundInteract>Interact_Shotgun</soundInteract>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
 		<costList>
-			<Steel>60</Steel>
+			<Shotgun_Component>1</Shotgun_Component>
+			<Weapon_Parts>2</Weapon_Parts>
 			<ComponentIndustrial>2</ComponentIndustrial>
+			<Plastic>10</Plastic>
 		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+				<li>AdvWeaponCraftingWorkTable</li>
+				<li>AdvToolBench</li>
+				<li>HeavyArmsBench</li>
+			</recipeUsers>
+			<researchPrerequisite>Shotgun_C2</researchPrerequisite>
+		</recipeMaker>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>

@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Gun_BoltActionRifle" or defName="Gun_M4A1Gun"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/comps</xpath>
 		<value>
 			<li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
 				<TextureSizeFactor>256</TextureSizeFactor>
@@ -18,7 +18,7 @@
 						<id>ModRF_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0.05,-0.1,-0.03)</postion>
+						<postion>(0.045,0.1,0.02)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -34,7 +34,7 @@
 						<name>under barrel</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
 						<allowEmpty>true</allowEmpty>
-						<postion>(-0.04,0.1,-0.01)</postion>
+						<postion>(-0.04,0.1,0.028)</postion>
 						<filter>
 							<thingDefs>
 								<li>Module_Bipod</li>
@@ -42,12 +42,15 @@
 								<li>Module_AngledGrip</li>
 							</thingDefs>
 						</filter>
+						<allowedExtraCompType>
+							<li>CombatExtended.BipodComp</li>
+						</allowedExtraCompType>
 					</li>
 					<li>
 						<id>ModRF_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.5,0.1,0.0078125)</postion>
+						<postion>(0.5,0.1,0.052)</postion>
 						<scale>(0.75,0,0.75)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -60,9 +63,6 @@
 								<li>Module_Bayonet</li>
 							</thingDefs>
 						</filter>
-						<allowedExtraCompType>
-							<li>CombatExtended.BipodComp</li>
-						</allowedExtraCompType>
 					</li>
 				</attachmentProperties>
 			</li>
@@ -70,7 +70,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="RF_Gun_CXfour" or defName="RF_Gun_USC"]/comps</xpath>
+		<xpath>Defs/ThingDef[defName="RF_Gun_CXfour"]/comps</xpath>
 		<value>
 			<li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
 				<TextureSizeFactor>256</TextureSizeFactor>
@@ -86,7 +86,7 @@
 						<id>ModMP_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(0,0.1,0)</postion>
+						<postion>(-0.13,0.1,0.01)</postion>
 						<defultThing>Module_HvySMG_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -99,7 +99,7 @@
 							<Module_HvySMG_MagClip>1</Module_HvySMG_MagClip>
 							<Module_HvySNG_MagDrum>1</Module_HvySNG_MagDrum>
 						</randomThingDefWeights>
-					</li>
+					</li><!--
 					<li>
 						<id>ModMP_Stock</id>
 						<name>stock</name>
@@ -112,12 +112,12 @@
 								<li>Module_HvySMG_Stock</li>
 							</thingDefs>
 						</filter>
-					</li>
+					</li>-->
 					<li>
 						<id>ModMP_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0,0.1,0.015)</postion>
+						<postion>(0.25,0.1,0.0358)</postion>
 						<scale>(1.2,0,1.2)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -145,7 +145,111 @@
 						<id>ModMP_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.3515625,0.1,0.0390625)</postion>
+						<postion>(0.4515625,0.1,0.067)</postion>
+						<scale>(0.75,0,0.755)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_Silencer</li>
+								<li>Module_MuzzleBrake</li>
+								<li>Module_MuzzleCompensator</li>
+								<li>Module_FlashHider</li>
+							</thingDefs>
+						</filter>
+					</li>
+				</attachmentProperties>
+				<compGetGizmosExtraAllowedCompType>
+					<li>CombatExtended.CompAmmoUser</li>
+					<li>CombatExtended.CompFireModes</li>
+				</compGetGizmosExtraAllowedCompType>
+				<compPropertiesInitializeCompType>
+					<li>CombatExtended.CompAmmoUser</li>
+					<li>CombatExtended.CompFireModes</li>
+				</compPropertiesInitializeCompType>
+				<compPropertiesCreateInstanceCompType>
+					<li>CombatExtended.CompFireModes</li>
+				</compPropertiesCreateInstanceCompType>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RF_Gun_USC"]/comps</xpath>
+		<value>
+			<li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+				<TextureSizeFactor>256</TextureSizeFactor>
+				<TextureFilterMode>Point</TextureFilterMode>
+				<ExceedanceFactor>2</ExceedanceFactor>
+				<ExceedanceOffset>1</ExceedanceOffset>
+				<ForceNodeIdControl>true</ForceNodeIdControl>
+			</li>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<attachmentProperties>
+					<li>
+						<id>ModMP_Magazine</id>
+						<name>magazine</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
+						<postion>(0.012,0.1,-0.01)</postion>
+						<defultThing>Module_HvySMG_MagClip</defultThing>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_HvySMG_MagClip</li>
+								<li>Module_HvySNG_MagDrum</li>
+							</thingDefs>
+						</filter>
+						<randomThingDefWeights>
+							<Module_HvySMG_MagClip>1</Module_HvySMG_MagClip>
+							<Module_HvySNG_MagDrum>1</Module_HvySNG_MagDrum>
+						</randomThingDefWeights>
+					</li><!--
+					<li>
+						<id>ModMP_Stock</id>
+						<name>stock</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</UITexPath>
+						<postion>(-0.5,-0.1,0.03)</postion>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_HvySMG_WireStock</li>
+								<li>Module_HvySMG_Stock</li>
+							</thingDefs>
+						</filter>
+					</li>-->
+					<li>
+						<id>ModMP_Sight</id>
+						<name>sight</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
+						<postion>(0.15,0.1,0)</postion>
+						<scale>(1.2,0,1.2)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_ACOG</li>
+								<li>Module_HoloSight</li>
+								<li>Module_RedDotSight</li>
+								<li>Module_SniperScope</li>
+							</thingDefs>
+						</filter>
+					</li>
+					<li>
+						<id>ModMP_Receiver</id>
+						<name>chamber</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Receiver</UITexPath>
+						<postion>(0,0.1,0)</postion>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_HvySMG_Chamber</li>
+							</thingDefs>
+						</filter>
+					</li>
+					<li>
+						<id>ModMP_Muzzle</id>
+						<name>muzzle</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
+						<postion>(0.5,0.1,-0.029)</postion>
 						<scale>(0.75,0,0.75)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -158,6 +262,17 @@
 						</filter>
 					</li>
 				</attachmentProperties>
+				<compGetGizmosExtraAllowedCompType>
+					<li>CombatExtended.CompAmmoUser</li>
+					<li>CombatExtended.CompFireModes</li>
+				</compGetGizmosExtraAllowedCompType>
+				<compPropertiesInitializeCompType>
+					<li>CombatExtended.CompAmmoUser</li>
+					<li>CombatExtended.CompFireModes</li>
+				</compPropertiesInitializeCompType>
+				<compPropertiesCreateInstanceCompType>
+					<li>CombatExtended.CompFireModes</li>
+				</compPropertiesCreateInstanceCompType>
 			</li>
 		</value>
 	</Operation>
