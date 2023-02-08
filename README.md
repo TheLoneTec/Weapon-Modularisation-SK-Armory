@@ -3,7 +3,7 @@ Conversion of Weapon Modularisation Weapon Pack for HSK.
 
 I consider this a community project. Support for other mods, or balance changes are something im going to mainly leave to others. As its such a big mod.
 
-**Descriptioon**
+**Description**
 
 As the titles  suggests, this overhauls not only the textures for weapons, but also adds attachments or upgrades. Weapons can be upgraded at the various weapon crafting benches. Enemies will also spawn with weapons with various attachments. (unsure if the AI will use the abilities granted by attachments, this may need a SkyAI update)
 
