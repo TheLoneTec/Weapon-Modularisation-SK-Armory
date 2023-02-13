@@ -118,11 +118,11 @@
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<notDrawInParent>true</notDrawInParent>
-				<!--<verbPropertiesOffseter>
+				<verbPropertiesOffseter>
 					<li>
 						<ticksBetweenBurstShots>-2</ticksBetweenBurstShots>
 					</li>
-				</verbPropertiesOffseter>-->
+				</verbPropertiesOffseter>
 				<statMultiplier>
 					<AccuracyTouch>0.9</AccuracyTouch>
 					<AccuracyShort>0.9</AccuracyShort>

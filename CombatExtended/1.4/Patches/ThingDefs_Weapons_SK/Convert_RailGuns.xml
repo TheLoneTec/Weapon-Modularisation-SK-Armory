@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_RailgunMKI"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.1,1.1)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_RailgunMKI"]/comps</xpath>
 		<value>

@@ -3,6 +3,15 @@
 
 	<!-- Not Big Enough for Underbarrel -->
 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="RF_Gun_Tecnine"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.7,1.3)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="RF_Gun_Tecnine"]/comps</xpath>
 		<value>
@@ -107,6 +116,15 @@
 	</Operation>
 
 	<!-- RF_Gun_TMP -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="RF_Gun_TMP"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.7,1.3)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="RF_Gun_TMP"]/comps</xpath>
@@ -213,6 +231,15 @@
 
 	<!-- RF_Gun_GreaseGun -->
 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="RF_Gun_GreaseGun"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.7,1.3)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="RF_Gun_GreaseGun"]/comps</xpath>
 		<value>
@@ -317,6 +344,15 @@
 	</Operation>
 
 	<!-- Big Enough for Underbarrel -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_UMP45Gun"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.7,1.3)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_UMP45Gun"]/comps</xpath>
@@ -436,6 +472,15 @@
 
 	<!-- Gun_HeavySMG -->
 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_HeavySMG"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.7,1.3)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/comps</xpath>
 		<value>
@@ -553,6 +598,15 @@
 	</Operation>
 
 	<!-- MP5 -->
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_MP5Gun"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.7,1.3)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_MP5Gun"]/comps</xpath>
@@ -672,6 +726,15 @@
 
 	<!-- Gun_MachinePistol -->
 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_MachinePistol"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.7,1.3)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_MachinePistol"]/comps</xpath>
 		<value>
@@ -776,6 +839,15 @@
 	</Operation>
 
 	<!-- RF_Gun_Skorpion -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="RF_Gun_Skorpion"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.7,1.3)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="RF_Gun_Skorpion"]/comps</xpath>
@@ -894,6 +966,15 @@
 	</Operation>
 
 	<!-- RF_Gun_Vector -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="RF_Gun_Vector"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.7,1.3)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="RF_Gun_Vector"]/comps</xpath>

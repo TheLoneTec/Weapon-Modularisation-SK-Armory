@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_Phalanx"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.5,1.5)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_Phalanx"]/comps</xpath>
 		<value>
@@ -72,6 +81,15 @@
 					<li>CombatExtended.CompFireModes</li>
 				</compPropertiesCreateInstanceCompType>
 			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_BlackWidow"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.7,1.3)</DrawSize>
+		  </li>
 		</value>
 	</Operation>
 
@@ -167,6 +185,16 @@
 			</li>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_AvengerA"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.6,1.6)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
+	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_AvengerA"]/comps</xpath>
 		<value>
@@ -255,6 +283,15 @@
 					<li>CombatExtended.CompFireModes</li>
 				</compPropertiesCreateInstanceCompType>
 			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_Harrier"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.6,1.6)</DrawSize>
+		  </li>
 		</value>
 	</Operation>
 
@@ -350,6 +387,15 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_Predator"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.6,1.6)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_Predator"]/comps</xpath>
 		<value>
@@ -432,6 +478,15 @@
 					<li>CombatExtended.CompFireModes</li>
 				</compPropertiesCreateInstanceCompType>
 			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_Hurricane"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.6,1.6)</DrawSize>
+		  </li>
 		</value>
 	</Operation>
 

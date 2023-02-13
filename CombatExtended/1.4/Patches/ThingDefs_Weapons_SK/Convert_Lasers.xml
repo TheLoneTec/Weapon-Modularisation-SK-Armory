@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_Mantis"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.2,1.2)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_Mantis"]/comps</xpath>
 		<value>
@@ -60,6 +69,15 @@
 					</li>
 				</attachmentProperties>
 			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_Mantis"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.5,1.2)</DrawSize>
+		  </li>
 		</value>
 	</Operation>
 
@@ -156,6 +174,15 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="HeavyLasergun"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.7,1.3)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="HeavyLasergun"]/comps</xpath>
 		<value>
@@ -246,6 +273,15 @@
 					<li>CombatExtended.CompFireModes</li>
 				</compPropertiesCreateInstanceCompType>
 			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="BurstLasergun"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.7,1.3)</DrawSize>
+		  </li>
 		</value>
 	</Operation>
 

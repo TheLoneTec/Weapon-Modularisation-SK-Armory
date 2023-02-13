@@ -1118,7 +1118,7 @@
 		<xpath>Defs/ThingDef[defName="Gun_FAMAS"]</xpath>
 		<value>
 		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
+			<DrawSize>(1.8,1.3)</DrawSize>
 		  </li>
 		</value>
 	</Operation>
