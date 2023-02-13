@@ -3,6 +3,15 @@
 
 	<!-- 0.001775 per pixel MAYBE? -->
 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.5,1.5)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_Revolver"]/comps</xpath>
 		<value>
@@ -94,6 +103,15 @@
 	</Operation>
 
 	<!-- RF_Gun_AT2K -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="RF_Gun_AT2K"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.5,1.5)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="RF_Gun_AT2K"]/comps</xpath>
@@ -187,6 +205,15 @@
 
 	<!-- 0.001775 per pixel MAYBE? -->
 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Gun_Autopistol"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.5,1.5)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_Autopistol"]/comps</xpath>
 		<value>
@@ -277,6 +304,15 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="RF_Gun_93R"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.5,1.5)</DrawSize>
+		  </li>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="RF_Gun_93R"]/comps</xpath>
 		<value>
@@ -364,6 +400,15 @@
 					<li>CombatExtended.CompFireModes</li>
 				</compPropertiesCreateInstanceCompType>
 			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="RF_Gun_VektorCP"]</xpath>
+		<value>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>(1.5,1.5)</DrawSize>
+		  </li>
 		</value>
 	</Operation>
 
