@@ -12,6 +12,10 @@
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
 		<costList>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
@@ -88,6 +92,10 @@
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
 		<costList>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>

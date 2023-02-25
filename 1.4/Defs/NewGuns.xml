@@ -14,12 +14,12 @@ Cons: Small proprietary clip / Slow to aim</description>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
             <MarketValue>2250</MarketValue>
-            <SightsEfficiency>1.24</SightsEfficiency>
+      		<SightsEfficiency>1.1</SightsEfficiency>
             <ShotSpread>0.04</ShotSpread>
-            <SwayFactor>1</SwayFactor>
-            <RangedWeapon_Cooldown>0.96</RangedWeapon_Cooldown>
-            <Bulk>11.2</Bulk>
-            <Mass>4.4</Mass>
+            <SwayFactor>1.1</SwayFactor>
+            <RangedWeapon_Cooldown>0.86</RangedWeapon_Cooldown>
+            <Bulk>11</Bulk>
+            <Mass>5.5</Mass>
         </statBases>
         <weaponTags>
             <li>RF4</li>
@@ -37,9 +37,9 @@ Cons: Small proprietary clip / Slow to aim</description>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
-                <warmupTime>0.76</warmupTime>
+                <warmupTime>1.1</warmupTime>
                 <range>55</range>
-                <burstShotCount>5</burstShotCount>
+                <burstShotCount>4</burstShotCount>
                 <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
                 <soundCast>Shot_AssaultRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
@@ -160,8 +160,9 @@ Cons: Small proprietary clip / Slow to aim</description>
 <ThingDef ParentName="BaseGun_ShortBarreled">
 		<defName>Gun_Glock17Gun</defName>
 		<label>Glock 17</label>
-		<description>A sturdy, repliable handgun which set an industry standard. It's got a bit of recoil so it's harder to reqacquire targets.
-Pros: Magazine and scope options
+		<description>A sturdy, repliable handgun which set an industry standard. It's got a bit of recoil so it's harder to reqacquire targets. Its frame is made of a durable, lightweight polymer.
+Type: 9mm Pistol
+Pros: Magazine and scope options / Mass
 Cons: Only average performance</description>
 		<graphicData>
 			<texPath>Things/Weapons/Glock17</texPath>
@@ -174,8 +175,8 @@ Cons: Only average performance</description>
 			<ShotSpread>0.12</ShotSpread>
 			<SwayFactor>1.2</SwayFactor>
 			<RangedWeapon_Cooldown>0.29</RangedWeapon_Cooldown>
-			<Bulk>1.6</Bulk>
-			<Mass>0.915</Mass>
+			<Bulk>2</Bulk>
+			<Mass>0.7</Mass>
 		</statBases>
 		<weaponTags>
 			<li>PT2</li>
@@ -209,7 +210,7 @@ Cons: Only average performance</description>
 				<aiAimMode>AimedShot</aiAimMode>
 			</li>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>17</magazineSize>
+				<magazineSize>10</magazineSize>
 				<reloadTime>1.5</reloadTime>
 				<ammoSet>AmmoSet_9x19mmPara</ammoSet>
 			</li>

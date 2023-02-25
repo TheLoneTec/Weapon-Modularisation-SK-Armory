@@ -63,12 +63,12 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_ACOG</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope_acog</uiIconPath>
-		<!--<stuffCategories>
+		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>-->
+		<costStuffCount>25</costStuffCount>
 		<costList>
-			<Weapon_Parts>1</Weapon_Parts>
+			<ComponentIndustrial>1</ComponentIndustrial>
 			<Glass>5</Glass>
 			<Silicon>5</Silicon>
 			<Plastic>10</Plastic>
@@ -115,12 +115,12 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_Holo</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope_Holo</uiIconPath>
-		<!--<stuffCategories>
+		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>20</costStuffCount>-->
+		<costStuffCount>20</costStuffCount>
 		<costList>
-			<Weapon_Parts>1</Weapon_Parts>
+			<ComponentIndustrial>1</ComponentIndustrial>
 			<ElectronicComponents>1</ElectronicComponents>
 			<Glass>5</Glass>
 			<Plastic>5</Plastic>
@@ -166,12 +166,12 @@
 			</recipeUsers>
 			<researchPrerequisite>Pistols_C2</researchPrerequisite>
 		</recipeMaker>
-		<!--<stuffCategories>
+		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>15</costStuffCount>-->
+		<costStuffCount>15</costStuffCount>
 		<costList>
-			<Weapon_Parts>1</Weapon_Parts>
+			<ComponentIndustrial>1</ComponentIndustrial>
 			<Glass>5</Glass>
 			<Plastic>5</Plastic>
 		</costList>
@@ -205,10 +205,10 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_Sniper</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope_Sniper</uiIconPath>
-		<!--<stuffCategories>
+		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>30</costStuffCount>-->
+		<costStuffCount>30</costStuffCount>
 		<costList>
 			<ComponentIndustrial>3</ComponentIndustrial>
 			<Glass>10</Glass>
@@ -285,10 +285,10 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_Sniper</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope_Sniper</uiIconPath>
-		<!--<stuffCategories>
+		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>30</costStuffCount>-->
+		<costStuffCount>30</costStuffCount>
 		<costList>
 			<ComponentIndustrial>3</ComponentIndustrial>
 			<Glass>10</Glass>
@@ -362,10 +362,10 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Underbarrel_Bipod</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel_Bipod</uiIconPath>
-		<!--<stuffCategories>
+		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>-->
+		<costStuffCount>25</costStuffCount>
 		<costList>
 			<ComponentIndustrial>3</ComponentIndustrial>
 			<Plastic>10</Plastic>
@@ -418,10 +418,10 @@
 			</recipeUsers>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
-		<!--<stuffCategories>
+		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>30</costStuffCount>-->
+		<costStuffCount>30</costStuffCount>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 			<Plastic>5</Plastic>
@@ -461,10 +461,10 @@
 			</recipeUsers>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
-		<!--<stuffCategories>
+		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>30</costStuffCount>-->
+		<costStuffCount>30</costStuffCount>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 			<Plastic>5</Plastic>

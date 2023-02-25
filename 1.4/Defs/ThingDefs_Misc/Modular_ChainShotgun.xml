@@ -11,12 +11,6 @@
 		<thingCategories>
 			<li>ThingCategory_SGGunParts</li>
 		</thingCategories>
-		<costList>
-			<Weapon_Parts>1</Weapon_Parts>
-		</costList>
-		<recipeMaker>
-			<researchPrerequisite>GasOperation</researchPrerequisite>
-		</recipeMaker>
 	</ThingDef>
 
 	<ThingDef ParentName="SGGunPartBase">
@@ -31,6 +25,16 @@
 			<WorkToMake>500</WorkToMake>
 			<Mass>0.3</Mass>
 		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>GasOperation</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/ChainShotgun/ChainShotgun_Magazine</PartTexPath>
@@ -55,6 +59,13 @@
 			<WorkToMake>3000</WorkToMake>
 			<Mass>0.7</Mass>
 		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>GasOperation</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
 		<costList>
 			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
@@ -95,8 +106,15 @@
 			<Mass>0.5</Mass>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite Inherit="False">BlowbackOperation</researchPrerequisite>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/ChainShotgun/ChainShotgun_Buncher</PartTexPath>
@@ -124,6 +142,13 @@
 		<statBases>
 			<Mass>0.1</Mass>
 		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>GasOperation</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
 		<costList>
 			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
@@ -132,7 +157,8 @@
 				<notDrawInParent>true</notDrawInParent>
 				<verbPropertiesMultiplier>
 					<li>
-						<ticksBetweenBurstShots>0.75</ticksBetweenBurstShots>
+						<ticksBetweenBurstShots>-2</ticksBetweenBurstShots>
+						<burstShotCount>1</burstShotCount>
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>

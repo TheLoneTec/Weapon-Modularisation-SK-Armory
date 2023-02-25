@@ -11,15 +11,6 @@
 		<thingCategories>
 			<li>ThingCategory_HvySMGGunParts</li>
 		</thingCategories>
-		<statBases>
-			<WorkToMake>500</WorkToMake>
-		</statBases>
-		<costList>
-			<Weapon_Parts>1</Weapon_Parts>
-		</costList>
-		<recipeMaker>
-			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
-		</recipeMaker>
 	</ThingDef>
 
 	<ThingDef ParentName="HvySMGGunPartBase">
@@ -30,6 +21,19 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Pistol</uiIconPath>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMG_Magazine</PartTexPath>
@@ -58,6 +62,19 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Pistol</uiIconPath>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMGCurved_Magazine</PartTexPath>
@@ -81,6 +98,19 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Pistol</uiIconPath>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMGBack_Magazine</PartTexPath>
@@ -107,6 +137,16 @@
 		<statBases>
 			<WorkToMake>300</WorkToMake>
 		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>5</costStuffCount>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMGBack15_Magazine</PartTexPath>
@@ -136,6 +176,16 @@
 			<Mass>0.6</Mass>
 			<WorkToMake>2500</WorkToMake>
 		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMG_CartridgeDrum</PartTexPath>
@@ -179,6 +229,13 @@
 		<statBases>
 			<Mass>0.1</Mass>
 		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
 		<costList>
 			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
@@ -187,7 +244,8 @@
 				<notDrawInParent>true</notDrawInParent>
 				<verbPropertiesMultiplier>
 					<li>
-						<ticksBetweenBurstShots>0.75</ticksBetweenBurstShots>
+						<ticksBetweenBurstShots>-1</ticksBetweenBurstShots>
+						<burstShotCount>2</burstShotCount>
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
@@ -210,7 +268,18 @@
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock_Simple</uiIconPath>
 		<statBases>
 			<Mass>0.1</Mass>
+			<WorkToMake>500</WorkToMake>
 		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		</recipeMaker>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMG_Stock</PartTexPath>
@@ -241,8 +310,12 @@
 			<Mass>0.3</Mass>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite Inherit="False">SMG_C2</researchPrerequisite >
+			<researchPrerequisite>SMG_C2</researchPrerequisite>
 		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
 		<costList>
 			<Weapon_Parts>2</Weapon_Parts>
 		</costList>

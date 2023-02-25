@@ -6,7 +6,7 @@
 		<label>Build HK417 Rifle</label>
 		<description>The HK417 is an extremely accurate battle rifle. Equipped with the right sights, it's a top-tier designated marksman rifle.\nCaliber: 5.56x45mm NATO</description>
 		<jobString>Building HK417 Rifle.</jobString>
-		<workAmount>20000</workAmount>
+		<workAmount>21000</workAmount>
 		<skillRequirements>
 			<Crafting>15</Crafting>
 		</skillRequirements>
@@ -25,7 +25,7 @@
 						<li>Weapon_Parts</li>
 					</thingDefs>
 				</filter>
-				<count>9</count>
+				<count>12</count>
 			</li>
 			<li>
 				<filter>
@@ -41,7 +41,7 @@
 						<li>Metallic</li>
 					</categories>
 				</filter>
-				<count>30</count>
+				<count>50</count>
 			</li>
 			<li>
 				<filter>
@@ -50,14 +50,6 @@
 					</thingDefs>
 				</filter>
 				<count>42</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>Leathers</li>
-					</categories>
-				</filter>
-				<count>20</count>
 			</li>
 		</ingredients>
 		<products>

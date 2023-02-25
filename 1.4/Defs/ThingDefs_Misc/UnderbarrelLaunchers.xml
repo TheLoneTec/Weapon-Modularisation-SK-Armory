@@ -13,10 +13,14 @@
 			<Mass>0.8</Mass>
 		</statBases>
 		<soundInteract>Interact_Autopistol</soundInteract>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
 		<costList>
 			<Heavy_Component>1</Heavy_Component>
 			<Weapon_Parts>2</Weapon_Parts>
-			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentIndustrial>4</ComponentIndustrial>
 			<Plastic>15</Plastic>
 		</costList>
 		<recipeMaker>
@@ -34,7 +38,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_UBGL</defaultProjectile>
 				<warmupTime>3.5</warmupTime>
-				<range>32</range>
+				<range>23.9</range>
 				<forcedMissRadius>1.9</forcedMissRadius>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>Shot_IncendiaryLauncher</soundCast>
@@ -88,10 +92,14 @@
 			<Mass>0.5</Mass>
 		</statBases>
 		<soundInteract>Interact_Autopistol</soundInteract>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
 		<costList>
 			<Heavy_Component>1</Heavy_Component>
 			<Weapon_Parts>2</Weapon_Parts>
-			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentIndustrial>3</ComponentIndustrial>
 			<Plastic>10</Plastic>
 		</costList>
 		<recipeMaker>
@@ -149,8 +157,6 @@
 		</comps>
 	</ThingDef>
 
-	<!-- Probably obsolete in HSK -->
-	
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_UBGL</defName>
 		<label>explosive bolt</label>
@@ -282,10 +288,14 @@
 			<Mass>0.5</Mass>
 		</statBases>
 		<soundInteract>Interact_Shotgun</soundInteract>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
 		<costList>
 			<Shotgun_Component>1</Shotgun_Component>
 			<Weapon_Parts>2</Weapon_Parts>
-			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentIndustrial>2</ComponentIndustrial>
 			<Plastic>10</Plastic>
 		</costList>
 		<recipeMaker>
@@ -303,7 +313,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_Shotgun</defaultProjectile>
 				<warmupTime>0.9</warmupTime>
-				<range>14</range>
+				<range>9.9</range>
 				<soundCast>Shot_Shotgun</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>

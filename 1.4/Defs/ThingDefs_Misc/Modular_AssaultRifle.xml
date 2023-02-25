@@ -11,12 +11,6 @@
 		<thingCategories>
 			<li>ThingCategory_ARGunParts</li>
 		</thingCategories>
-		<costList>
-			<Weapon_Parts>1</Weapon_Parts>
-		</costList>
-		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
-		</recipeMaker>
 	</ThingDef>
 
 	<ThingDef ParentName="ARGunPartBase">
@@ -31,18 +25,19 @@
 			<WorkToMake>500</WorkToMake>
 			<Mass>0.3</Mass>
 		</statBases>
-		<!--<stuffCategories>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>-->
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_Magazine</PartTexPath>
-				<verbPropertiesObjectPatch>
-					<li>
-						<burstShotCount>3</burstShotCount>
-					</li>
-				</verbPropertiesObjectPatch>
 			</li>
 		</comps>
 	</ThingDef>
@@ -59,18 +54,19 @@
 			<WorkToMake>1500</WorkToMake>
 			<Mass>0.5</Mass>
 		</statBases>
-		<!--<stuffCategories>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>35</costStuffCount>-->
+		<costStuffCount>35</costStuffCount>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_Magazine</PartTexPath>
-				<verbPropertiesObjectPatch>
-					<li>
-						<burstShotCount>5</burstShotCount>
-					</li>
-				</verbPropertiesObjectPatch>
 				<verbPropertiesMultiplier>
 					<li>
 						<warmupTime>1.05</warmupTime>
@@ -92,21 +88,19 @@
 			<WorkToMake>3000</WorkToMake>
 			<Mass>0.7</Mass>
 		</statBases>
-		<!--<stuffCategories>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>45</costStuffCount>-->
+		<costStuffCount>45</costStuffCount>
 		<costList>
 			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_CartridgeDrum</PartTexPath>
-				<verbPropertiesObjectPatch>
-					<li>
-						<burstShotCount>10</burstShotCount>
-					</li>
-				</verbPropertiesObjectPatch>
 				<verbPropertiesMultiplier>
 					<li>
 						<warmupTime>1.1</warmupTime>
@@ -136,23 +130,24 @@
 			<Mass>0.1</Mass>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite Inherit="False">GasOperation</researchPrerequisite>
+			<researchPrerequisite>GasOperation</researchPrerequisite>
 		</recipeMaker>
-		<!--<stuffCategories>
+		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>-->
+		<costStuffCount>25</costStuffCount>
 		<costList>
 			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<notDrawInParent>true</notDrawInParent>
-				<verbPropertiesMultiplier>
+				<verbPropertiesOffseter>		
 					<li>
-						<ticksBetweenBurstShots>0.75</ticksBetweenBurstShots>
+						<ticksBetweenBurstShots>-1</ticksBetweenBurstShots>
+						<burstShotCount>2</burstShotCount>
 					</li>
-				</verbPropertiesMultiplier>
+				</verbPropertiesOffseter>
 				<statMultiplier>
 					<AccuracyTouch>0.9</AccuracyTouch>
 					<AccuracyShort>0.9</AccuracyShort>
@@ -174,10 +169,13 @@
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
-		<!--<stuffCategories>
+		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>-->
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_LengthenedBarrel</PartTexPath>
