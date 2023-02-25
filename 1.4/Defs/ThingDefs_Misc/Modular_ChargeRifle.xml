@@ -15,8 +15,8 @@
 
 	<ThingDef ParentName="CRGunPartBase">
 		<defName>Module_CR_Mag</defName>
-		<label>charge battery</label>
-		<description>Standard 30 round clip magazine designed for various assault rifles.</description>
+		<label>Battery Extender 150</label>
+		<description>Additional primary battery for directed energy weapons. Increases energy storage by 50 percent.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Gun/ChargeRifle/Item_ChargeRifle_Battery</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -40,18 +40,23 @@
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/ChargeRifle/ChargeRifle_Battery</PartTexPath>
 				<verbPropertiesObjectPatch>
-					<li>
+					<!-- <li>
 						<burstShotCount>3</burstShotCount>
-					</li>
+					</li> -->
 				</verbPropertiesObjectPatch>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>1.5</magazineSize>
+					</li>
+				</compPropertiesMultiplier>
 			</li>
 		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="CRGunPartBase">
 		<defName>Module_CR_MagExt</defName>
-		<label>extended charge battery</label>
-		<description>100 round drum magazine provides better sustained firepower, at the cost of reload speed. It also affects the center of gravity of the gun, making it unwieldy.</description>
+		<label>Battery Extender 220</label>
+		<description>Additional primary battery for directed energy weapons. Increases energy storage by 120 percent. Makes the weapon bulky and harder to maneuver.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Gun/ChargeRifle/Item_ChargeRifle_LargeBattery</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -76,10 +81,19 @@
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/ChargeRifle/ChargeRifle_LargeBattery</PartTexPath>
 				<verbPropertiesObjectPatch>
-					<li>
+					<!-- <li>
 						<burstShotCount>5</burstShotCount>
-					</li>
+					</li> -->
 				</verbPropertiesObjectPatch>
+				<statOffset>
+					<Mass>1</Mass>
+					<Bulk>1.5</Bulk>
+				</statOffset>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>2.2</magazineSize>
+					</li>
+				</compPropertiesMultiplier>
 				<verbPropertiesMultiplier>
 					<li>
 						<warmupTime>1.1</warmupTime>

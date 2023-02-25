@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_Mantis"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.2,1.2)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_Mantis"]/comps</xpath>
 		<value>
@@ -72,15 +63,6 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_Mantis"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.5,1.2)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="LaserRifle"]/comps</xpath>
 		<value>
@@ -103,8 +85,8 @@
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<li>Module_CR_A3_MagExt</li>
-								<li>Module_CR_A3X_MagExt</li>
+								<li>Module_CR_Mag</li>
+								<li>Module_CR_MagExt</li>
 							</thingDefs>
 						</filter><!--
 						<randomThingDefWeights>
@@ -174,15 +156,6 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="HeavyLasergun"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="HeavyLasergun"]/comps</xpath>
 		<value>
@@ -205,8 +178,8 @@
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<li>Module_CR_A3_MagExt</li>
-								<li>Module_CR_A3X_MagExt</li>
+								<li>Module_CR_Mag</li>
+								<li>Module_CR_MagExt</li>
 							</thingDefs>
 						</filter><!--
 						<randomThingDefWeights>
@@ -276,15 +249,6 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="BurstLasergun"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="BurstLasergun"]/comps</xpath>
 		<value>
@@ -302,13 +266,14 @@
 						<id>ModCR_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(-0.28,-0.1,0.15)</postion>
+						<!-- <postion>(-0.28,-0.1,0.15)</postion> -->
+						<postion>(0.12,-0.1,0.05)</postion>
 						<!--<defultThing>Module_CR_A3_MagExt</defultThing>-->
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<li>Module_CR_A3_MagExt</li>
-								<li>Module_CR_A3X_MagExt</li>
+								<li>Module_CR_Mag</li>
+								<li>Module_CR_MagExt</li>
 							</thingDefs>
 						</filter><!--
 						<randomThingDefWeights>
@@ -320,7 +285,8 @@
 						<id>ModCR_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0.085,0.1,0.075)</postion>
+						<!-- <postion>(0.085,0.1,0.075)</postion> -->
+						<postion>(0.185,0.1,0.05)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>

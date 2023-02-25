@@ -6,6 +6,7 @@
 		<value>
 			<compPropertiesObjectPatch>
 				<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+					<magazineSize>3</magazineSize>
 					<magazineSize>30</magazineSize>
 				</il>
 			</compPropertiesObjectPatch>
@@ -13,12 +14,27 @@
 		<order>Append</order>
 	</Operation>
 
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Module_AR_Mag60Clip"]/comps/li[@Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon"]</xpath>
+		<value>
+			<compPropertiesObjectPatch>
+				<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+					<reloadTime>4</reloadTime>
+					<magazineSize>60</magazineSize>
+				</il>
+			</compPropertiesObjectPatch>
+		</value>
+		<order>Append</order>
+	</Operation>
+
+
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Module_AR_MagDrum"]/comps/li[@Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon"]</xpath>
 		<value>
 			<compPropertiesObjectPatch>
 				<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+					<reloadTime>6</reloadTime>
 					<magazineSize>100</magazineSize>
 				</il>
 			</compPropertiesObjectPatch>
@@ -28,9 +44,19 @@
 	
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Module_AR_LongBarrel"]/comps/li[@Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon"]/statMultiplier</xpath>
+		<xpath>Defs/ThingDef[defName="Module_AR_LongBarrel"]/comps/li[@Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon"]</xpath>
 		<value>
-			<ShotSpread>0.75</ShotSpread>
+
+
+			<extraComp>
+				<li Class="CombatExtended.CompProperties_BipodComp">
+					<!-- <catDef>bipodRifle</catDef> -->
+					<additionalrange>3</additionalrange>
+
+				</li>
+			</extraComp>
+
+			<!-- <ShotSpread>0.75</ShotSpread> -->
 		</value>
 		<order>Append</order>
 	</Operation>
@@ -39,7 +65,13 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Module_AR_MagClip"]/comps/li[@Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon"]/verbPropertiesObjectPatch/li/burstShotCount</xpath>
 		<value>
-			<burstShotCount>6</burstShotCount>
+			<burstShotCount>5</burstShotCount>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Module_AR_Mag60Clip"]/comps/li[@Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon"]/verbPropertiesObjectPatch/li/burstShotCount</xpath>
+		<value>
+			<burstShotCount>7</burstShotCount>
 		</value>
 	</Operation>
 
