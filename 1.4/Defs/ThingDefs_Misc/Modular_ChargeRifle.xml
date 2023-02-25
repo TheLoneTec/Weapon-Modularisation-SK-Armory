@@ -11,6 +11,9 @@
 		<thingCategories>
 			<li>ThingCategory_ARGunParts</li>
 		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisite>ChargedShot</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 	<ThingDef ParentName="CRGunPartBase">
@@ -26,13 +29,6 @@
 			<WorkToMake>500</WorkToMake>
 			<Mass>0.3</Mass>
 		</statBases>
-		<recipeMaker>
-			<researchPrerequisite>ChargedShot</researchPrerequisite>
-		</recipeMaker>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>25</costStuffCount>
 		<costList>
 			<Charged_Component>1</Charged_Component>
 		</costList>
@@ -69,10 +65,6 @@
 		<recipeMaker>
 			<researchPrerequisite>ChargedShot</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>40</costStuffCount>
 		<costList>
 			<Charged_Component>1</Charged_Component>
 			<Weapon_Parts>2</Weapon_Parts>
@@ -119,13 +111,6 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Receiver</uiIconPath>
-		<recipeMaker>
-			<researchPrerequisite>ChargedShot</researchPrerequisite>
-		</recipeMaker>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
 		<costList>
 			<Charged_Component>1</Charged_Component>
 			<Weapon_Parts>2</Weapon_Parts>
