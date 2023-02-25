@@ -369,7 +369,7 @@
 		</value>
 	</Operation>
 		<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_PlasmaRifle"]</xpath>
+		<xpath>Defs/ThingDef[defName="Gun_PlasmaCarbine"]</xpath>
 		<value>
 		  <li Class="CombatExtended.GunDrawExtension">
 			<DrawSize>1.15</DrawSize>
@@ -377,7 +377,7 @@
 		</value>
 	</Operation>
 		<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Gun_PlasmaRifle"]/graphicData</xpath>
+		<xpath>Defs/ThingDef[defName="Gun_PlasmaCarbine"]/graphicData</xpath>
 		<value>
 			<drawSize>(1.15,1.15)</drawSize>
 		</value>

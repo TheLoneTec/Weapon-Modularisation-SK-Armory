@@ -12,10 +12,6 @@
 			<WorkToMake>3000</WorkToMake>
 			<Mass>0.5</Mass>
 		</statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 			<Plastic>10</Plastic>
@@ -61,10 +57,6 @@
 		<statBases>
 			<Mass>0.1</Mass>
 		</statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>15</costStuffCount>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 			<Rubber>6</Rubber>
@@ -100,10 +92,6 @@
 		<statBases>
 			<Mass>0.1</Mass>
 		</statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>15</costStuffCount>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 			<Rubber>6</Rubber>
@@ -139,10 +127,6 @@
 		<statBases>
 			<Mass>0.1</Mass>
 		</statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>15</costStuffCount>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 			<Rubber>6</Rubber>
@@ -185,12 +169,8 @@
 		<statBases>
 			<Mass>0.1</Mass>
 		</statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>40</costStuffCount>
 		<costList>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
 			<recipeUsers>

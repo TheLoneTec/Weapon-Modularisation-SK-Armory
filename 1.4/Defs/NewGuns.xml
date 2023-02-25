@@ -14,20 +14,19 @@ Cons: Small proprietary clip / Slow to aim</description>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
             <MarketValue>2250</MarketValue>
-            <SightsEfficiency>1.1</SightsEfficiency>
-            <ShotSpread>0.045</ShotSpread>
-            <SwayFactor>1.13</SwayFactor>
-            <RangedWeapon_Cooldown>0.68</RangedWeapon_Cooldown>
-            <Bulk>10</Bulk>
-            <Mass>6.5</Mass>
+            <SightsEfficiency>1.24</SightsEfficiency>
+            <ShotSpread>0.04</ShotSpread>
+            <SwayFactor>1</SwayFactor>
+            <RangedWeapon_Cooldown>0.96</RangedWeapon_Cooldown>
+            <Bulk>11.2</Bulk>
+            <Mass>4.4</Mass>
         </statBases>
         <weaponTags>
             <li>RF4</li>
             <li>AdvancedGun</li>
 			<li>IndustrialGunAdvanced</li>
-            <li>TierTwoRifle</li>
+            <li>TierThreeRifle</li>
             <li>CE_AI_Rifle</li>
-			<li>AssaultRifle</li>
         </weaponTags>
         <thingCategories>
             <li>Rifles</li>
@@ -38,8 +37,8 @@ Cons: Small proprietary clip / Slow to aim</description>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
-                <warmupTime>0.66</warmupTime>
-                <range>45</range>
+                <warmupTime>0.76</warmupTime>
+                <range>55</range>
                 <burstShotCount>5</burstShotCount>
                 <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
                 <soundCast>Shot_AssaultRifle</soundCast>
@@ -153,7 +152,7 @@ Cons: Small proprietary clip / Slow to aim</description>
         </comps>
         <smeltProducts>
             <AdvRifle_Component>1</AdvRifle_Component>
-            <Weapon_Parts>5</Weapon_Parts>
+            <Weapon_Parts>6</Weapon_Parts>
         </smeltProducts>
     </ThingDef>
 
@@ -170,13 +169,13 @@ Cons: Only average performance</description>
 		</graphicData>
 		<soundInteract>Interact_Revolver</soundInteract>
 		<statBases>
-			<MarketValue>630</MarketValue>
+			<MarketValue>350</MarketValue>
 			<SightsEfficiency>0.9</SightsEfficiency>
-			<ShotSpread>0.15</ShotSpread>
+			<ShotSpread>0.12</ShotSpread>
 			<SwayFactor>1.2</SwayFactor>
 			<RangedWeapon_Cooldown>0.29</RangedWeapon_Cooldown>
-			<Bulk>2</Bulk>
-			<Mass>1.2</Mass>
+			<Bulk>1.6</Bulk>
+			<Mass>0.915</Mass>
 		</statBases>
 		<weaponTags>
 			<li>PT2</li>
@@ -210,7 +209,7 @@ Cons: Only average performance</description>
 				<aiAimMode>AimedShot</aiAimMode>
 			</li>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>10</magazineSize>
+				<magazineSize>17</magazineSize>
 				<reloadTime>1.5</reloadTime>
 				<ammoSet>AmmoSet_9x19mmPara</ammoSet>
 			</li>
@@ -306,7 +305,7 @@ Cons: Only average performance</description>
 		</comps>
 		<smeltProducts>
 			<Pistol_Component>1</Pistol_Component>
-			<Weapon_Parts>2</Weapon_Parts>
+			<Weapon_Parts>1</Weapon_Parts>
 		</smeltProducts>
 	</ThingDef>
 	

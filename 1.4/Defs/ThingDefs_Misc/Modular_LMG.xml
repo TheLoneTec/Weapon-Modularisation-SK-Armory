@@ -15,9 +15,6 @@
 			<WorkToMake>3500</WorkToMake>
 			<Mass>0.7</Mass>
 		</statBases>
-		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
-		</recipeMaker>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>HF</li>
@@ -63,9 +60,6 @@
 			<WorkToMake>3500</WorkToMake>
 			<Mass>0.7</Mass>
 		</statBases>
-		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
-		</recipeMaker>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>HF</li>

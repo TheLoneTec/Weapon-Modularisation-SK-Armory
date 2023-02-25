@@ -39,13 +39,16 @@
 			<hasStandardCommand>True</hasStandardCommand>
 			<defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
 			<warmupTime>1</warmupTime>
-			<range>24.9</range>
-			<minRange>5</minRange>
+			<range>32</range>
+			<minRange>4</minRange>
 			<soundCast>Shot_Autopistol</soundCast>
 			<soundCastTail>GunTail_Light</soundCastTail>
 			<muzzleFlashScale>14</muzzleFlashScale>
 			<recoilAmount>2.93</recoilAmount>
 			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
 		</Properties>
 
 		<AmmoUser>
@@ -83,13 +86,16 @@
 			<hasStandardCommand>True</hasStandardCommand>
 			<defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
 			<warmupTime>1</warmupTime>
-			<range>19.9</range>
-			<minRange>5</minRange>
+			<range>30</range>
+			<minRange>4</minRange>
 			<soundCast>Shot_Autopistol</soundCast>
 			<soundCastTail>GunTail_Light</soundCastTail>
 			<muzzleFlashScale>14</muzzleFlashScale>
 			<recoilAmount>2.93</recoilAmount>
 			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
 		</Properties>
 
 		<AmmoUser>
@@ -128,7 +134,7 @@
 			<defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
 			<burstShotCount>1</burstShotCount>
 			<warmupTime>0.8</warmupTime>
-			<range>10</range>
+			<range>14</range>
 			<soundCast>Shot_Shotgun</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>9</muzzleFlashScale>
@@ -136,7 +142,8 @@
 
 		<AmmoUser>
 			<magazineSize>4</magazineSize>
-			<reloadTime>4</reloadTime>
+			<reloadOneAtATime>true</reloadOneAtATime>
+			<reloadTime>0.6</reloadTime>
 			<ammoSet>AmmoSet_12Gauge</ammoSet>
 		</AmmoUser>
 
