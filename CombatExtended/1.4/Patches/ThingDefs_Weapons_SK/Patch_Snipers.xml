@@ -196,10 +196,21 @@ Cons: Advanced Production / No magazine options</description>
 	</value>
 </Operation>
 <Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="Gun_M42A_USCM"]/weaponTags</xpath> 
+	<value>
+        <weaponTags>
+			<li>SNIP3</li>
+            <li>AdvancedGun</li>
+            <li>TierThreeSniper</li>
+            <li>CE_AI_Rifle</li>
+		</weaponTags>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
 	<xpath>Defs/ThingDef[defName="Gun_M42A_USCM"]/statBases</xpath> 
 	<value>
                  <statBases>
-                        <MarketValue>2750</MarketValue>
+                        <MarketValue>3450</MarketValue>
                         <SightsEfficiency>1.15</SightsEfficiency>
                         <ShotSpread>0.02</ShotSpread>
                         <SwayFactor>1.3</SwayFactor>
@@ -240,14 +251,13 @@ Cons: Advanced Production / No magazine options</description>
         </value>
 </Operation>
 <Operation Class="PatchOperationReplace">
-	<xpath>Defs/ThingDef[defName="Gun_M42A_USCM"]/recipeUsers</xpath> 
+	<xpath>Defs/RecipeDef[defName="BuildM42A_USCM"]/recipeUsers</xpath> 
 	<value>
-                 <recipeUsers>
+        <recipeUsers>
 			<li>AdvWeaponCraftingWorkTable</li>
 		</recipeUsers>
 	</value>
 </Operation>
-
 
 </Patch>  
 

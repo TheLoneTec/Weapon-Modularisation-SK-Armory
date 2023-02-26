@@ -45,17 +45,17 @@ Cons: No full auto</description>
 <Operation Class="PatchOperationReplace">
 	<xpath>Defs/ThingDef[defName="RF_Gun_Tecnine"]/label</xpath> 
 	<value>
-                 <label>Colt N99</label>
+        <label>Colt N99</label>
 	</value>
 </Operation>
 <Operation Class="PatchOperationReplace">
 	<xpath>Defs/ThingDef[defName="RF_Gun_Tecnine" or 
 defName="BuildTecnine"]/description</xpath> 
 	<value>
-                 <label>The N98 is a 9mm version of the 10mm N99 machine pistol which is popular among wastelanders due to its reliability under harsh conditions. It has a high rate of fire but requires a lot of skill to use effectively.
+                 <description>The N98 is a 9mm version of the 10mm N99 machine pistol which is popular among wastelanders due to its reliability under harsh conditions. It has a high rate of fire but requires a lot of skill to use effectively.
 Type: 9mm Machine Pistol
 Pros: Range / Rate of Fire
-Cons: Difficult to use / Inaccurate if unskilled</label>
+Cons: Difficult to use / Inaccurate if unskilled</description>
 	</value>
 </Operation>
 <Operation Class="PatchOperationReplace">

@@ -15,7 +15,7 @@
 	</value>
 </Operation>
 <Operation Class="PatchOperationReplace">
-	<xpath>Defs/RecipeDef[defName="BuildGalilBurstRifle"]/researchPrerequisite</xpath> 
+	<xpath>Defs/RecipeDef[defName="BuildGalilBurstRifle"]/workAmount</xpath> 
 	<value>
 		<workAmount>17900</workAmount>
 	</value>
