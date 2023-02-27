@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_RailgunMKI"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.1,1.1)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_RailgunMKI"]/comps</xpath>
 		<value>
@@ -27,7 +18,8 @@
 						<id>ModCR_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(0,0.1,0)</postion>
+						<postion>(0.063,0.1,0.098)</postion>
+						<scale>(-1,1,1)</scale>
 						<defultThing>Module_CR_Mag</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -45,7 +37,8 @@
 						<id>ModCR_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0.075,0.1,-0.005)</postion>
+						<postion>(0.1,0.1,0.058)</postion>
+						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -53,6 +46,7 @@
 								<li>Module_HoloSight</li>
 								<li>Module_RedDotSight</li>
 								<li>Module_SniperScope</li>
+								<li>Module_AdvSniperScope</li>
 							</thingDefs>
 						</filter>
 					</li>
@@ -62,7 +56,8 @@
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
 						<verbPropertiesObjectPatchByChildPart Default="false" />
 						<allowEmpty>true</allowEmpty>
-						<postion>(0.05,0.1,0)</postion>
+						<postion>(0.188,0.1,0)</postion>
+						<scale>(0.75,0,0.75)</scale>
 						<filter>
 							<thingDefs>
 								<li>Module_Bipod</li>

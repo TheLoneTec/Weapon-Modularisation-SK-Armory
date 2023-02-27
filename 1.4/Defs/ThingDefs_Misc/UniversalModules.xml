@@ -53,8 +53,8 @@
 
 	<ThingDef ParentName="GunPartBase">
 		<defName>Module_ACOG</defName>
-		<label>ACOG sight</label>
-		<description>2x5 magnification scope that improves medium range aiming capability.</description>
+		<label>ACOG 4x sight</label>
+		<description>The Advanced Combat Tactical Gunsight is a prismatic scope with fixed 4x magnification scope that improves short to medium range aiming capability.</description>
 		<statBases>
 			<WorkToMake>3000</WorkToMake>
 			<Mass>0.5</Mass>
@@ -186,8 +186,8 @@
 
 	<ThingDef ParentName="GunPartBase">
 		<defName>Module_SniperScope</defName>
-		<label>sniper scope</label>
-		<description>Delicate optical scope with adjustable magnification. Great for shooting target afar, not so good when target is close.</description>
+		<label>DMR 3-9x scope</label>
+		<description>A variable magnification scope for a Designated Marksman Rifle. This is meant to fill the gap between infantry and long range snipers. Works well as a hunting scope, too.</description>
 		<statBases>
 			<WorkToMake>7500</WorkToMake>
 			<Mass>0.7</Mass>
@@ -225,18 +225,19 @@
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
 				<verbPropertiesMultiplier>
 					<li>
-						<warmupTime>1.5</warmupTime>
+						<warmupTime>1.4</warmupTime>
 					</li>
 				</verbPropertiesMultiplier>
 				<verbPropertiesOffseter>
 					<li>
-						<range>10</range>
+					<!-- <range>10</range> -->
+						<range>8</range>
 					</li>
 				</verbPropertiesOffseter>
 				<statMultiplier>
 				</statMultiplier>
 				<statOffset>
-					<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+					<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
 				</statOffset>
 				<attachmentProperties>
 					<li>
@@ -244,8 +245,8 @@
 						<name>Sub Scope</name>
 						<allowEmpty>true</allowEmpty>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(-0.0078125,0.1,0.084375)</postion>
-						<scale>(0.8,1,0.8)</scale>
+						<!-- <postion>(-0.0078125,0.1,0.084375)</postion>
+						<scale>(0.8,1,0.8)</scale> -->
 						<filter>
 							<thingDefs>
 								<li>Module_HoloSight</li>
@@ -257,6 +258,86 @@
 			</li>
 		</comps>
 	</ThingDef>
+
+
+	<ThingDef ParentName="GunPartBase">
+		<defName>Module_AdvSniperScope</defName>
+		<label>long-range 6-20x scope</label>
+		<description>A riflescope for extremely long-range shooting. Only fits on sniper rifles, and it's quite hard to reacquire targest after firing, so best plan to only need to fire once. Reticle displays help with wind and elevation calculations. Not recommended for novices.</description>
+		<statBases>
+			<WorkToMake>7500</WorkToMake>
+			<Mass>0.7</Mass>
+		</statBases>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_Sniper</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope_Sniper</uiIconPath>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Glass>10</Glass>
+			<Silicon>10</Silicon>
+			<Plastic>10</Plastic>
+		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+				<li>AdvWeaponCraftingWorkTable</li>
+				<li>AdvToolBench</li>
+				<li>HeavyArmsBench</li>
+			</recipeUsers>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/SniperRifle/AdvSniperScope</PartTexPath>
+				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<verbPropertiesMultiplier>
+					<li>
+						<warmupTime>1.8</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<verbPropertiesOffseter>
+					<li>
+						<range>15</range>
+					</li>
+				</verbPropertiesOffseter>
+				<statMultiplier>
+					<AccuracyTouch>0.3</AccuracyTouch>
+					<AccuracyShort>0.8</AccuracyShort>
+					<AccuracyMedium>1.25</AccuracyMedium>
+					<AccuracyLong>1.5</AccuracyLong>
+				</statMultiplier>
+				<statOffset>
+					<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+				</statOffset>
+				<attachmentProperties>
+					<li>
+						<id>ModSC_SubScope</id>
+						<name>Sub Scope</name>
+						<allowEmpty>true</allowEmpty>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
+						<!-- <postion>(-0.0078125,0.1,0.084375)</postion>
+						<scale>(0.8,1,0.8)</scale> -->
+						<filter>
+							<thingDefs>
+								<li>Module_HoloSight</li>
+								<li>Module_RedDotSight</li>
+							</thingDefs>
+						</filter>
+					</li>
+				</attachmentProperties>
+			</li>
+		</comps>
+	</ThingDef>
+
 
 	<!--Underbarrel attachments-->
 
@@ -307,7 +388,7 @@
 	<ThingDef ParentName="GunPartBase">
 		<defName>Module_VerticalGrip</defName>
 		<label>vertical grip</label>
-		<description>A handy grip allows faster aiming.</description>
+		<description>A handy grip allows faster aiming at the expense of aiming stability.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Underbarrel_VertiGrip</texPath>
 		</graphicData>
@@ -335,7 +416,8 @@
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/Grip</PartTexPath>
 				<verbPropertiesMultiplier>
 					<li>
-						<warmupTime>0.9</warmupTime>
+						<!-- <warmupTime>0.9</warmupTime> -->
+						<warmupTime>0.75</warmupTime>
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
@@ -347,7 +429,7 @@
 	<ThingDef ParentName="GunPartBase">
 		<defName>Module_AngledGrip</defName>
 		<label>angled grip</label>
-		<description>A handy grip allows faster aiming.</description>
+		<description>A handy grip allows slightly faster aiming and increased weapon stability.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Underbarrel_AngledGrip</texPath>
 		</graphicData>
@@ -375,7 +457,8 @@
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/TriangleGrip</PartTexPath>
 				<verbPropertiesMultiplier>
 					<li>
-						<warmupTime>0.8</warmupTime>
+						<!-- <warmupTime>0.8</warmupTime> -->
+						<warmupTime>0.85</warmupTime>
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>

@@ -15,8 +15,8 @@
 
 	<ThingDef ParentName="HvySMGGunPartBase">
 		<defName>Module_HvySMG_MagClip</defName>
-		<label>SMG magazine</label>
-		<description>Standard 30 round clip magazine designed for heavy SMG.</description>
+		<label>SMG magazine (straight)</label>
+		<description>Straight 30 round clip magazine designed for submachine guns and auto pistols.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
 		</graphicData>
@@ -37,11 +37,129 @@
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMG_Magazine</PartTexPath>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>30</magazineSize>
+					</il>
+				</compPropertiesObjectPatch>
 				<verbPropertiesObjectPatch>
 					<li>
 						<burstShotCount>3</burstShotCount>
 					</li>
 				</verbPropertiesObjectPatch>
+				<statOffset>
+					<Bulk>0.5</Bulk>
+				</statOffset>
+			</li>
+		</comps>
+	</ThingDef>
+
+		<ThingDef ParentName="HvySMGGunPartBase">
+		<defName>Module_HvySMGCurved_MagClip</defName>
+		<label>SMG magazine (curved)</label>
+		<description>Curved 30 round clip magazine designed for submachine guns and auto pistols.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Pistol</uiIconPath>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMGCurved_Magazine</PartTexPath>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>30</magazineSize>
+					</il>
+				</compPropertiesObjectPatch>
+				<statOffset>
+					<Bulk>0.5</Bulk>
+				</statOffset>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="HvySMGGunPartBase">
+		<defName>Module_HvySMGAngled_MagClip</defName>
+		<label>SMG magazine (angled, 30 round)</label>
+		<description>Angled 30 round clip magazine designed for SMGs and pistols which hold their magazine in the grip.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Pistol</uiIconPath>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMGBack_Magazine</PartTexPath>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>30</magazineSize>
+					</il>
+				</compPropertiesObjectPatch>
+				<statOffset>
+					<Bulk>0.5</Bulk>
+				</statOffset>
+			</li>
+		</comps>
+	</ThingDef>
+
+		<ThingDef ParentName="HvySMGGunPartBase">
+		<defName>Module_HvySMGAngled15_MagClip</defName>
+		<label>SMG magazine (angled, 15 round)</label>
+		<description>Angled 30 round clip magazine designed for SMGs and pistols which hold their magazine in the grip.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Pistol</uiIconPath>
+		<statBases>
+			<WorkToMake>300</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>5</costStuffCount>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMGBack15_Magazine</PartTexPath>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>15</magazineSize>
+					</il>
+				</compPropertiesObjectPatch>
+				<verbPropertiesMultiplier>
+					<li>
+						<warmupTime>1.05</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
 			</li>
 		</comps>
 	</ThingDef>
@@ -72,10 +190,15 @@
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMG_CartridgeDrum</PartTexPath>
 				<verbPropertiesObjectPatch>
-					<li>
+					<!-- <li>
 						<burstShotCount>5</burstShotCount>
-					</li>
+					</li> -->
 				</verbPropertiesObjectPatch>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>50</magazineSize>
+					</il>
+				</compPropertiesObjectPatch>
 				<verbPropertiesMultiplier>
 					<li>
 						<warmupTime>1.1</warmupTime>
@@ -84,6 +207,9 @@
 				<statMultiplier>
 					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 				</statMultiplier>
+				<statOffset>
+					<Bulk>1</Bulk>
+				</statOffset>
 			</li>
 		</comps>
 	</ThingDef>
@@ -114,7 +240,8 @@
 				<notDrawInParent>true</notDrawInParent>
 				<verbPropertiesMultiplier>
 					<li>
-						<ticksBetweenBurstShots>0.75</ticksBetweenBurstShots>
+						<ticksBetweenBurstShots>-1</ticksBetweenBurstShots>
+						<burstShotCount>2</burstShotCount>
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
@@ -190,6 +317,9 @@
 				</verbPropertiesOffseter>
 				<statMultiplier>
 				</statMultiplier>
+				<statOffset>
+					<Bulk>0.25</Bulk>
+				</statOffset>
 			</li>
 		</comps>
 	</ThingDef>

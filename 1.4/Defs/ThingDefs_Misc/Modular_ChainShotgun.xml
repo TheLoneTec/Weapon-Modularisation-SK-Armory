@@ -15,7 +15,7 @@
 
 	<ThingDef ParentName="SGGunPartBase">
 		<defName>Module_ChainSG_MagClip</defName>
-		<label>chain shotgun magazine</label>
+		<label>shotgun magazine</label>
 		<description>Standard 10 round clip magazine designed for the chain shotgun.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Generic</texPath>
@@ -49,7 +49,7 @@
 
 	<ThingDef ParentName="SGGunPartBase">
 		<defName>Module_ChainSG_MagDrum</defName>
-		<label>chain shotgun drum magazine</label>
+		<label>shotgun drum magazine</label>
 		<description>20 round drum magazine provides better sustained firepower, at the cost of reload speed. It also affects the center of gravity of the gun, making it unwieldy.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Drum</texPath>
@@ -151,7 +151,8 @@
 				<notDrawInParent>true</notDrawInParent>
 				<verbPropertiesMultiplier>
 					<li>
-						<ticksBetweenBurstShots>0.75</ticksBetweenBurstShots>
+						<ticksBetweenBurstShots>-2</ticksBetweenBurstShots>
+						<burstShotCount>1</burstShotCount>
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>

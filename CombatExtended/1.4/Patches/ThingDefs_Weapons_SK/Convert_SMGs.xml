@@ -3,15 +3,7 @@
 
 	<!-- Not Big Enough for Underbarrel -->
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="RF_Gun_Tecnine"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-
+<!-- Colt N98 -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="RF_Gun_Tecnine"]/comps</xpath>
 		<value>
@@ -29,30 +21,33 @@
 						<id>ModHvySMG_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(-0.01,0.1,0)</postion>
-						<defultThing>Module_HvySMG_MagClip</defultThing>
+						<postion>(-0.137,-0.1,0.016)</postion>
+						<scale>(-1,0,1)</scale>
+						<defultThing>Module_HvySMGAngled15_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<li>Module_HvySMG_MagClip</li>
-								<li>Module_HvySNG_MagDrum</li>
+								<li>Module_HvySMGAngled15_MagClip</li>
+								<li>Module_HvySMGAngled_MagClip</li>
+								<!-- <li>Module_HvySNG_MagDrum</li> -->
 							</thingDefs>
 						</filter>
 						<randomThingDefWeights>
-							<Module_HvySMG_MagClip>1</Module_HvySMG_MagClip>
-							<Module_HvySNG_MagDrum>1</Module_HvySNG_MagDrum>
+							<Module_HvySMGAngled15_MagClip>1</Module_HvySMGAngled15_MagClip>
+							<Module_HvySMGAngled_MagClip>1</Module_HvySMGAngled_MagClip>
 						</randomThingDefWeights>
 					</li>
 					<li>
 						<id>ModHvySMG_Stock</id>
 						<name>stock</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</UITexPath>
-						<postion>(-0.5,-0.1,0.02)</postion>
+						<postion>(-0.449,0.1,-0.18)</postion>
+						<scale>(0.85,0,-0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
 								<li>Module_HvySMG_WireStock</li>
-								<li>Module_HvySMG_Stock</li>
+								<!-- <li>Module_HvySMG_Stock</li> -->
 							</thingDefs>
 						</filter>
 					</li>
@@ -60,7 +55,7 @@
 						<id>ModHvySMG_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0,0.1,0.015625)</postion>
+						<postion>(0.045,0.1,0)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -87,8 +82,8 @@
 						<id>ModHvySMG_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.29,0.1,0.03)</postion>
-						<scale>(0.75,0,0.75)</scale>
+						<postion>(0.277,0.1,0)</postion>
+						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -117,15 +112,6 @@
 
 	<!-- RF_Gun_TMP -->
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="RF_Gun_TMP"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="RF_Gun_TMP"]/comps</xpath>
 		<value>
@@ -143,30 +129,30 @@
 						<id>ModHvySMG_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(0.04,0.1,0.1)</postion>
+						<postion>(-0.117,-0.1,0.063)</postion>
 						<defultThing>Module_HvySMG_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
 								<li>Module_HvySMG_MagClip</li>
-								<li>Module_HvySNG_MagDrum</li>
+								<!-- <li>Module_HvySNG_MagDrum</li> -->
 							</thingDefs>
 						</filter>
 						<randomThingDefWeights>
 							<Module_HvySMG_MagClip>1</Module_HvySMG_MagClip>
-							<Module_HvySNG_MagDrum>1</Module_HvySNG_MagDrum>
+							<!-- <Module_HvySNG_MagDrum>1</Module_HvySNG_MagDrum> -->
 						</randomThingDefWeights>
 					</li>
 					<li>
 						<id>ModHvySMG_Stock</id>
 						<name>stock</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</UITexPath>
-						<postion>(-0.5,-0.1,0.06)</postion>
+						<postion>(-0.48,-0.1,0.063)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
 								<li>Module_HvySMG_WireStock</li>
-								<li>Module_HvySMG_Stock</li>
+								<!-- <li>Module_HvySMG_Stock</li> -->
 							</thingDefs>
 						</filter>
 					</li>
@@ -174,14 +160,14 @@
 						<id>ModHvySMG_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0,0.1,0.06)</postion>
+						<postion>(0.07,0.1,0.047)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
 								<li>Module_ACOG</li>
 								<li>Module_HoloSight</li>
 								<li>Module_RedDotSight</li>
-								<li>Module_SniperScope</li>
+								<!-- <li>Module_SniperScope</li> -->
 							</thingDefs>
 						</filter>
 					</li>
@@ -201,8 +187,8 @@
 						<id>ModHvySMG_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.269375,0.1,0.059)</postion>
-						<scale>(0.75,0,0.75)</scale>
+						<postion>(0.227,0.1,0.055)</postion>
+						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -231,15 +217,6 @@
 
 	<!-- RF_Gun_GreaseGun -->
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="RF_Gun_GreaseGun"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="RF_Gun_GreaseGun"]/comps</xpath>
 		<value>
@@ -257,25 +234,26 @@
 						<id>ModHvySMG_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(0.05,0.1,-0.01)</postion>
+						<postion>(0.041,0.1,-0.01)</postion>
 						<defultThing>Module_HvySMG_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
 								<li>Module_HvySMG_MagClip</li>
-								<li>Module_HvySNG_MagDrum</li>
+								<!-- <li>Module_HvySNG_MagDrum</li> -->
 							</thingDefs>
 						</filter>
 						<randomThingDefWeights>
 							<Module_HvySMG_MagClip>1</Module_HvySMG_MagClip>
-							<Module_HvySNG_MagDrum>1</Module_HvySNG_MagDrum>
+							<!-- <Module_HvySNG_MagDrum>1</Module_HvySNG_MagDrum> -->
 						</randomThingDefWeights>
 					</li>
 					<li>
 						<id>ModHvySMG_Stock</id>
 						<name>stock</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</UITexPath>
-						<postion>(-0.52,-0.1,0.01)</postion>
+						<postion>(-0.4,-0.1,0.017)</postion>
+						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -284,7 +262,7 @@
 							</thingDefs>
 						</filter>
 					</li>
-					<li>
+					<!-- <li>
 						<id>ModHvySMG_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
@@ -298,8 +276,8 @@
 								<li>Module_SniperScope</li>
 							</thingDefs>
 						</filter>
-					</li>
-					<li>
+					</li> -->
+					<!-- <li>
 						<id>ModHvySMG_Receiver</id>
 						<name>chamber</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Receiver</UITexPath>
@@ -310,13 +288,13 @@
 								<li>Module_HvySMG_Chamber</li>
 							</thingDefs>
 						</filter>
-					</li>
+					</li> -->
 					<li>
 						<id>ModHvySMG_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.379375,0.1,0.011)</postion>
-						<scale>(0.75,0,0.75)</scale>
+						<postion>(0.328,0.1,0.008)</postion>
+						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -345,15 +323,6 @@
 
 	<!-- Big Enough for Underbarrel -->
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_UMP45Gun"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_UMP45Gun"]/comps</xpath>
 		<value>
@@ -371,17 +340,17 @@
 						<id>ModHvySMG_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(-0.02,0.1,0.05)</postion>
-						<defultThing>Module_HvySMG_MagClip</defultThing>
+						<postion>(-0.027,0.1,0.031)</postion>
+						<defultThing>Module_HvySMGAngled_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<li>Module_HvySMG_MagClip</li>
+								<li>Module_HvySMGAngled_MagClip</li>
 								<li>Module_HvySNG_MagDrum</li>
 							</thingDefs>
 						</filter>
 						<randomThingDefWeights>
-							<Module_HvySMG_MagClip>1</Module_HvySMG_MagClip>
+							<Module_HvySMGAngled_MagClip>1</Module_HvySMGAngled_MagClip>
 							<Module_HvySNG_MagDrum>1</Module_HvySNG_MagDrum>
 						</randomThingDefWeights>
 					</li>
@@ -389,7 +358,8 @@
 						<id>ModHvySMG_Stock</id>
 						<name>stock</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</UITexPath>
-						<postion>(-0.5,-0.1,0.02)</postion>
+						<postion>(-0.473,-0.1,0.020)</postion>
+						<scale>(1,0,1)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -402,14 +372,14 @@
 						<id>ModHvySMG_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0.08,0.1,0.024)</postion>
+						<postion>(0.005,0.1,0.047)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
 								<li>Module_ACOG</li>
 								<li>Module_HoloSight</li>
 								<li>Module_RedDotSight</li>
-								<li>Module_SniperScope</li>
+								<!-- <li>Module_SniperScope</li> -->
 							</thingDefs>
 						</filter>
 					</li>
@@ -418,7 +388,8 @@
 						<name>under barrel</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
 						<allowEmpty>true</allowEmpty>
-						<postion>(0.01,0.1,-0.004)</postion>
+						<postion>(0,0.1,0)</postion>
+						<!-- <scale>(0.8,0,0.8)</scale> -->
 						<filter>
 							<thingDefs>
 								<li>Module_VerticalGrip</li>
@@ -442,8 +413,8 @@
 						<id>ModHvySMG_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.329375,0.1,0.002)</postion>
-						<scale>(0.75,0,0.75)</scale>
+						<postion>(0.324,0.1,0.018)</postion>
+						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -472,15 +443,6 @@
 
 	<!-- Gun_HeavySMG -->
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_HeavySMG"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/comps</xpath>
 		<value>
@@ -498,7 +460,7 @@
 						<id>ModHvySMG_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(0,0.1,0.02)</postion>
+						<postion>(0.047,0.1,-0.004)</postion>
 						<defultThing>Module_HvySMG_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -516,7 +478,7 @@
 						<id>ModHvySMG_Stock</id>
 						<name>stock</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</UITexPath>
-						<postion>(-0.5,-0.1,0.02)</postion>
+						<postion>(-0.46,0.1,0.039)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -529,7 +491,7 @@
 						<id>ModHvySMG_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0.08,0.1,0.022)</postion>
+						<postion>(0.09,0.1,0.028)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -545,7 +507,7 @@
 						<name>under barrel</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
 						<allowEmpty>true</allowEmpty>
-						<postion>(0.02,0.1,-0.012)</postion>
+						<postion>(0.086,-0.1,0)</postion>
 						<filter>
 							<thingDefs>
 								<li>Module_VerticalGrip</li>
@@ -569,8 +531,8 @@
 						<id>ModHvySMG_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.359375,0.1,0.012)</postion>
-						<scale>(0.75,0,0.75)</scale>
+						<postion>(0.42,0.1,0.01)</postion>
+						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -599,15 +561,6 @@
 
 	<!-- MP5 -->
 	
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_MP5Gun"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_MP5Gun"]/comps</xpath>
 		<value>
@@ -625,25 +578,25 @@
 						<id>ModHvySMG_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(0.02,0.1,0.03)</postion>
-						<defultThing>Module_HvySMG_MagClip</defultThing>
+						<postion>(0.031,0.1,0.004)</postion>
+						<!-- <defultThing>Module_HvySMGCurved_MagClip</defultThing> -->
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<li>Module_HvySMG_MagClip</li>
+								<!-- <li>Module_HvySMGCurved_MagClip</li> -->
 								<li>Module_HvySNG_MagDrum</li>
 							</thingDefs>
 						</filter>
 						<randomThingDefWeights>
-							<Module_HvySMG_MagClip>1</Module_HvySMG_MagClip>
-							<Module_HvySNG_MagDrum>1</Module_HvySNG_MagDrum>
+							<!-- <Module_HvySMGCurved_MagClip>1</Module_HvySMGCurved_MagClip> -->
+							<Module_HvySNG_MagDrum>0.5</Module_HvySNG_MagDrum>
 						</randomThingDefWeights>
 					</li>
 					<li>
 						<id>ModHvySMG_Stock</id>
 						<name>stock</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</UITexPath>
-						<postion>(-0.5,-0.1,0)</postion>
+						<postion>(-0.47,-0.1,0.027)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -656,7 +609,7 @@
 						<id>ModHvySMG_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0.08,0.1,0.017)</postion>
+						<postion>(0.082,0.1,0.03)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -672,7 +625,7 @@
 						<name>under barrel</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
 						<allowEmpty>true</allowEmpty>
-						<postion>(0.04,0.1,-0.01)</postion>
+						<postion>(0.082,-0.1,0)</postion>
 						<filter>
 							<thingDefs>
 								<li>Module_VerticalGrip</li>
@@ -696,7 +649,7 @@
 						<id>ModHvySMG_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.4,0.1,0.01)</postion>
+						<postion>(0.42,0.1,0.01)</postion>
 						<scale>(0.75,0,0.75)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -724,16 +677,7 @@
 		</value>
 	</Operation>
 
-	<!-- Gun_MachinePistol -->
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_MachinePistol"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
+	<!-- UZI Gun_MachinePistol -->
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_MachinePistol"]/comps</xpath>
@@ -752,13 +696,13 @@
 						<id>ModHvySMG_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(-0.12,0.1,-0.02)</postion>
-						<defultThing>Module_HvySMG_MagClip</defultThing>
+						<postion>(-0.113,-0.1,0.074)</postion>
+						<!-- <defultThing>Module_HvySMG_MagClip</defultThing> -->
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
 								<li>Module_HvySMG_MagClip</li>
-								<li>Module_HvySNG_MagDrum</li>
+								<!-- <li>Module_HvySNG_MagDrum</li> -->
 							</thingDefs>
 						</filter><!--
 						<randomThingDefWeights>
@@ -770,7 +714,8 @@
 						<id>ModHvySMG_Stock</id>
 						<name>stock</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</UITexPath>
-						<postion>(-0.55,-0.1,0.05)</postion>
+						<postion>(-0.5,-0.1,0.051)</postion>
+						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -783,7 +728,7 @@
 						<id>ModHvySMG_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0,0.1,0.0655)</postion>
+						<postion>(0.016,0.1,0.063)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -810,8 +755,8 @@
 						<id>ModHvySMG_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.27675,0.1,0.042)</postion>
-						<scale>(0.75,0,0.75)</scale>
+						<postion>(0.32	,0.1,0.043)</postion>
+						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -840,15 +785,6 @@
 
 	<!-- RF_Gun_Skorpion -->
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="RF_Gun_Skorpion"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="RF_Gun_Skorpion"]/comps</xpath>
 		<value>
@@ -866,21 +802,21 @@
 						<id>ModHvySMG_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(0,0.1,0)</postion>
-						<defultThing>Module_HvySMG_MagClip</defultThing>
+						<postion>(-0.004,0.1,0.051)</postion>
+						<defultThing>Module_HvySMGAngled_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<li>Module_HvySMG_MagClip</li>
+								<li>Module_HvySMGAngled_MagClip</li>
 								<li>Module_HvySNG_MagDrum</li>
 							</thingDefs>
 						</filter>
 						<randomThingDefWeights>
-							<Module_HvySMG_MagClip>1</Module_HvySMG_MagClip>
+							<Module_HvySMGCurved_MagClip>1</Module_HvySMGCurved_MagClip>
 							<Module_HvySNG_MagDrum>1</Module_HvySNG_MagDrum>
 						</randomThingDefWeights>
 					</li>
-					<li>
+					<!-- <li>
 						<id>ModHvySMG_Stock</id>
 						<name>stock</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</UITexPath>
@@ -892,12 +828,12 @@
 								<li>Module_HvySMG_Stock</li>
 							</thingDefs>
 						</filter>
-					</li>
+					</li> -->
 					<li>
 						<id>ModHvySMG_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0.05,0.1,0.015625)</postion>
+						<postion>(0.01,-0.1,0.01)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -905,19 +841,6 @@
 								<li>Module_HoloSight</li>
 								<li>Module_RedDotSight</li>
 								<li>Module_SniperScope</li>
-							</thingDefs>
-						</filter>
-					</li>
-					<li>
-						<id>ModHvySMG_UnderBarrel</id>
-						<name>under barrel</name>
-						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
-						<allowEmpty>true</allowEmpty>
-						<postion>(-0.05,0.1,-0.016)</postion>
-						<filter>
-							<thingDefs>
-								<li>Module_VerticalGrip</li>
-								<!--<li>Module_AngledGrip</li>-->
 							</thingDefs>
 						</filter>
 					</li>
@@ -937,8 +860,8 @@
 						<id>ModHvySMG_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.229375,0.1,0.0078125)</postion>
-						<scale>(0.75,0,0.75)</scale>
+						<postion>(0.277,0.1,0.01)</postion>
+						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -967,15 +890,6 @@
 
 	<!-- RF_Gun_Vector -->
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="RF_Gun_Vector"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="RF_Gun_Vector"]/comps</xpath>
 		<value>
@@ -993,25 +907,27 @@
 						<id>ModHvySMG_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(-0.1,0.1,-0.05)</postion>
-						<defultThing>Module_Light_MagClip</defultThing>
+						<postion>(0.051,-0.1,-0.012)</postion>
+						<scale>(-1,1,1)</scale>
+						<defultThing>Module_HvySMGAngled_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<li>Module_Light_MagClip</li>
-								<li>Module_Light_MagDrum</li>
+								<li>Module_HvySMGAngled_MagClip</li>
+								<li>Module_HvySNG_MagDrum</li>
 							</thingDefs>
-						</filter><!--
+						</filter>
 						<randomThingDefWeights>
-							<Module_Light_MagClip>1</Module_Light_MagClip>
-							<Module_Light_MagDrum>1</Module_Light_MagDrum>
-						</randomThingDefWeights>-->
+							<Module_HvySMGAngled_MagClip>1</Module_HvySMGAngled_MagClip>
+							<Module_HvySNG_MagDrum>0.7</Module_HvySNG_MagDrum>
+						</randomThingDefWeights>
 					</li>
 					<li>
 						<id>ModHvySMG_Stock</id>
 						<name>stock</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</UITexPath>
-						<postion>(-0.4,-0.1,0.04)</postion>
+						<postion>(-0.504,-0.1,0.035)</postion>
+						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -1024,7 +940,7 @@
 						<id>ModHvySMG_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0.1,0.1,0.02825)</postion>
+						<postion>(0,0.1,0.031)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -1040,11 +956,11 @@
 						<name>under barrel</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
 						<allowEmpty>true</allowEmpty>
-						<postion>(0.01,0.1,0.01)</postion>
+						<postion>(0,-0.1,0)</postion>
 						<filter>
 							<thingDefs>
 								<li>Module_VerticalGrip</li>
-								<!--<li>Module_AngledGrip</li>-->
+								<li>Module_AngledGrip</li>
 							</thingDefs>
 						</filter>
 					</li>
@@ -1064,8 +980,8 @@
 						<id>ModHvySMG_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.28,0.1,0.002)</postion>
-						<scale>(0.75,0,0.75)</scale>
+						<postion>(0.293,0.1,-0.004)</postion>
+						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>

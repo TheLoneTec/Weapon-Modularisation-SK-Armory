@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-
+<!-- M16 -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/comps</xpath>
 		<value>
@@ -27,13 +18,14 @@
 						<id>ModAR_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(-0.005,-0.1,0.06)</postion>
-						<scale>(0.9,0,0.9)</scale>
+						<postion>(-0.055,-0.1,0.020)</postion>
+						<scale>(0.8,0,0.8)</scale>
 						<defultThing>Module_AR_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
 								<li>Module_AR_MagClip</li>
+								<li>Module_AR_Mag60Clip</li>
 								<li>Module_AR_MagDrum</li>
 							</thingDefs>
 						</filter>
@@ -46,7 +38,8 @@
 						<id>ModAR_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0.045,0.1,0.02)</postion>
+						<postion>(-0.047,-0.1,0.051)</postion>
+						<scale>(0.75,0,0.75)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -62,8 +55,8 @@
 						<name>under barrel</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
 						<verbPropertiesObjectPatchByChildPart Default="false" />
-						<postion>(0,0.1,0.02)</postion>
-						<scale>(0.9,0,0.9)</scale>
+						<postion>(-0.059,0.1,0.012)</postion>
+						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -94,7 +87,7 @@
 						<id>ModAR_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.44,0.1,0.024)</postion>
+						<postion>(0.51,0.1,0.01)</postion>
 						<scale>(0.6,0,0.6)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -124,141 +117,8 @@
 		</value>
 	</Operation>
 
-	<!-- Gun_M4A1Gun -->
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_M4A1Gun"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Gun_M4A1Gun"]/comps</xpath>
-		<value>
-			<li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
-				<TextureSizeFactor>256</TextureSizeFactor>
-				<TextureFilterMode>Point</TextureFilterMode>
-				<ExceedanceFactor>2</ExceedanceFactor>
-				<ExceedanceOffset>1</ExceedanceOffset>
-				<ForceNodeIdControl>true</ForceNodeIdControl>
-			</li>
-			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
-				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
-				<attachmentProperties>
-					<li>
-						<id>ModAR_Magazine</id>
-						<name>magazine</name>
-						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(0.021,0.1,0.003)</postion>
-						<scale>(0.745,0,0.75)</scale>
-						<defultThing>Module_AR_MagClip</defultThing>
-						<allowEmpty>true</allowEmpty>
-						<filter>
-							<thingDefs>
-								<li>Module_AR_MagClip</li>
-								<li>Module_AR_MagDrum</li>
-							</thingDefs>
-						</filter>
-						<randomThingDefWeights>
-							<Module_AR_MagClip>1</Module_AR_MagClip>
-							<Module_AR_MagDrum>1</Module_AR_MagDrum>
-						</randomThingDefWeights>
-					</li>
-					<li>
-						<id>ModAR_Sight</id>
-						<name>sight</name>
-						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0.04,0.1,0)</postion>
-						<allowEmpty>true</allowEmpty>
-						<filter>
-							<thingDefs>
-								<li>Module_ACOG</li>
-								<li>Module_HoloSight</li>
-								<li>Module_RedDotSight</li>
-								<li>Module_SniperScope</li>
-							</thingDefs>
-						</filter>
-					</li>
-					<li>
-						<id>ModAR_UnderBarrel</id>
-						<name>under barrel</name>
-						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
-						<verbPropertiesObjectPatchByChildPart Default="false" />
-						<postion>(-0.01,0.1,0)</postion>
-						<scale>(0.9,0,0.9)</scale>
-						<allowEmpty>true</allowEmpty>
-						<filter>
-							<thingDefs>
-								<li>Module_Bipod</li>
-								<li>Module_UBGL</li>
-								<li>Module_MasterKey</li>
-								<li>Module_VerticalGrip</li>
-								<li>Module_AngledGrip</li>
-							</thingDefs>
-						</filter>
-						<allowedExtraCompType>
-							<li>CombatExtended.BipodComp</li>
-						</allowedExtraCompType>
-					</li>
-					<li>
-						<id>ModAR_Receiver</id>
-						<name>chamber</name>
-						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Receiver</UITexPath>
-						<postion>(0,0.1,0)</postion>
-						<allowEmpty>true</allowEmpty>
-						<filter>
-							<thingDefs>
-								<li>Module_AR_Chamber</li>
-							</thingDefs>
-						</filter>
-					</li>
-					<li>
-						<id>ModAR_Muzzle</id>
-						<name>muzzle</name>
-						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.435,0.1,0.012)</postion>
-						<scale>(0.75,0,0.75)</scale>
-						<allowEmpty>true</allowEmpty>
-						<filter>
-							<thingDefs>
-								<li>Module_Silencer</li>
-								<li>Module_MuzzleBrake</li>
-								<li>Module_MuzzleCompensator</li>
-								<li>Module_FlashHider</li>
-								<li>Module_AR_LongBarrel</li>
-								<li>Module_Bayonet</li>
-							</thingDefs>
-						</filter>
-					</li>
-				</attachmentProperties>
-				<compGetGizmosExtraAllowedCompType>
-					<li>CombatExtended.CompAmmoUser</li>
-					<li>CombatExtended.CompFireModes</li>
-				</compGetGizmosExtraAllowedCompType>
-				<compPropertiesInitializeCompType>
-					<li>CombatExtended.CompAmmoUser</li>
-					<li>CombatExtended.CompFireModes</li>
-				</compPropertiesInitializeCompType>
-				<compPropertiesCreateInstanceCompType>
-					<li>CombatExtended.CompFireModes</li>
-				</compPropertiesCreateInstanceCompType>
-			</li>
-		</value>
-	</Operation>
 
 	<!-- Gun_SCAR_H -->
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_SCAR_H"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_SCAR_H"]/comps</xpath>
@@ -277,18 +137,19 @@
 						<id>ModAR_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(-0.06,0.1,0.017)</postion>
+						<postion>(-0.051,0.1,0.02)</postion>
 						<defultThing>Module_AR_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
 								<li>Module_AR_MagClip</li>
+								<li>Module_AR_Mag60Clip</li>
 								<li>Module_AR_MagDrum</li>
 							</thingDefs>
 						</filter>
 						<randomThingDefWeights>
 							<Module_AR_MagClip>1</Module_AR_MagClip>
-							<Module_AR_MagDrum>1</Module_AR_MagDrum>
+							<Module_AR_Mag60Clip>1</Module_AR_Mag60Clip>
 						</randomThingDefWeights>
 					</li>
 					<li>
@@ -343,8 +204,8 @@
 						<id>ModAR_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.47,0.1,0.00174)</postion>
-						<scale>(0.75,0,0.75)</scale>
+						<postion>(0.5,0.1,0.004)</postion>
+						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -375,15 +236,6 @@
 
 	<!-- Gun_AUG -->
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_AUG"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_AUG"]/comps</xpath>
 		<value>
@@ -401,7 +253,7 @@
 						<id>ModAR_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(-0.2,0.1,0.022)</postion>
+						<postion>(-0.2,-0.1,0.022)</postion>
 						<defultThing>Module_AR_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -419,7 +271,8 @@
 						<id>ModAR_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0.14,0.1,0.077)</postion>
+						<postion>(0.066,0.1,0.09)</postion>
+						<scale>(0.9,0,0.9)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -435,12 +288,12 @@
 						<name>under barrel</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
 						<verbPropertiesObjectPatchByChildPart Default="false" />
-						<postion>(0.026,0.1,0.015)</postion>
-						<scale>(0.9,0,0.9)</scale>
+						<postion>(0.098,0.1,0.012)</postion>
+						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<li>Module_Bipod</li>
+								<!-- <li>Module_Bipod</li> -->
 								<li>Module_UBGL</li>
 								<li>Module_MasterKey</li>
 								<li>Module_VerticalGrip</li>
@@ -467,7 +320,7 @@
 						<id>ModAR_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.49,0.1,0.02)</postion>
+						<postion>(0.49,0.1,0.018)</postion>
 						<scale>(0.75,0,0.75)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -499,15 +352,6 @@
 
 	<!-- Gun_SG553Gun -->
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_SG553Gun"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_SG553Gun"]/comps</xpath>
 		<value>
@@ -521,7 +365,7 @@
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
 				<attachmentProperties>
-					<li>
+					<!-- <li> 
 						<id>ModAR_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
@@ -538,12 +382,13 @@
 							<Module_AR_MagClip>1</Module_AR_MagClip>
 							<Module_AR_MagDrum>1</Module_AR_MagDrum>
 						</randomThingDefWeights>
-					</li>
+					</li> -->
 					<li>
 						<id>ModAR_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0.04,0.1,0.015)</postion>
+						<postion>(0.0,0.1,0.031)</postion>
+						<scale>(0.95,0,0.95)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -559,7 +404,7 @@
 						<name>under barrel</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
 						<verbPropertiesObjectPatchByChildPart Default="false" />
-						<postion>(0.04,0.1,0.002)</postion>
+						<postion>(0.082,0.1,0.02)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -590,7 +435,7 @@
 						<id>ModAR_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.5,0.1,0.01354)</postion>
+						<postion>(0.468,0.1,0.02)</postion>
 						<scale>(0.75,0,0.75)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -620,16 +465,7 @@
 		</value>
 	</Operation>
 
-	<!-- Gun_TacticalCombatRifle -->
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_TacticalCombatRifle"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
+	<!-- MA5B - Gun_TacticalCombatRifle -->
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_TacticalCombatRifle"]/comps</xpath>
@@ -648,17 +484,17 @@
 						<id>ModAR_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(-0.3,0.1,0)</postion>
+						<postion>(0.02, -0.1, 0.043)</postion>
 						<defultThing>Module_AR_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<li>Module_AR_MagClip</li>
+								<li>Module_AR_Mag60Clip</li>
 								<li>Module_AR_MagDrum</li>
 							</thingDefs>
 						</filter>
 						<randomThingDefWeights>
-							<Module_AR_MagClip>1</Module_AR_MagClip>
+							<Module_AR_Mag60Clip>1</Module_AR_Mag60Clip>
 							<Module_AR_MagDrum>1</Module_AR_MagDrum>
 						</randomThingDefWeights>
 					</li>
@@ -666,7 +502,8 @@
 						<id>ModAR_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0.2,0.1,0.055)</postion>
+						<postion>(0.152,0.1,0.086)</postion>
+						<scale>(0.80,0,0.80)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -682,7 +519,7 @@
 						<name>under barrel</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
 						<verbPropertiesObjectPatchByChildPart Default="false" />
-						<postion>(-0.028,0.1,0)</postion>
+						<postion>(0.086,-0.1,-0.078)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -713,7 +550,7 @@
 						<id>ModAR_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.47,0.1,0.035)</postion>
+						<postion>(0.496,0.1,0.031)</postion>
 						<scale>(0.75,0,0.75)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -743,16 +580,7 @@
 		</value>
 	</Operation>
 
-	<!-- Gun_MarineSturmRifle -->
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_MarineSturmRifle"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
+	<!-- Morita II - replaces TAR-21 - Gun_MarineSturmRifle -->
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_MarineSturmRifle"]/comps</xpath>
@@ -771,17 +599,17 @@
 						<id>ModAR_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(-0.15,0.1,0.04)</postion>
+						<postion>(-0.234,0.1,0.043)</postion>
 						<defultThing>Module_AR_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<li>Module_AR_MagClip</li>
+								<li>Module_AR_Mag60Clip</li>
 								<li>Module_AR_MagDrum</li>
 							</thingDefs>
 						</filter>
 						<randomThingDefWeights>
-							<Module_AR_MagClip>1</Module_AR_MagClip>
+							<Module_AR_Mag60Clip>1</Module_AR_Mag60Clip>
 							<Module_AR_MagDrum>1</Module_AR_MagDrum>
 						</randomThingDefWeights>
 					</li>
@@ -789,7 +617,7 @@
 						<id>ModAR_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0.0252,0.1,0.042)</postion>
+						<postion>(0.078,0.1,0.078)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -805,7 +633,8 @@
 						<name>under barrel</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
 						<verbPropertiesObjectPatchByChildPart Default="false" />
-						<postion>(0.07,0.1,0)</postion>
+						<postion>(0.086,0.1,0.02)</postion>
+						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -836,7 +665,7 @@
 						<id>ModAR_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.5,0.1,0.0265)</postion>
+						<postion>(0.49,0.1,0.027)</postion>
 						<scale>(0.75,0,0.75)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -866,16 +695,7 @@
 		</value>
 	</Operation>
 
-	<!-- RF_Gun_XMeight -->
-
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="RF_Gun_XMeight"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
+	<!-- Lancer - replaces HK XM8-->
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="RF_Gun_XMeight"]/comps</xpath>
@@ -894,12 +714,14 @@
 						<id>ModAR_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(0.018,0.1,0)</postion>
+						<postion>(-0.108,-0.1,-0.02)</postion>
+						<scale>(1,0,1)</scale>
 						<defultThing>Module_AR_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
 								<li>Module_AR_MagClip</li>
+								<li>Module_AR_Mag60Clip</li>
 								<li>Module_AR_MagDrum</li>
 							</thingDefs>
 						</filter>
@@ -912,36 +734,17 @@
 						<id>ModAR_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0.16,0.1,0.05)</postion>
+						<postion>(-0.047,0.1,0.016)</postion>
+						<scale>(1,0,1)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
 								<li>Module_ACOG</li>
 								<li>Module_HoloSight</li>
 								<li>Module_RedDotSight</li>
-								<li>Module_SniperScope</li>
+								<!-- <li>Module_SniperScope</li> -->
 							</thingDefs>
 						</filter>
-					</li>
-					<li>
-						<id>ModAR_UnderBarrel</id>
-						<name>under barrel</name>
-						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
-						<verbPropertiesObjectPatchByChildPart Default="false" />
-						<postion>(0.04,0.1,0)</postion>
-						<allowEmpty>true</allowEmpty>
-						<filter>
-							<thingDefs>
-								<li>Module_Bipod</li>
-								<li>Module_UBGL</li>
-								<li>Module_MasterKey</li>
-								<li>Module_VerticalGrip</li>
-								<li>Module_AngledGrip</li>
-							</thingDefs>
-						</filter>
-						<allowedExtraCompType>
-							<li>CombatExtended.BipodComp</li>
-						</allowedExtraCompType>
 					</li>
 					<li>
 						<id>ModAR_Receiver</id>
@@ -959,17 +762,16 @@
 						<id>ModAR_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.5,0.1,0.008)</postion>
-						<scale>(0.75,0,0.75)</scale>
+						<postion>(0.441,0.1,0.004)</postion>
+						<scale>(0.7,0,0.7)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<li>Module_Silencer</li>
+								<!-- <li>Module_Silencer</li> -->
 								<li>Module_MuzzleBrake</li>
 								<li>Module_MuzzleCompensator</li>
 								<li>Module_FlashHider</li>
-								<li>Module_AR_LongBarrel</li>
-								<li>Module_Bayonet</li>
+								<!-- <li>Module_AR_LongBarrel</li> -->
 							</thingDefs>
 						</filter>
 					</li>
@@ -991,15 +793,6 @@
 
 	<!-- Gun_AK47Gun -->
 
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_AK47Gun"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.7,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_AK47Gun"]/comps</xpath>
 		<value>
@@ -1017,18 +810,18 @@
 						<id>ModAR_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(-0.016,0.1,0.068)</postion>
+						<postion>(-0.016,-0.1,0.068)</postion>
 						<defultThing>Module_AR_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
 								<li>Module_AR_MagClip</li>
-								<li>Module_AR_MagDrum</li>
+								<li>Module_AR_Mag60Clip</li>
 							</thingDefs>
 						</filter>
 						<randomThingDefWeights>
 							<Module_AR_MagClip>1</Module_AR_MagClip>
-							<Module_AR_MagDrum>1</Module_AR_MagDrum>
+							<Module_AR_Mag60Clip>0.5</Module_AR_Mag60Clip>
 						</randomThingDefWeights>
 					</li>
 					<li>
@@ -1051,7 +844,7 @@
 						<name>under barrel</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
 						<verbPropertiesObjectPatchByChildPart Default="false" />
-						<postion>(-0.073,0.1,0.017)</postion>
+						<postion>(-0.06,0.1,0.017)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -1114,15 +907,6 @@
 
 	<!-- FAMAS -->
 	
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="Gun_FAMAS"]</xpath>
-		<value>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>(1.8,1.3)</DrawSize>
-		  </li>
-		</value>
-	</Operation>
-	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_FAMAS"]/comps</xpath>
 		<value>
@@ -1140,18 +924,19 @@
 						<id>ModAR_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(-0.19,0.1,0.01)</postion>
+						<postion>(-0.18,-0.1,0.06)</postion>
 						<defultThing>Module_AR_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
 								<li>Module_AR_MagClip</li>
-								<li>Module_AR_MagDrum</li>
+								<li>Module_AR_Mag60Clip</li>
+								<!-- <li>Module_AR_MagDrum</li> -->
 							</thingDefs>
 						</filter>
 						<randomThingDefWeights>
 							<Module_AR_MagClip>1</Module_AR_MagClip>
-							<Module_AR_MagDrum>1</Module_AR_MagDrum>
+							<Module_AR_Mag60Clip>1</Module_AR_Mag60Clip>
 						</randomThingDefWeights>
 					</li>
 					<li>
@@ -1165,7 +950,7 @@
 								<li>Module_ACOG</li>
 								<li>Module_HoloSight</li>
 								<li>Module_RedDotSight</li>
-								<li>Module_SniperScope</li>
+								<!-- <li>Module_SniperScope</li> -->
 							</thingDefs>
 						</filter>
 					</li>
@@ -1205,8 +990,8 @@
 						<id>ModAR_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.5,0.1,0.00785)</postion>
-						<scale>(0.75,0,0.75)</scale>
+						<postion>(0.508,0.1,0.014)</postion>
+						<scale>(0.65,0,0.65)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -1214,7 +999,7 @@
 								<li>Module_MuzzleBrake</li>
 								<li>Module_MuzzleCompensator</li>
 								<li>Module_FlashHider</li>
-								<li>Module_AR_LongBarrel</li>
+								<!-- <li>Module_AR_LongBarrel</li> -->
 								<li>Module_Bayonet</li>
 							</thingDefs>
 						</filter>

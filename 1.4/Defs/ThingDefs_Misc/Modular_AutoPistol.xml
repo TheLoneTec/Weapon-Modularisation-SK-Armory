@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="GunPartBase">
+	<!-- <ThingDef ParentName="GunPartBase">
 		<defName>Module_AP_MagClip</defName>
 		<label>autopistol magazine</label>
 		<description>Standard 8 round pistol magazine.</description>
@@ -28,6 +28,6 @@
 				<PartTexPath>Things/WeaponPart/Gun/Autopistol/Autopisto_Magazine</PartTexPath>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef> -->
 
 </Defs>
