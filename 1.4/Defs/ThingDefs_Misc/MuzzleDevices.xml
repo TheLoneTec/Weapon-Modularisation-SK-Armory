@@ -40,8 +40,6 @@
 					</li>
 				</verbPropertiesObjectPatch>
 				<statMultiplier>
-					<AccuracyTouch>1.15</AccuracyTouch>
-					<AccuracyShort>1.15</AccuracyShort>
 				</statMultiplier>
 				<statOffset>
 					<HuntingStealth>.5</HuntingStealth>
@@ -82,8 +80,6 @@
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_MuzzleBrake</PartTexPath>
 				<statMultiplier>
-					<AccuracyMedium>1.125</AccuracyMedium>
-					<AccuracyLong>1.125</AccuracyLong>
 				</statMultiplier>
 			</li>
 		</comps>
@@ -121,8 +117,6 @@
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_MuzzleCompensator</PartTexPath>
 				<statMultiplier>
-					<AccuracyTouch>1.2</AccuracyTouch>
-					<AccuracyShort>1.2</AccuracyShort>
 				</statMultiplier>
 			</li>
 		</comps>
@@ -165,8 +159,6 @@
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
-					<AccuracyTouch>1.1</AccuracyTouch>
-					<AccuracyShort>1.1</AccuracyShort>
 				</statMultiplier>
 			</li>
 		</comps>
