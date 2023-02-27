@@ -28,10 +28,10 @@
 		<recipeMaker>
 			<researchPrerequisite>GasOperation</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>25</costStuffCount> -->
 		<costList>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
@@ -62,10 +62,10 @@
 		<recipeMaker>
 			<researchPrerequisite>GasOperation</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>50</costStuffCount>
+		<costStuffCount>50</costStuffCount> -->
 		<costList>
 			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
@@ -83,6 +83,10 @@
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
+					<!-- <AccuracyTouch>0.9</AccuracyTouch>
+					<AccuracyShort>0.9</AccuracyShort>
+					<AccuracyMedium>0.8</AccuracyMedium>
+					<AccuracyLong>0.8</AccuracyLong> -->
 					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 				</statMultiplier>
 			</li>
@@ -104,11 +108,12 @@
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>25</costStuffCount> -->
 		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<comps>
@@ -120,6 +125,8 @@
 					</li>
 				</verbPropertiesOffseter>
 				<statMultiplier>
+					<!-- <AccuracyTouch>0.8</AccuracyTouch>
+					<AccuracyMedium>1.2</AccuracyMedium> -->
 				</statMultiplier>
 			</li>
 		</comps>
@@ -139,11 +146,12 @@
 		<recipeMaker>
 			<researchPrerequisite>GasOperation</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>20</costStuffCount> -->
 		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
 			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
 		<comps>
@@ -156,6 +164,10 @@
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
+					<!-- <AccuracyTouch>0.9</AccuracyTouch>
+					<AccuracyShort>0.9</AccuracyShort>
+					<AccuracyMedium>0.9</AccuracyMedium>
+					<AccuracyLong>0.9</AccuracyLong> -->
 				</statMultiplier>
 			</li>
 		</comps>

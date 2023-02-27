@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="GunPartBase">
 		<defName>Module_RF_LongBarrel</defName>
-		<label>bolt action rifle long barrel</label>
+		<label>rifle long barrel</label>
 		<description>TODO</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Barrel_Long</texPath>
@@ -12,10 +12,10 @@
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>30</costStuffCount> -->
 		<costList>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
@@ -36,6 +36,8 @@
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
+					<!-- <AccuracyTouch>0.6</AccuracyTouch>
+					<AccuracyShort>0.8</AccuracyShort> -->
 				</statMultiplier>
 				<verbPropertiesObjectPatch>
 					<li>
@@ -79,7 +81,7 @@
 		</graphicData>
 	</ThingDef>
 
-	<ThingDef ParentName="GunPartBase">
+	<!-- <ThingDef ParentName="GunPartBase">
 		<defName>Module_SR_LongBarrel</defName>
 		<label>sniper rifle long barrel</label>
 		<description>TODO</description>
@@ -140,7 +142,7 @@
 				</attachmentProperties>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef> -->
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_SniperRifleLongBarrel</defName>

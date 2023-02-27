@@ -29,10 +29,10 @@
 		<recipeMaker>
 			<researchPrerequisite>ChargedShot</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>25</costStuffCount> -->
 		<costList>
 			<Charged_Component>1</Charged_Component>
 		</costList>
@@ -69,10 +69,10 @@
 		<recipeMaker>
 			<researchPrerequisite>ChargedShot</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>40</costStuffCount>
+		<costStuffCount>40</costStuffCount> -->
 		<costList>
 			<Charged_Component>1</Charged_Component>
 			<Weapon_Parts>2</Weapon_Parts>
@@ -100,6 +100,10 @@
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
+					<!-- <AccuracyTouch>0.9</AccuracyTouch>
+					<AccuracyShort>0.9</AccuracyShort>
+					<AccuracyMedium>0.8</AccuracyMedium>
+					<AccuracyLong>0.8</AccuracyLong> -->
 					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 				</statMultiplier>
 			</li>
@@ -118,10 +122,10 @@
 		<recipeMaker>
 			<researchPrerequisite>ChargedShot</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>20</costStuffCount> -->
 		<costList>
 			<Charged_Component>1</Charged_Component>
 			<Weapon_Parts>2</Weapon_Parts>
@@ -137,6 +141,10 @@
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
+					<!-- <AccuracyTouch>0.9</AccuracyTouch>
+					<AccuracyShort>0.9</AccuracyShort>
+					<AccuracyMedium>0.9</AccuracyMedium>
+					<AccuracyLong>0.9</AccuracyLong> -->
 				</statMultiplier>
 			</li>
 		</comps>

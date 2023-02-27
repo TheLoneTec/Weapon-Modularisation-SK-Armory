@@ -28,11 +28,15 @@
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
 		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList> -->
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<comps>
@@ -57,12 +61,16 @@
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>35</costStuffCount>
 		<costList>
 			<Weapon_Parts>1</Weapon_Parts>
+		</costList> -->
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
@@ -91,12 +99,16 @@
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>45</costStuffCount>
 		<costList>
 			<Weapon_Parts>2</Weapon_Parts>
+		</costList> -->
+		<costList>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Weapon_Parts>3</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
@@ -107,6 +119,10 @@
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
+					<!-- <AccuracyTouch>0.9</AccuracyTouch>
+					<AccuracyShort>0.9</AccuracyShort>
+					<AccuracyMedium>0.8</AccuracyMedium>
+					<AccuracyLong>0.8</AccuracyLong> -->
 					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 				</statMultiplier>
 			</li>
@@ -128,11 +144,15 @@
 		<recipeMaker>
 			<researchPrerequisite>GasOperation</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
 		<costList>
+			<Weapon_Parts>2</Weapon_Parts>
+		</costList> -->
+		<costList>
+			<Mechanism>1</Mechanism>
 			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
 		<comps>
@@ -145,6 +165,10 @@
 					</li>
 				</verbPropertiesOffseter>
 				<statMultiplier>
+					<!-- <AccuracyTouch>0.9</AccuracyTouch>
+					<AccuracyShort>0.9</AccuracyShort>
+					<AccuracyMedium>0.9</AccuracyMedium>
+					<AccuracyLong>0.9</AccuracyLong> -->
 				</statMultiplier>
 			</li>
 		</comps>
@@ -161,10 +185,13 @@
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList> -->
 		<costList>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
@@ -185,6 +212,10 @@
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
+					<!-- <AccuracyTouch>0.8</AccuracyTouch>
+					<AccuracyShort>0.9</AccuracyShort>
+					<AccuracyMedium>1.1</AccuracyMedium>
+					<AccuracyLong>1.1</AccuracyLong> -->
 				</statMultiplier>
 				<verbPropertiesObjectPatch>
 					<li>

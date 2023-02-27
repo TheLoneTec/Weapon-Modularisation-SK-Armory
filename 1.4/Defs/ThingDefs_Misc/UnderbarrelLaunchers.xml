@@ -13,10 +13,10 @@
 			<Mass>0.8</Mass>
 		</statBases>
 		<soundInteract>Interact_Autopistol</soundInteract>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>30</costStuffCount> -->
 		<costList>
 			<Heavy_Component>1</Heavy_Component>
 			<Weapon_Parts>2</Weapon_Parts>
@@ -92,10 +92,10 @@
 			<Mass>0.5</Mass>
 		</statBases>
 		<soundInteract>Interact_Autopistol</soundInteract>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>20</costStuffCount> -->
 		<costList>
 			<Heavy_Component>1</Heavy_Component>
 			<Weapon_Parts>2</Weapon_Parts>
@@ -288,10 +288,10 @@
 			<Mass>0.5</Mass>
 		</statBases>
 		<soundInteract>Interact_Shotgun</soundInteract>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>25</costStuffCount> -->
 		<costList>
 			<Shotgun_Component>1</Shotgun_Component>
 			<Weapon_Parts>2</Weapon_Parts>
