@@ -94,8 +94,6 @@
 					</li>
 				</verbPropertiesOffseter>
 				<statMultiplier>
-					<!-- <AccuracyMedium>1.25</AccuracyMedium>
-					<AccuracyLong>1.25</AccuracyLong> -->
 				</statMultiplier>
 			</li>
 		</comps>
@@ -140,9 +138,6 @@
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/Holographic</PartTexPath>
 				<statMultiplier>
-					<!-- <AccuracyTouch>1.2</AccuracyTouch>
-					<AccuracyShort>1.2</AccuracyShort>
-					<AccuracyMedium>1.2</AccuracyMedium> -->
 				</statMultiplier>
 			</li>
 		</comps>
@@ -184,10 +179,6 @@
 					</li>
 				</verbPropertiesOffseter>
 				<statMultiplier>
-					<!-- <AccuracyTouch>1.2</AccuracyTouch>
-					<AccuracyShort>1.1</AccuracyShort>
-					<AccuracyMedium>0.9</AccuracyMedium>
-					<AccuracyLong>0.8</AccuracyLong> -->
 				</statMultiplier>
 			</li>
 		</comps>
@@ -244,10 +235,6 @@
 					</li>
 				</verbPropertiesOffseter>
 				<statMultiplier>
-					<!-- <AccuracyTouch>0.3</AccuracyTouch>
-					<AccuracyShort>0.8</AccuracyShort>
-					<AccuracyMedium>1.25</AccuracyMedium>
-					<AccuracyLong>1.5</AccuracyLong> -->
 				</statMultiplier>
 				<statOffset>
 					<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
@@ -323,10 +310,6 @@
 					</li>
 				</verbPropertiesOffseter>
 				<statMultiplier>
-					<!-- <AccuracyTouch>0.3</AccuracyTouch>
-					<AccuracyShort>0.8</AccuracyShort>
-					<AccuracyMedium>1.25</AccuracyMedium>
-					<AccuracyLong>1.5</AccuracyLong> -->
 				</statMultiplier>
 				<statOffset>
 					<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
@@ -391,9 +374,6 @@
 					</li>
 				</verbPropertiesOffseter>
 				<statMultiplier>
-					<!-- <AccuracyShort>1.2</AccuracyShort>
-					<AccuracyMedium>1.3</AccuracyMedium>
-					<AccuracyLong>1.5</AccuracyLong> -->
 				</statMultiplier>
 				<statOffset>
 					<RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
@@ -438,8 +418,6 @@
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
-					<!-- <AccuracyTouch>1.2</AccuracyTouch>
-					<AccuracyShort>1.2</AccuracyShort> -->
 				</statMultiplier>
 			</li>
 		</comps>
@@ -481,8 +459,6 @@
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
-					<!-- <AccuracyTouch>1.1</AccuracyTouch>
-					<AccuracyShort>1.1</AccuracyShort> -->
 				</statMultiplier>
 			</li>
 		</comps>

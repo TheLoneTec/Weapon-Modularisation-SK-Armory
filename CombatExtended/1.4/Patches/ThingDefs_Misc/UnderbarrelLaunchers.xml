@@ -56,11 +56,10 @@
 			<reloadTime>4</reloadTime>
 			<ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
 		</AmmoUser>
-
-		<FireModes>
+		<!-- <FireModes>
 			<aiUseBurstMode>False</aiUseBurstMode>
 			<aiAimMode>SuppressFire</aiAimMode>
-		</FireModes>
+		</FireModes> -->
 		<researchPrerequisite>Grenade_launchers_C1</researchPrerequisite>
 	</Operation>
 	
@@ -103,11 +102,10 @@
 			<reloadTime>4</reloadTime>
 			<ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
 		</AmmoUser>
-
-		<FireModes>
+		<!-- <FireModes>
 			<aiUseBurstMode>False</aiUseBurstMode>
 			<aiAimMode>SuppressFire</aiAimMode>
-		</FireModes>
+		</FireModes> -->
 		<researchPrerequisite>Grenade_launchers_C1</researchPrerequisite>
 	</Operation>
 	
@@ -146,10 +144,9 @@
 			<reloadTime>0.6</reloadTime>
 			<ammoSet>AmmoSet_12Gauge</ammoSet>
 		</AmmoUser>
-
-		<FireModes>
+		<!-- <FireModes>
 			<aiAimMode>AimedShot</aiAimMode>
-		</FireModes>
+		</FireModes> -->
 	</Operation>
 	
 </Patch>

@@ -705,10 +705,9 @@
 								<!-- <li>Module_HvySNG_MagDrum</li> -->
 							</thingDefs>
 						</filter>
-						<randomThingDefWeights>
+						<!-- <randomThingDefWeights>
 							<Module_HvySMG_MagClip>0.5</Module_HvySMG_MagClip>
-							<!-- <Module_HvySNG_MagDrum>1</Module_HvySNG_MagDrum> -->
-						</randomThingDefWeights>
+						</randomThingDefWeights> -->
 					</li>
 					<li>
 						<id>ModHvySMG_Stock</id>

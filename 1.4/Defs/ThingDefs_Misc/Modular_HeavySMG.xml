@@ -210,10 +210,6 @@
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
-					<!-- <AccuracyTouch>0.9</AccuracyTouch>
-					<AccuracyShort>0.9</AccuracyShort>
-					<AccuracyMedium>0.8</AccuracyMedium>
-					<AccuracyLong>0.8</AccuracyLong> -->
 					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 				</statMultiplier>
 				<statOffset>
@@ -254,10 +250,6 @@
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
-					<!-- <AccuracyTouch>0.9</AccuracyTouch>
-					<AccuracyShort>0.9</AccuracyShort>
-					<AccuracyMedium>0.9</AccuracyMedium>
-					<AccuracyLong>0.9</AccuracyLong> -->
 				</statMultiplier>
 			</li>
 		</comps>
@@ -295,10 +287,6 @@
 					</li>
 				</verbPropertiesOffseter>
 				<statMultiplier>
-					<!-- <AccuracyTouch>1.1</AccuracyTouch>
-					<AccuracyShort>1.1</AccuracyShort>
-					<AccuracyMedium>1.1</AccuracyMedium>
-					<AccuracyLong>1.1</AccuracyLong> -->
 				</statMultiplier>
 			</li>
 		</comps>
@@ -335,10 +323,6 @@
 					</li>
 				</verbPropertiesOffseter>
 				<statMultiplier>
-					<!-- <AccuracyTouch>1.2</AccuracyTouch>
-					<AccuracyShort>1.2</AccuracyShort>
-					<AccuracyMedium>1.3</AccuracyMedium>
-					<AccuracyLong>1.3</AccuracyLong> -->
 				</statMultiplier>
 				<statOffset>
 					<Bulk>0.25</Bulk>

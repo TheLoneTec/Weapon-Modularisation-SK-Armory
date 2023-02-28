@@ -36,8 +36,6 @@
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
-					<!-- <AccuracyTouch>0.6</AccuracyTouch>
-					<AccuracyShort>0.8</AccuracyShort> -->
 				</statMultiplier>
 				<verbPropertiesObjectPatch>
 					<li>
