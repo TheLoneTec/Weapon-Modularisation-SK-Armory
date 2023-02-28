@@ -381,7 +381,7 @@ Cons: Slow reload / Long cooldown</description>
 	<xpath>Defs/ThingDef[defName="Gun_SCAR_H" or 
     defName="BuildSCAR_H"]/description</xpath> 
 	<value>
-        <description>The Special Operations Forces Combat Assault Rifle (SCAR) is battle rifle which fires powerful 7.62x51mm ammunition. Standard magazine is 20-rounds, so upgrades should be considered to more sustained fire.
+        <description>The Special Operations Forces Combat Assault Rifle (SCAR) is battle rifle which fires powerful 7.62x51mm ammunition. It can accept accept large magazine sizes for sustained firepower that can rival LMGs.
 Type: 7.62x51mm Battle Rifle
 Pros: Very powerful / Good range / Quick reload
 Cons: Heavy / Slow aiming / High recoil</description>

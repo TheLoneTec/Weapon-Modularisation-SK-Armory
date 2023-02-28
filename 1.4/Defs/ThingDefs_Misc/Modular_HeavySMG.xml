@@ -15,7 +15,7 @@
 
 	<ThingDef ParentName="HvySMGGunPartBase">
 		<defName>Module_HvySMG_MagClip</defName>
-		<label>SMG magazine (straight)</label>
+		<label>SMG magazine (straight, 30-rnd)</label>
 		<description>Straight 30 round clip magazine designed for submachine guns and auto pistols.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
@@ -27,11 +27,12 @@
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>15</costStuffCount>
+		<costStuffCount>15</costStuffCount> -->
 		<costList>
+			<ComponentIndustrial>6</ComponentIndustrial>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<comps>
@@ -54,7 +55,7 @@
 		</comps>
 	</ThingDef>
 
-		<ThingDef ParentName="HvySMGGunPartBase">
+		<!-- <ThingDef ParentName="HvySMGGunPartBase">
 		<defName>Module_HvySMGCurved_MagClip</defName>
 		<label>SMG magazine (curved)</label>
 		<description>Curved 30 round clip magazine designed for submachine guns and auto pistols.</description>
@@ -88,11 +89,11 @@
 				</statOffset>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef> -->
 
 	<ThingDef ParentName="HvySMGGunPartBase">
 		<defName>Module_HvySMGAngled_MagClip</defName>
-		<label>SMG magazine (angled, 30 round)</label>
+		<label>SMG magazine (angled, 30-rnd)</label>
 		<description>Angled 30 round clip magazine designed for SMGs and pistols which hold their magazine in the grip.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
@@ -104,11 +105,12 @@
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>15</costStuffCount>
+		<costStuffCount>15</costStuffCount> -->
 		<costList>
+			<ComponentIndustrial>6</ComponentIndustrial>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<comps>
@@ -140,11 +142,12 @@
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>5</costStuffCount>
+		<costStuffCount>5</costStuffCount> -->
 		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<comps>
@@ -179,12 +182,14 @@
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
-			<li>Metallic</li>
+			<!-- <stuffCategories>
+		<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>25</costStuffCount> -->
 		<costList>
-			<Weapon_Parts>1</Weapon_Parts>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Mechanism>1</Mechanism>
+			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
@@ -228,10 +233,10 @@
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>25</costStuffCount>-->
 		<costList>
 			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
@@ -262,11 +267,12 @@
 			<Mass>0.1</Mass>
 			<WorkToMake>500</WorkToMake>
 		</statBases>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>15</costStuffCount>
+		<costStuffCount>15</costStuffCount> -->
 		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<recipeMaker>
@@ -300,11 +306,12 @@
 		<recipeMaker>
 			<researchPrerequisite>SMG_C2</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>25</costStuffCount> -->
 		<costList>
+			<ComponentIndustrial>4</ComponentIndustrial>
 			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
 		<comps>

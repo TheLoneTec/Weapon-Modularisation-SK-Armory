@@ -12,11 +12,12 @@
 			<WorkToMake>3000</WorkToMake>
 			<Mass>0.5</Mass>
 		</statBases>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>20</costStuffCount> -->
 		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
 			<ComponentIndustrial>1</ComponentIndustrial>
 			<Plastic>10</Plastic>
 			<Rubber>15</Rubber>
@@ -59,13 +60,13 @@
 		<statBases>
 			<Mass>0.1</Mass>
 		</statBases>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>15</costStuffCount>
+		<costStuffCount>15</costStuffCount> -->
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
-			<Rubber>6</Rubber>
+			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<recipeMaker>
 			<recipeUsers>
@@ -96,13 +97,13 @@
 		<statBases>
 			<Mass>0.1</Mass>
 		</statBases>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>15</costStuffCount>
+		<costStuffCount>15</costStuffCount> -->
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
-			<Rubber>6</Rubber>
+			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<recipeMaker>
 			<recipeUsers>
@@ -133,13 +134,13 @@
 		<statBases>
 			<Mass>0.1</Mass>
 		</statBases>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>15</costStuffCount>
+		<costStuffCount>15</costStuffCount> -->
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
-			<Rubber>6</Rubber>
+			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<recipeMaker>
 			<recipeUsers>

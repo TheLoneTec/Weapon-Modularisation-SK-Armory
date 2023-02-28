@@ -203,7 +203,7 @@
 						<id>ModRF_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.492,0.1,-0.005)</postion>
+						<postion>(0.473,0.1,-0.005)</postion>
 						<scale>(0.75,0,0.75)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>

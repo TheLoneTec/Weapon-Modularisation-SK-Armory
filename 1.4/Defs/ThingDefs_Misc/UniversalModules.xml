@@ -63,14 +63,14 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_ACOG</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope_acog</uiIconPath>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>25</costStuffCount> -->
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
-			<Glass>5</Glass>
-			<Silicon>5</Silicon>
+			<Glass>10</Glass>
+			<Weapon_Parts>1</Weapon_Parts>
 			<Plastic>10</Plastic>
 		</costList>
 		<recipeMaker>
@@ -113,12 +113,12 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_Holo</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope_Holo</uiIconPath>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>20</costStuffCount> -->
 		<costList>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<ComponentIndustrial>4</ComponentIndustrial>
 			<ElectronicComponents>1</ElectronicComponents>
 			<Glass>5</Glass>
 			<Plastic>5</Plastic>
@@ -161,12 +161,12 @@
 			</recipeUsers>
 			<researchPrerequisite>Pistols_C2</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>15</costStuffCount>
+		<costStuffCount>15</costStuffCount> -->
 		<costList>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<ComponentIndustrial>4</ComponentIndustrial>
 			<Glass>5</Glass>
 			<Plastic>5</Plastic>
 		</costList>
@@ -196,14 +196,14 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_Sniper</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope_Sniper</uiIconPath>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>30</costStuffCount> -->
 		<costList>
 			<ComponentIndustrial>3</ComponentIndustrial>
-			<Glass>10</Glass>
-			<Silicon>10</Silicon>
+			<Glass>20</Glass>
+			<Weapon_Parts>2</Weapon_Parts>
 			<Plastic>10</Plastic>
 		</costList>
 		<recipeMaker>
@@ -245,8 +245,8 @@
 						<name>Sub Scope</name>
 						<allowEmpty>true</allowEmpty>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<!-- <postion>(-0.0078125,0.1,0.084375)</postion>
-						<scale>(0.8,1,0.8)</scale> -->
+						<postion>(-0.0078125,0.1,0.084375)</postion>
+						<scale>(0.8,1,0.8)</scale>
 						<filter>
 							<thingDefs>
 								<li>Module_HoloSight</li>
@@ -263,7 +263,7 @@
 	<ThingDef ParentName="GunPartBase">
 		<defName>Module_AdvSniperScope</defName>
 		<label>long-range 6-20x scope</label>
-		<description>A riflescope for extremely long-range shooting. Only fits on sniper rifles, and it's quite hard to reacquire targest after firing, so best plan to only need to fire once. Reticle displays help with wind and elevation calculations. Not recommended for novices.</description>
+		<description>A riflescope for extremely long-range shooting. Only fits on sniper rifles and specialized DM rifles, and it's quite hard to reacquire targest after firing, so best plan to only need to fire once. Reticle displays help with wind and elevation calculations. Not recommended for novices.</description>
 		<statBases>
 			<WorkToMake>7500</WorkToMake>
 			<Mass>0.7</Mass>
@@ -272,15 +272,15 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_Sniper</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope_Sniper</uiIconPath>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>30</costStuffCount> -->
 		<costList>
-			<ComponentIndustrial>3</ComponentIndustrial>
-			<Glass>10</Glass>
-			<Silicon>10</Silicon>
-			<Plastic>10</Plastic>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Glass>20</Glass>
+			<Weapon_Parts>2</Weapon_Parts>
+			<Plastic>20</Plastic>
 		</costList>
 		<recipeMaker>
 			<recipeUsers>
@@ -310,10 +310,6 @@
 					</li>
 				</verbPropertiesOffseter>
 				<statMultiplier>
-					<AccuracyTouch>0.3</AccuracyTouch>
-					<AccuracyShort>0.8</AccuracyShort>
-					<AccuracyMedium>1.25</AccuracyMedium>
-					<AccuracyLong>1.5</AccuracyLong>
 				</statMultiplier>
 				<statOffset>
 					<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
@@ -324,8 +320,8 @@
 						<name>Sub Scope</name>
 						<allowEmpty>true</allowEmpty>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<!-- <postion>(-0.0078125,0.1,0.084375)</postion>
-						<scale>(0.8,1,0.8)</scale> -->
+						<postion>(-0.0078125,0.1,0.084375)</postion>
+						<scale>(0.8,1,0.8)</scale>
 						<filter>
 							<thingDefs>
 								<li>Module_HoloSight</li>
@@ -349,12 +345,13 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Underbarrel_Bipod</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel_Bipod</uiIconPath>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>25</costStuffCount> -->
 		<costList>
 			<ComponentIndustrial>3</ComponentIndustrial>
+			<Weapon_Parts>1</Weapon_Parts>
 			<Plastic>10</Plastic>
 			<Rubber>15</Rubber>
 		</costList>
@@ -402,12 +399,12 @@
 			</recipeUsers>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>30</costStuffCount> -->
 		<costList>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<ComponentIndustrial>4</ComponentIndustrial>
 			<Plastic>5</Plastic>
 			<Rubber>5</Rubber>
 		</costList>
@@ -443,12 +440,12 @@
 			</recipeUsers>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>30</costStuffCount> -->
 		<costList>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<ComponentIndustrial>4</ComponentIndustrial>
 			<Plastic>5</Plastic>
 			<Rubber>5</Rubber>
 		</costList>

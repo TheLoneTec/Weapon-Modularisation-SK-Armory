@@ -29,10 +29,10 @@
 		<recipeMaker>
 			<researchPrerequisite>ChargedShot</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>25</costStuffCount> -->
 		<costList>
 			<Charged_Component>1</Charged_Component>
 		</costList>
@@ -69,10 +69,10 @@
 		<recipeMaker>
 			<researchPrerequisite>ChargedShot</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>40</costStuffCount>
+		<costStuffCount>40</costStuffCount> -->
 		<costList>
 			<Charged_Component>1</Charged_Component>
 			<Weapon_Parts>2</Weapon_Parts>
@@ -118,10 +118,10 @@
 		<recipeMaker>
 			<researchPrerequisite>ChargedShot</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>20</costStuffCount> -->
 		<costList>
 			<Charged_Component>1</Charged_Component>
 			<Weapon_Parts>2</Weapon_Parts>

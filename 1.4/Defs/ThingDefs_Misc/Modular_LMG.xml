@@ -5,8 +5,8 @@
 
 	<ThingDef ParentName="ARGunPartBase">
 		<defName>Module_LMG_MagBox</defName>
-		<label>5.56 Belt Box</label>
-		<description>A hard plastic or soft canvas box which can hold a 200-round belt which provides better sustained firepower, at the cost of reload speed. It also affects the center of gravity of the gun, making it unwieldy.</description>
+		<label>LMG Belt Box</label>
+		<description>A canvas box which can hold a 200-round belt which provides better sustained firepower, at the cost of reload speed. It also affects the center of gravity of the gun, making it unwieldy.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Box</texPath>
 		</graphicData>
@@ -18,14 +18,9 @@
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
-			<li>Fabric</li>
-			<li>HF</li>
-			<li>Plastic</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
 		<costList>
-			<Weapon_Parts>2</Weapon_Parts>
+			<Cloth>100</Cloth>
+			<Weapon_Parts>3</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
@@ -41,58 +36,6 @@
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
-					<AccuracyTouch>0.9</AccuracyTouch>
-					<AccuracyShort>0.9</AccuracyShort>
-					<AccuracyMedium>0.8</AccuracyMedium>
-					<AccuracyLong>0.8</AccuracyLong>
-					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
-				</statMultiplier>
-			</li>
-		</comps>
-	</ThingDef>
-
-	<ThingDef ParentName="ARGunPartBase">
-		<defName>Module_MMG_MagBox</defName>
-		<label>7.62 Belt Box</label>
-		<description>A hard plastic or soft canvas box which can hold a 150-round belt which provides better sustained firepower, at the cost of reload speed. It also affects the center of gravity of the gun, making it unwieldy.</description>
-		<graphicData>
-			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Box</texPath>
-		</graphicData>
-		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Box</uiIconPath>
-		<statBases>
-			<WorkToMake>3500</WorkToMake>
-			<Mass>0.7</Mass>
-		</statBases>
-		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
-		</recipeMaker>
-		<stuffCategories>
-			<li>Fabric</li>
-			<li>HF</li>
-			<li>Plastic</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
-		<costList>
-			<Weapon_Parts>2</Weapon_Parts>
-		</costList>
-		<comps>
-			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
-				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/LMG_Box</PartTexPath>
-				<!-- <verbPropertiesObjectPatch>
-					<li>
-						<burstShotCount>10</burstShotCount>
-					</li>
-				</verbPropertiesObjectPatch> -->
-				<verbPropertiesMultiplier>
-					<li>
-						<warmupTime>1.2</warmupTime>
-					</li>
-				</verbPropertiesMultiplier>
-				<statMultiplier>
-					<AccuracyTouch>0.9</AccuracyTouch>
-					<AccuracyShort>0.9</AccuracyShort>
-					<AccuracyMedium>0.8</AccuracyMedium>
-					<AccuracyLong>0.8</AccuracyLong>
 					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 				</statMultiplier>
 			</li>

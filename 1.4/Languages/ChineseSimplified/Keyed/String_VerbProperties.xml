@@ -18,10 +18,6 @@
 	<ai_TargetHasRangedAttackScoreOffset>被攻击目标溯源偏移</ai_TargetHasRangedAttackScoreOffset>
 	<forcedMissRadius>强制偏离范围</forcedMissRadius>
 	<forcedMissRadiusClassicMortars>迫击炮强制偏离范围</forcedMissRadiusClassicMortars>
-	<accuracyTouch>默认精度(最近)</accuracyTouch>
-	<accuracyShort>默认精度(短距)</accuracyShort>
-	<accuracyMedium>默认精度(中距)</accuracyMedium>
-	<accuracyLong>默认精度(长距)</accuracyLong>
 	<beamWidth>射线宽度</beamWidth>
 	<beamMaxDeviation>射线最大偏移量</beamMaxDeviation>
 	<beamFleckChancePerTick>射线烧蚀率</beamFleckChancePerTick>

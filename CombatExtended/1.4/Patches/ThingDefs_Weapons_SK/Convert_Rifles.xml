@@ -137,7 +137,7 @@
 						<id>ModAR_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(-0.051,0.1,0.02)</postion>
+						<postion>(0.02,0.1,0.02)</postion>
 						<defultThing>Module_AR_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -156,7 +156,8 @@
 						<id>ModAR_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0,0.1,0)</postion>
+						<postion>(0.023,0.1,0.012)</postion>
+						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -172,8 +173,8 @@
 						<name>under barrel</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
 						<verbPropertiesObjectPatchByChildPart Default="false" />
-						<postion>(-0.01,0.1,0.005)</postion>
-						<scale>(0.85,0,0.85)</scale>
+						<postion>(0.08,0.1,0)</postion>
+						<scale>(0.75,0,0.75)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -204,8 +205,8 @@
 						<id>ModAR_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.5,0.1,0.004)</postion>
-						<scale>(0.85,0,0.85)</scale>
+						<postion>(0.41,0.1,-0.0015</postion>
+						<scale>(0.75,0,0.75)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>

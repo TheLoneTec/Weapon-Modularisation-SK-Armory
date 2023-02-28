@@ -88,7 +88,7 @@ Cons: No full auto / Shorter range than M16.</description>
                 <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
                 <warmupTime>0.7</warmupTime>
                 <range>42</range>
-                <!-- <burstShotCount>5</burstShotCount> -->
+                <burstShotCount>3</burstShotCount>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
                 <soundCast>ShotM4A1</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -96,6 +96,9 @@ Cons: No full auto / Shorter range than M16.</description>
             </li>
         </verbs>
 	</value>
+</Operation>
+<Operation Class="PatchOperationRemove">
+	<xpath>Defs/ThingDef[defName="Gun_M4A1Gun"]/comps/li[@Class="CombatExtended.CompProperties_FireModes"]/aimedBurstShotCount</xpath> 
 </Operation>
 
 

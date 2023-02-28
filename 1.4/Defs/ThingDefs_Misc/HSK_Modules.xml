@@ -16,13 +16,17 @@
 		<recipeMaker>
 			<researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
-		</costList>
+		</costList> -->
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList> 
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/HSK/ATR_Mag</PartTexPath>
@@ -55,13 +59,18 @@
 		<recipeMaker>
 			<researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>40</costStuffCount>
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<Mechanism>2</Mechanism>
+		</costList> -->
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Mechanism>1</Mechanism>
+			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
@@ -82,10 +91,10 @@
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
-					<AccuracyTouch>0.9</AccuracyTouch>
+					<!-- <AccuracyTouch>0.9</AccuracyTouch>
 					<AccuracyShort>0.9</AccuracyShort>
 					<AccuracyMedium>0.8</AccuracyMedium>
-					<AccuracyLong>0.8</AccuracyLong>
+					<AccuracyLong>0.8</AccuracyLong> -->
 					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 				</statMultiplier>
 			</li>
@@ -109,12 +118,16 @@
 		<recipeMaker>
 			<researchPrerequisite Inherit="False">ChargedShot</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
+			<ElectronicComponents>2</ElectronicComponents>
+		</costList> -->
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
 			<ElectronicComponents>2</ElectronicComponents>
 		</costList>
 		<comps>
@@ -146,21 +159,6 @@
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/HSK/ChargeRifle_Cartridge_Dark</PartTexPath>
-				<verbPropertiesObjectPatch>
-					<!-- <li>
-						<burstShotCount>3</burstShotCount>
-					</li> -->
-				</verbPropertiesObjectPatch>
-				<!-- <compPropertiesObjectMultiplier>
-					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-						<magazineSize>1.2</magazineSize>
-					</il>
-				</compPropertiesObjectMultiplier> -->
-				<compPropertiesOffseter>
-					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-						<magazineSize>12</magazineSize>
-					</il>	
-				</compPropertiesOffseter>
 			</li>
 		</comps>
 	</ThingDef>
@@ -181,13 +179,18 @@
 		<recipeMaker>
 			<researchPrerequisite Inherit="False">ChargedShot</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>40</costStuffCount>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
 			<Mechanism>1</Mechanism>
+			<ElectronicComponents>3</ElectronicComponents>
+		</costList> -->
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Mechanism>2</Mechanism>
 			<ElectronicComponents>3</ElectronicComponents>
 		</costList>
 		<comps>
@@ -218,10 +221,6 @@
 					<Bulk>1</Bulk>
 				</statOffset>
 				<statMultiplier>
-					<AccuracyTouch>0.9</AccuracyTouch>
-					<AccuracyShort>0.9</AccuracyShort>
-					<AccuracyMedium>0.9</AccuracyMedium>
-					<AccuracyLong>0.9</AccuracyLong>
 				</statMultiplier>
 			</li>
 		</comps>
@@ -234,28 +233,6 @@
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/HSK/ChargeRifle_CartridgeExt_Dark</PartTexPath>
-				<verbPropertiesObjectPatch>
-				</verbPropertiesObjectPatch>
-				<statOffset>
-					<Mass>1</Mass>
-					<Bulk>1</Bulk>
-				</statOffset>
-				<verbPropertiesMultiplier>
-					<li>
-						<warmupTime>1.1</warmupTime>
-					</li>
-				</verbPropertiesMultiplier>
-				<compPropertiesOffseter>
-					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-						<magazineSize>40</magazineSize>
-					</il>
-				</compPropertiesOffseter>
-				<statMultiplier>
-					<AccuracyTouch>0.9</AccuracyTouch>
-					<AccuracyShort>0.9</AccuracyShort>
-					<AccuracyMedium>0.9</AccuracyMedium>
-					<AccuracyLong>0.9</AccuracyLong>
-				</statMultiplier>
 			</li>
 		</comps>
 	</ThingDef>
@@ -276,13 +253,18 @@
 		<recipeMaker>
 			<researchPrerequisite Inherit="False">ChargedShot</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>40</costStuffCount>
 		<costList>
 			<ComponentSpacer>1</ComponentSpacer>
 			<Mechanism>1</Mechanism>
+			<ElectronicComponents>3</ElectronicComponents>
+		</costList> -->
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Mechanism>2</Mechanism>
 			<ElectronicComponents>3</ElectronicComponents>
 		</costList>
 		<comps>
@@ -309,10 +291,6 @@
 					</il>
 				</compPropertiesOffseter>
 				<statMultiplier>
-					<AccuracyTouch>0.9</AccuracyTouch>
-					<AccuracyShort>0.9</AccuracyShort>
-					<AccuracyMedium>0.8</AccuracyMedium>
-					<AccuracyLong>0.8</AccuracyLong>
 					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 					<ShotSpread>1.3</ShotSpread>
 					<SwayFactor>1.5</SwayFactor>
@@ -329,30 +307,7 @@
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/HSK/ChargeRifle_Cartridge_Dark</PartTexPath>
-				<verbPropertiesMultiplier>
-					<li>
-						<warmupTime>1.1</warmupTime>
-					</li>
-				</verbPropertiesMultiplier>
-				<compPropertiesMultiplier>
-					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-						<magazineSize>2.0</magazineSize>
-					</il>
-				</compPropertiesMultiplier>
-				<compPropertiesOffseter>
-					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-						<magazineSize>8</magazineSize>
-					</il>
-				</compPropertiesOffseter>
-				<statMultiplier>
-					<AccuracyTouch>0.9</AccuracyTouch>
-					<AccuracyShort>0.9</AccuracyShort>
-					<AccuracyMedium>0.8</AccuracyMedium>
-					<AccuracyLong>0.8</AccuracyLong>
-					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
-					<ShotSpread>1.3</ShotSpread>
-					<SwayFactor>1.5</SwayFactor>
-				</statMultiplier>
+			
 			</li>
 		</comps>
 	</ThingDef>

@@ -18,10 +18,6 @@
 	<ai_TargetHasRangedAttackScoreOffset>Target Has Ranged Attack Score Offset</ai_TargetHasRangedAttackScoreOffset>
 	<forcedMissRadius>Forced Miss Radius</forcedMissRadius>
 	<forcedMissRadiusClassicMortars>Classic Mortars Forced Miss Radius</forcedMissRadiusClassicMortars>
-	<accuracyTouch>Default Accuracy(Touch)</accuracyTouch>
-	<accuracyShort>Default Accuracy(Short)</accuracyShort>
-	<accuracyMedium>Default Accuracy(Medium)</accuracyMedium>
-	<accuracyLong>Default Accuracy(Long)</accuracyLong>
 	<beamWidth>Beam Width</beamWidth>
 	<beamMaxDeviation>Beam Max Deviation</beamMaxDeviation>
 	<beamFleckChancePerTick>Beam Fleck Chance</beamFleckChancePerTick>
