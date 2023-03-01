@@ -272,7 +272,7 @@
 						<id>ModAR_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0.066,0.1,0.09)</postion>
+						<postion>(0.01,0.1,0.035)</postion>
 						<scale>(0.9,0,0.9)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -294,7 +294,7 @@
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<!-- <li>Module_Bipod</li> -->
+								<li>Module_Bipod</li>
 								<li>Module_UBGL</li>
 								<li>Module_MasterKey</li>
 								<li>Module_VerticalGrip</li>
