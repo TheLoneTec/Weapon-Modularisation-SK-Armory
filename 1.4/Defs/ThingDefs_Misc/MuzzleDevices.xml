@@ -43,7 +43,7 @@
 				<statMultiplier>
 				</statMultiplier>
 				<statOffset>
-					<HuntingStealth>.5</HuntingStealth>
+					<HuntingStealth>0.5</HuntingStealth>
 				</statOffset>
 			</li>
 		</comps>
