@@ -11,6 +11,12 @@
 		<thingCategories>
 			<li>ThingCategory_SGGunParts</li>
 		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisite>GasOperation</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SGGunPartBase">
@@ -25,16 +31,10 @@
 			<WorkToMake>500</WorkToMake>
 			<Mass>0.3</Mass>
 		</statBases>
-		<recipeMaker>
-			<researchPrerequisite>GasOperation</researchPrerequisite>
-		</recipeMaker>
 		<!-- <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount> -->
-		<costList>
-			<Weapon_Parts>1</Weapon_Parts>
-		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/ChainShotgun/ChainShotgun_Magazine</PartTexPath>
@@ -110,7 +110,6 @@
 		<costStuffCount>25</costStuffCount> -->
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
-			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">

@@ -6,7 +6,7 @@
 		<label>Build Glock 17</label>
 		<description>Build a Glock 17 pistol. A sturdy, repliable handgun which set an industry standard. It's got a bit of recoil so it's harder to reqacquire targets.\nCaliber: .45 ACP</description>
 		<jobString>Building Glock 17.</jobString>
-		<workAmount>9100</workAmount>
+		<workAmount>7800</workAmount>
 		<skillRequirements>
 			<Crafting>4</Crafting>
 		</skillRequirements>
@@ -37,11 +37,19 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>Plastic</li>
-					</thingDefs>
+					<categories>
+						<li>Metallic</li>
+					</categories>
 				</filter>
-				<count>25</count>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>10</count>
 			</li>
 		</ingredients>
 		<products>
@@ -52,11 +60,11 @@
 				<li>Pistol_Component</li>
 				<li>Weapon_Parts</li>
 				<li>ComponentIndustrial</li>
-				<li>Plastic</li>
 			</thingDefs>
 			<categories>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
+				<li>Leathers</li>
 			</categories>
 		</fixedIngredientFilter>
 		<recipeUsers>
