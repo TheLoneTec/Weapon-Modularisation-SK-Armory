@@ -811,13 +811,14 @@
 						<id>ModAR_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(-0.016,-0.1,0.068)</postion>
-						<defultThing>Module_AR_MagClip</defultThing>
-						<allowEmpty>true</allowEmpty>
+						<postion>(0,-0.1,0.038)</postion>
+						<defultThing>Module_AK47Default</defultThing>
+						<allowEmpty>false</allowEmpty>
 						<filter>
 							<thingDefs>
-								<li>Module_AR_MagClip</li>
-								<li>Module_AR_Mag60Clip</li>
+								<li>Module_AK47Default</li>
+								<!--<li>Module_AR_MagClip</li>
+								<li>Module_AR_Mag60Clip</li>-->
 							</thingDefs>
 						</filter>
 						<randomThingDefWeights>
@@ -829,7 +830,7 @@
 						<id>ModAR_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0,0.1,0.015)</postion>
+						<postion>(0.04,0.1,0.002)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -845,7 +846,7 @@
 						<name>under barrel</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
 						<verbPropertiesObjectPatchByChildPart Default="false" />
-						<postion>(-0.06,0.1,0.017)</postion>
+						<postion>(0.009,0.1,-0.002)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -876,7 +877,7 @@
 						<id>ModAR_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.5,0.1,0.0141)</postion>
+						<postion>(0.53,0.1,0)</postion>
 						<scale>(0.75,0,0.75)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>

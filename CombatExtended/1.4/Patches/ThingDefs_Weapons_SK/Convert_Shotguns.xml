@@ -417,10 +417,26 @@
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
 				<attachmentProperties>
 					<li>
+						<id>ModChainSG_Magazine</id>
+						<name>magazine</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
+						<postion>(0, -0.1, 0)</postion>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_SG_Speedloadertube</li>
+							</thingDefs>
+						</filter>
+						<!--<randomThingDefWeights>
+							<Module_SG_Speedloadertube>1</Module_SG_Speedloadertube>
+						</randomThingDefWeights>-->
+						<verbPropertiesObjectPatchByChildPart Default="false" />
+					</li>
+					<li>
 						<id>ModPumpSG_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
-						<postion>(0.1,0.1,0.01)</postion>
+						<postion>(0.1,0.1,0.04)</postion>
 						<scale>(0.75,0,0.75)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -434,7 +450,7 @@
 						<id>ModPumpSG_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.51,0.1,0.037)</postion>
+						<postion>(0.51,0.1,0.046)</postion>
 						<scale>(0.75,0,0.75)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -468,6 +484,22 @@
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
 				<attachmentProperties>
 					<li>
+						<id>ModChainSG_Magazine</id>
+						<name>magazine</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
+						<postion>(0, -0.1, 0)</postion>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_SG_Speedloadertube</li>
+							</thingDefs>
+						</filter>
+						<!--<randomThingDefWeights>
+							<Module_SG_Speedloadertube>1</Module_SG_Speedloadertube>
+						</randomThingDefWeights>-->
+						<verbPropertiesObjectPatchByChildPart Default="false" />
+					</li>
+					<li>
 						<id>ModPumpSG_Sight</id>
 						<name>sight</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
@@ -484,7 +516,7 @@
 						<id>ModPumpSG_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.385,0.1,0.054)</postion>
+						<postion>(0.5,0.1,0.076)</postion>
 						<scale>(0.516,0,0.086)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
