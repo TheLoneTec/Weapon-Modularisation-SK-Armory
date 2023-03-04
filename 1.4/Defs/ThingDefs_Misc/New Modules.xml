@@ -13,6 +13,9 @@
 			<WorkToMake>400</WorkToMake>
 			<Mass>0.1</Mass>
 		</statBases>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<notDrawInParent>true</notDrawInParent>
@@ -21,7 +24,7 @@
 					<reloadOneAtATime>false</reloadOneAtATime>
 					<reloadTime>2.8</reloadTime>
 				</il>
-			</compPropertiesObjectPatch>
+				</compPropertiesObjectPatch>
 			</li>
 		</comps>
 	</ThingDef>
