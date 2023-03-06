@@ -310,7 +310,7 @@
 						<id>ModAR_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.426,0.1,0.016)</postion>
+						<postion>(0.426,0.1,0.018)</postion>
 						<scale>(0.75,0,0.75)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>

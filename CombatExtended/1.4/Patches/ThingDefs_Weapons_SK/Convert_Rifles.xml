@@ -812,12 +812,13 @@
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
 						<postion>(-0.016,-0.1,0.068)</postion>
-						<defultThing>Module_AR_MagClip</defultThing>
+						<defultThing>Module_AK47Default</defultThing>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
-								<li>Module_AR_MagClip</li>
-								<li>Module_AR_Mag60Clip</li>
+								<li>Module_AK47Default</li>
+								<!--<li>Module_AR_MagClip</li>
+								<li>Module_AR_Mag60Clip</li>-->
 							</thingDefs>
 						</filter>
 						<randomThingDefWeights>

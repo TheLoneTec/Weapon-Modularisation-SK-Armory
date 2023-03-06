@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="SGGunPartBase">
+		<defName>Module_SG_Speedloadertube</defName>
+		<label>shotgun speedloader tube</label>
+		<description>Speedloader tube for any shotgun with tubular magazine.</description>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Generic</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
+		<statBases>
+			<WorkToMake>400</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<notDrawInParent>true</notDrawInParent>
+				<compPropertiesObjectPatch>
+				<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+					<reloadOneAtATime>false</reloadOneAtATime>
+					<reloadTime>2.8</reloadTime>
+				</il>
+				</compPropertiesObjectPatch>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>
