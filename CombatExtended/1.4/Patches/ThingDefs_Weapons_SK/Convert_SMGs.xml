@@ -478,7 +478,7 @@
 						<id>ModHvySMG_Stock</id>
 						<name>stock</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</UITexPath>
-						<postion>(-0.46,0.1,0.039)</postion>
+						<postion>(-0.457,-0.1,0.012)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
@@ -531,7 +531,7 @@
 						<id>ModHvySMG_Muzzle</id>
 						<name>muzzle</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle</UITexPath>
-						<postion>(0.42,0.1,0.01)</postion>
+						<postion>(0.383,0.1,0.02)</postion>
 						<scale>(0.85,0,0.85)</scale>
 						<allowEmpty>true</allowEmpty>
 						<filter>
@@ -596,7 +596,7 @@
 						<id>ModHvySMG_Stock</id>
 						<name>stock</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</UITexPath>
-						<postion>(-0.47,-0.1,0.027)</postion>
+						<postion>(-0.488,-0.1,0.02)</postion>
 						<allowEmpty>true</allowEmpty>
 						<filter>
 							<thingDefs>
