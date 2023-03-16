@@ -460,7 +460,7 @@
 		</value>
 	</Operation>
 
-		<Operation Class="PatchOperationAdd">
+	<!--<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="RF_Gun_Deringer"]/comps</xpath>
 		<value>
 			<li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
@@ -500,6 +500,6 @@
 				</compPropertiesCreateInstanceCompType>
 			</li>
 		</value>
-	</Operation>
+	</Operation>-->
 
 </Patch>

@@ -20,10 +20,10 @@
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<notDrawInParent>true</notDrawInParent>
 				<compPropertiesObjectPatch>
-				<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-					<reloadOneAtATime>false</reloadOneAtATime>
-					<reloadTime>2.8</reloadTime>
-				</il>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadOneAtATime>false</reloadOneAtATime>
+						<reloadTime>2.8</reloadTime>
+					</il>
 				</compPropertiesObjectPatch>
 			</li>
 		</comps>

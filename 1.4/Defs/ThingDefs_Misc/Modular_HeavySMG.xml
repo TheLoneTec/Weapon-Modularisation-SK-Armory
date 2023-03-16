@@ -16,7 +16,7 @@
 	<ThingDef ParentName="HvySMGGunPartBase">
 		<defName>Module_HvySMG_MagClip</defName>
 		<label>SMG magazine (straight, 30-rnd)</label>
-		<description>Straight 30 round clip magazine designed for submachine guns and auto pistols.</description>
+		<description>Straight 30 round stick magazine designed for submachine guns and auto pistols.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
 		</graphicData>
@@ -94,7 +94,7 @@
 	<ThingDef ParentName="HvySMGGunPartBase">
 		<defName>Module_HvySMGAngled_MagClip</defName>
 		<label>SMG magazine (angled, 30-rnd)</label>
-		<description>Angled 30 round clip magazine designed for SMGs and pistols which hold their magazine in the grip.</description>
+		<description>Angled 30 round curve magazine designed for SMGs and pistols which hold their magazine in the grip.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
 		</graphicData>
@@ -131,7 +131,7 @@
 		<ThingDef ParentName="HvySMGGunPartBase">
 		<defName>Module_HvySMGAngled15_MagClip</defName>
 		<label>SMG magazine (angled, 15 round)</label>
-		<description>Angled 30 round clip magazine designed for SMGs and pistols which hold their magazine in the grip.</description>
+		<description>Angled 30 round curve magazine designed for SMGs and pistols which hold their magazine in the grip.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
 		</graphicData>
@@ -201,9 +201,14 @@
 				</verbPropertiesObjectPatch>
 				<compPropertiesObjectPatch>
 					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-						<magazineSize>50</magazineSize>
+						<magazineSize>100</magazineSize>
 					</il>
 				</compPropertiesObjectPatch>
+				<compPropertiesMultiplier>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>1.5</reloadTime>
+					</il>
+				</compPropertiesMultiplier>
 				<verbPropertiesMultiplier>
 					<li>
 						<warmupTime>1.1</warmupTime>
@@ -243,12 +248,12 @@
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<notDrawInParent>true</notDrawInParent>
-				<verbPropertiesMultiplier>
+				<verbPropertiesOffseter>
 					<li>
 						<ticksBetweenBurstShots>-1</ticksBetweenBurstShots>
 						<burstShotCount>2</burstShotCount>
 					</li>
-				</verbPropertiesMultiplier>
+				</verbPropertiesOffseter>
 				<statMultiplier>
 				</statMultiplier>
 			</li>

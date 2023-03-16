@@ -18,7 +18,7 @@
 						<id>ModCR_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(0.063,0.1,0.098)</postion>
+						<postion>(0.063,-0.1,0.098)</postion>
 						<scale>(-1,1,1)</scale>
 						<defultThing>Module_CR_Mag</defultThing>
 						<allowEmpty>true</allowEmpty>
