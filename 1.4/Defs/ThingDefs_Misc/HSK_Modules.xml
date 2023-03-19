@@ -4,14 +4,16 @@
 	<ThingDef ParentName="ARGunPartBase">
 		<defName>Module_ATR_MagClip</defName>
 		<label>ATR magazine</label>
-		<description>Extended 7 round clip magazine designed for Large caliber bullet used by many heavy machine guns and anti-materiel rifles.</description>
+		<description>Extended 10 round magazine designed for Large caliber bullet used by anti-tank rifles and anti-materiel rifles.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Generic</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
 		<statBases>
-			<WorkToMake>500</WorkToMake>
-			<Mass>0.3</Mass>
+			<WorkToMake>2000</WorkToMake>
+			<MarketValue>440</MarketValue>
+			<Mass>0.82</Mass>
+			<Bulk>2.2</Bulk>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
@@ -37,7 +39,7 @@
 				</verbPropertiesObjectPatch>
 				<compPropertiesObjectPatch>
 					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-						<magazineSize>7</magazineSize>
+						<magazineSize>10</magazineSize>
 					</il>
 				</compPropertiesObjectPatch>
 			</li>
@@ -53,8 +55,10 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Drum</uiIconPath>
 		<statBases>
-			<WorkToMake>3000</WorkToMake>
-			<Mass>0.7</Mass>
+			<WorkToMake>4000</WorkToMake>
+			<MarketValue>850</MarketValue>
+			<Mass>1.6</Mass>
+			<Bulk>4</Bulk>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite Inherit="False">PrecisionRifling</researchPrerequisite>
@@ -112,8 +116,10 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
 		<statBases>
-			<WorkToMake>500</WorkToMake>
-			<Mass>0.3</Mass>
+			<WorkToMake>3000</WorkToMake>
+			<MarketValue>340</MarketValue>
+			<Mass>0.95</Mass>
+			<Bulk>1.2</Bulk>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite Inherit="False">ChargedShot</researchPrerequisite>
@@ -143,11 +149,11 @@
 						<magazineSize>1.2</magazineSize>
 					</li>
 				</compPropertiesMultiplier>
-				<compPropertiesOffseter>
+				<!--<compPropertiesOffseter>
 					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
 						<magazineSize>12</magazineSize>
 					</li>	
-				</compPropertiesOffseter>
+				</compPropertiesOffseter>-->
 			</li>
 		</comps>
 	</ThingDef>
@@ -248,7 +254,9 @@
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
 		<statBases>
 			<WorkToMake>3000</WorkToMake>
-			<Mass>0.7</Mass>
+			<MarketValue>340</MarketValue>
+			<Mass>0.95</Mass>
+			<Bulk>1.2</Bulk>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite Inherit="False">ChargedShot</researchPrerequisite>

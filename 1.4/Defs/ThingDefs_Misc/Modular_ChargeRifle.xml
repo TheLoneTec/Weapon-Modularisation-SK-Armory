@@ -11,6 +11,12 @@
 		<thingCategories>
 			<li>ThingCategory_ARGunParts</li>
 		</thingCategories>
+		<statBases>
+			<WorkToMake>2800</WorkToMake>
+			<MarketValue>280</MarketValue>
+			<Mass>0.6</Mass>
+			<Bulk>0.8</Bulk>
+		</statBases>
 	</ThingDef>
 
 	<ThingDef ParentName="CRGunPartBase">

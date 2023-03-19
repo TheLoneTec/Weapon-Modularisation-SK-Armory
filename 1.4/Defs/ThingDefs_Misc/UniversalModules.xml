@@ -28,6 +28,9 @@
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>70</MaxHitPoints>
@@ -57,7 +60,9 @@
 		<description>The Advanced Combat Tactical Gunsight is a prismatic scope with fixed 4x magnification scope that improves short to medium range aiming capability.</description>
 		<statBases>
 			<WorkToMake>3000</WorkToMake>
-			<Mass>0.5</Mass>
+			<MarketValue>280</MarketValue>
+			<Mass>0.428</Mass>
+			<Bulk>1</Bulk>
 		</statBases>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_ACOG</texPath>
@@ -106,8 +111,10 @@
 		<label>holographic sight</label>
 		<description>This advanced sight projects a holographic recticle focused on barrel orientation, good for short to medium range and does not affect field of vision.</description>
 		<statBases>
-			<WorkToMake>3000</WorkToMake>
-			<Mass>0.3</Mass>
+			<WorkToMake>2400</WorkToMake>
+			<MarketValue>160</MarketValue>
+			<Mass>0.255</Mass>
+			<Bulk>0.42</Bulk>
 		</statBases>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_Holo</texPath>
@@ -153,6 +160,12 @@
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_RedDot</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope_RedDot</uiIconPath>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<MarketValue>100</MarketValue>
+			<Mass>0.13</Mass>
+			<Bulk>0.18</Bulk>
+		</statBases>
 		<recipeMaker>
 			<recipeUsers>
 				<li>WeaponCraftingWorkTable</li>
@@ -175,7 +188,7 @@
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/RedDot</PartTexPath>
 				<verbPropertiesOffseter>
 					<li>
-						<warmupTime>0.2</warmupTime>
+						<warmupTime>-0.2</warmupTime>
 					</li>
 				</verbPropertiesOffseter>
 				<statMultiplier>
@@ -189,8 +202,10 @@
 		<label>DMR 3-9x scope</label>
 		<description>A variable magnification scope for a Designated Marksman Rifle. This is meant to fill the gap between infantry and long range snipers. Works well as a hunting scope, too.</description>
 		<statBases>
-			<WorkToMake>7500</WorkToMake>
-			<Mass>0.7</Mass>
+			<WorkToMake>4900</WorkToMake>
+			<MarketValue>380</MarketValue>
+			<Mass>0.54</Mass>
+			<Bulk>1.8</Bulk>
 		</statBases>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_Sniper</texPath>
@@ -266,7 +281,9 @@
 		<description>A riflescope for extremely long-range shooting. Only fits on sniper rifles and specialized DM rifles, and it's quite hard to reacquire targest after firing, so best plan to only need to fire once. Reticle displays help with wind and elevation calculations. Not recommended for novices.</description>
 		<statBases>
 			<WorkToMake>7500</WorkToMake>
-			<Mass>0.7</Mass>
+			<MarketValue>380</MarketValue>
+			<Mass>0.91</Mass>
+			<Bulk>2.3</Bulk>
 		</statBases>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_Sniper</texPath>
@@ -341,6 +358,12 @@
 		<defName>Module_Bipod</defName>
 		<label>bipod</label>
 		<description>This device allows resting the gun on the ground, offering better accuracy. However deploying and stowing the bipod takes significant time.</description>
+		<statBases>
+			<WorkToMake>2100</WorkToMake>
+			<MarketValue>120</MarketValue>
+			<Mass>0.311</Mass>
+			<Bulk>1.4</Bulk>
+		</statBases>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Underbarrel_Bipod</texPath>
 		</graphicData>
@@ -384,8 +407,14 @@
 
 	<ThingDef ParentName="GunPartBase">
 		<defName>Module_VerticalGrip</defName>
-		<label>vertical grip</label>
-		<description>A handy grip allows faster aiming at the expense of aiming stability.</description>
+		<label>vertical foregrip</label>
+		<description>A handy grip improve weapon handling and stability at short range.</description>
+		<statBases>
+			<WorkToMake>1400</WorkToMake>
+			<MarketValue>80</MarketValue>
+			<Mass>0.158</Mass>
+			<Bulk>0.86</Bulk>
+		</statBases>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Underbarrel_VertiGrip</texPath>
 		</graphicData>
@@ -426,7 +455,13 @@
 	<ThingDef ParentName="GunPartBase">
 		<defName>Module_AngledGrip</defName>
 		<label>angled grip</label>
-		<description>A handy grip allows slightly faster aiming and increased weapon stability.</description>
+		<description>A handy grip improve weapon handling and stability at long range.</description>
+		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<MarketValue>75</MarketValue>
+			<Mass>0.072</Mass>
+			<Bulk>0.61</Bulk>
+		</statBases>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Underbarrel_AngledGrip</texPath>
 		</graphicData>
@@ -455,7 +490,7 @@
 				<verbPropertiesMultiplier>
 					<li>
 						<!-- <warmupTime>0.8</warmupTime> -->
-						<warmupTime>0.85</warmupTime>
+						<RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>

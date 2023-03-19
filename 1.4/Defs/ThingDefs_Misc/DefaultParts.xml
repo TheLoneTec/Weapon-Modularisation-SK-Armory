@@ -10,8 +10,10 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
 		<statBases>
-			<WorkToMake>400</WorkToMake>
-			<Mass>0.3</Mass>
+			<WorkToMake>300</WorkToMake>
+			<MarketValue>100</MarketValue>
+			<Mass>0.372</Mass>
+			<Bulk>0.3</Bulk>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>

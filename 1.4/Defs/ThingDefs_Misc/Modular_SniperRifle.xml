@@ -19,20 +19,26 @@
 		<costList>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<MarketValue>300</MarketValue>
+			<Mass>0.7</Mass>
+			<Bulk>0.6</Bulk>
+		</statBases>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_LengthenedBarrel</PartTexPath>
 				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
-				<verbPropertiesOffseter>
+				<!--<verbPropertiesOffseter>
 					<li>
 						<warmupTime>0.5</warmupTime>
 					</li>
-				</verbPropertiesOffseter>
+				</verbPropertiesOffseter>-->
 				<verbPropertiesMultiplier>
 					<li>
-						<warmupTime>1.2</warmupTime>
-						<range>1.25</range>
+						<warmupTime>1.4</warmupTime>
+						<range>1.15</range>
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>

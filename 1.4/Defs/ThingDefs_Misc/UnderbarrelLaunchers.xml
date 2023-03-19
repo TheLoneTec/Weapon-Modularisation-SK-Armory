@@ -9,8 +9,10 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel_UBGL</uiIconPath>
 		<statBases>
-			<WorkToMake>3000</WorkToMake>
-			<Mass>0.8</Mass>
+			<WorkToMake>7200</WorkToMake>
+			<MarketValue>1100</MarketValue>
+			<Mass>1.36</Mass>
+			<Bulk>2.4</Bulk>
 		</statBases>
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<!-- <stuffCategories>
@@ -88,8 +90,10 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel_UBGL</uiIconPath>
 		<statBases>
-			<WorkToMake>3000</WorkToMake>
-			<Mass>0.5</Mass>
+			<WorkToMake>5600</WorkToMake>
+			<MarketValue>860</MarketValue>
+			<Mass>1.02</Mass>
+			<Bulk>2</Bulk>
 		</statBases>
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<!-- <stuffCategories>
@@ -285,7 +289,10 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel_UBSG</uiIconPath>
 		<statBases>
-			<Mass>0.5</Mass>
+			<WorkToMake>6800</WorkToMake>
+			<MarketValue>300</MarketValue>
+			<Mass>2.2</Mass>
+			<Bulk>2.8</Bulk>
 		</statBases>
 		<soundInteract>Interact_Shotgun</soundInteract>
 		<!-- <stuffCategories>
@@ -296,7 +303,7 @@
 			<Shotgun_Component>1</Shotgun_Component>
 			<Weapon_Parts>2</Weapon_Parts>
 			<ComponentIndustrial>2</ComponentIndustrial>
-			<Plastic>10</Plastic>
+			<Plastic>5</Plastic>
 		</costList>
 		<recipeMaker>
 			<recipeUsers>
@@ -312,8 +319,8 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_Shotgun</defaultProjectile>
-				<warmupTime>0.9</warmupTime>
-				<range>9.9</range>
+				<warmupTime>0.42</warmupTime>
+				<range>12</range>
 				<soundCast>Shot_Shotgun</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>

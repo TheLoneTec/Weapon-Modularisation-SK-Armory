@@ -117,12 +117,13 @@
         <defName>Module_MasterKey</defName>
 
 		<statBases>
-			<WorkToMake>7000</WorkToMake>
 			<SightsEfficiency>1</SightsEfficiency>
 			<ShotSpread>0.19</ShotSpread>
 			<SwayFactor>2.34</SwayFactor>
-			<Bulk>4.39</Bulk>
-			<Mass>1.90</Mass>
+			<WorkToMake>6800</WorkToMake>
+			<MarketValue>300</MarketValue>
+			<Mass>2.2</Mass>
+			<Bulk>2.8</Bulk>
 			<RangedWeapon_Cooldown>0.43</RangedWeapon_Cooldown>
 		</statBases>
 
@@ -131,7 +132,7 @@
 			<hasStandardCommand>True</hasStandardCommand>
 			<defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
 			<burstShotCount>1</burstShotCount>
-			<warmupTime>0.8</warmupTime>
+			<warmupTime>0.42</warmupTime>
 			<range>14</range>
 			<soundCast>Shot_Shotgun</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
