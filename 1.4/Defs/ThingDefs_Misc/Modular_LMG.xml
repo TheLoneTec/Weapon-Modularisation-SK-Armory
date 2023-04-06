@@ -12,8 +12,10 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Box</uiIconPath>
 		<statBases>
-			<WorkToMake>3500</WorkToMake>
-			<Mass>0.7</Mass>
+			<WorkToMake>2600</WorkToMake>
+			<MarketValue>280</MarketValue>
+			<Mass>0.1</Mass>
+			<Bulk>0</Bulk>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
@@ -30,6 +32,11 @@
 						<burstShotCount>10</burstShotCount>
 					</li>
 				</verbPropertiesObjectPatch> -->
+				<verbPropertiesOffseter>
+					<li>
+						<burstShotCount>4</burstShotCount>
+					</li>
+				</verbPropertiesOffseter>
 				<verbPropertiesMultiplier>
 					<li>
 						<warmupTime>1.2</warmupTime>
@@ -38,6 +45,16 @@
 				<statMultiplier>
 					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 				</statMultiplier>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>200</magazineSize>
+					</il>
+				</compPropertiesObjectPatch>
+				<compPropertiesMultiplier>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>3</reloadTime>
+					</il>
+				</compPropertiesMultiplier>
 			</li>
 		</comps>
 	</ThingDef>

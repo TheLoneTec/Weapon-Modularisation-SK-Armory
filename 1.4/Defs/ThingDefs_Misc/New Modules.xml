@@ -11,8 +11,13 @@
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
 		<statBases>
 			<WorkToMake>400</WorkToMake>
-			<Mass>0.1</Mass>
+			<MarketValue>100</MarketValue>
+			<Mass>0.2</Mass>
+			<Bulk>0.2</Bulk>
 		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>GasOperation</researchPrerequisite>
+		</recipeMaker>
 		<costList>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>

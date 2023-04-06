@@ -23,6 +23,9 @@
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Pistol</uiIconPath>
 		<statBases>
 			<WorkToMake>500</WorkToMake>
+			<MarketValue>60</MarketValue>
+			<Mass>0.198</Mass>
+			<Bulk>0.25</Bulk>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
@@ -43,14 +46,11 @@
 						<magazineSize>30</magazineSize>
 					</il>
 				</compPropertiesObjectPatch>
-				<verbPropertiesObjectPatch>
+				<verbPropertiesOffseter>
 					<li>
-						<burstShotCount>3</burstShotCount>
+						<burstShotCount>1</burstShotCount>
 					</li>
-				</verbPropertiesObjectPatch>
-				<statOffset>
-					<Bulk>0.5</Bulk>
-				</statOffset>
+				</verbPropertiesOffseter>
 			</li>
 		</comps>
 	</ThingDef>
@@ -93,7 +93,7 @@
 
 	<ThingDef ParentName="HvySMGGunPartBase">
 		<defName>Module_HvySMGAngled_MagClip</defName>
-		<label>SMG magazine (angled, 30-rnd)</label>
+		<label>SMG magazine (curve, 30-rnd)</label>
 		<description>Angled 30 round curve magazine designed for SMGs and pistols which hold their magazine in the grip.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
@@ -101,6 +101,9 @@
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Pistol</uiIconPath>
 		<statBases>
 			<WorkToMake>500</WorkToMake>
+			<MarketValue>60</MarketValue>
+			<Mass>0.198</Mass>
+			<Bulk>0.25</Bulk>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
@@ -121,23 +124,23 @@
 						<magazineSize>30</magazineSize>
 					</il>
 				</compPropertiesObjectPatch>
-				<statOffset>
-					<Bulk>0.5</Bulk>
-				</statOffset>
 			</li>
 		</comps>
 	</ThingDef>
 
 		<ThingDef ParentName="HvySMGGunPartBase">
 		<defName>Module_HvySMGAngled15_MagClip</defName>
-		<label>SMG magazine (angled, 15 round)</label>
-		<description>Angled 30 round curve magazine designed for SMGs and pistols which hold their magazine in the grip.</description>
+		<label>SMG magazine (curve, 15 round)</label>
+		<description>Angled 15 round curve magazine designed for SMGs and pistols which hold their magazine in the grip.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Pistol</uiIconPath>
 		<statBases>
 			<WorkToMake>300</WorkToMake>
+			<MarketValue>30</MarketValue>
+			<Mass>0.142</Mass>
+			<Bulk>0.1</Bulk>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
@@ -176,8 +179,10 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Drum</uiIconPath>
 		<statBases>
-			<Mass>0.6</Mass>
+			<Mass>1.36</Mass>
 			<WorkToMake>2500</WorkToMake>
+			<MarketValue>220</MarketValue>
+			<Bulk>1.15</Bulk>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
@@ -217,9 +222,6 @@
 				<statMultiplier>
 					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 				</statMultiplier>
-				<statOffset>
-					<Bulk>1</Bulk>
-				</statOffset>
 			</li>
 		</comps>
 	</ThingDef>
@@ -234,6 +236,9 @@
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Receiver_Component</uiIconPath>
 		<statBases>
 			<Mass>0.1</Mass>
+			<WorkToMake>500</WorkToMake>
+			<MarketValue>100</MarketValue>
+			<Bulk>0</Bulk>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
@@ -269,8 +274,10 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock_Simple</uiIconPath>
 		<statBases>
-			<Mass>0.1</Mass>
 			<WorkToMake>500</WorkToMake>
+			<MarketValue>120</MarketValue>
+			<Mass>0.2</Mass>
+			<Bulk>0.25</Bulk>
 		</statBases>
 		<!-- <stuffCategories>
 			<li>Metallic</li>
@@ -306,7 +313,10 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</uiIconPath>
 		<statBases>
-			<Mass>0.3</Mass>
+			<WorkToMake>900</WorkToMake>
+			<MarketValue>280</MarketValue>
+			<Mass>0.4</Mass>
+			<Bulk>0.7</Bulk>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>SMG_C2</researchPrerequisite>

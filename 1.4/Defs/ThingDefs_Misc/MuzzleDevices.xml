@@ -9,8 +9,10 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle_Suppresor</uiIconPath>
 		<statBases>
-			<WorkToMake>3000</WorkToMake>
-			<Mass>0.5</Mass>
+			<WorkToMake>2200</WorkToMake>
+			<MarketValue>180</MarketValue>
+			<Mass>0.482 </Mass>
+			<Bulk>0.56</Bulk>
 		</statBases>
 		<!-- <stuffCategories>
 			<li>Metallic</li>
@@ -58,7 +60,10 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle_Brake</uiIconPath>
 		<statBases>
-			<Mass>0.1</Mass>
+			<WorkToMake>1600</WorkToMake>
+			<MarketValue>80</MarketValue>
+			<Mass>0.0765</Mass>
+			<Bulk>0.28</Bulk>
 		</statBases>
 		<!-- <stuffCategories>
 			<li>Metallic</li>
@@ -95,7 +100,10 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle_Compensator</uiIconPath>
 		<statBases>
-			<Mass>0.1</Mass>
+			<WorkToMake>1600</WorkToMake>
+			<MarketValue>80</MarketValue>
+			<Bulk>0.28</Bulk>
+			<Mass>0.0848</Mass>
 		</statBases>
 		<!-- <stuffCategories>
 			<li>Metallic</li>
@@ -132,7 +140,10 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle_FlashHider</uiIconPath>
 		<statBases>
-			<Mass>0.1</Mass>
+			<WorkToMake>1600</WorkToMake>
+			<MarketValue>80</MarketValue>
+			<Mass>0.0765</Mass>
+			<Bulk>0.28</Bulk>
 		</statBases>
 		<!-- <stuffCategories>
 			<li>Metallic</li>
@@ -176,7 +187,10 @@
 		</graphicData>
 		<uiIconPath>Things/WeaponPart/Gun/AssaultRifle/Bayonet</uiIconPath>
 		<statBases>
-			<Mass>0.1</Mass>
+			<WorkToMake>2100</WorkToMake>
+			<MarketValue>120</MarketValue>
+			<Bulk>0.68</Bulk>
+			<Mass>0.272</Mass>
 		</statBases>
 		<!--<stuffCategories>
 			<li>Metallic</li>

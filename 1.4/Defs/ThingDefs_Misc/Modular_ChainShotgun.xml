@@ -16,14 +16,16 @@
 	<ThingDef ParentName="SGGunPartBase">
 		<defName>Module_ChainSG_MagClip</defName>
 		<label>shotgun magazine</label>
-		<description>Standard 10 round clip magazine designed for the chain shotgun.</description>
+		<description>Standard 10 round magazine designed for shotgun.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Generic</texPath>
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
 		<statBases>
-			<WorkToMake>500</WorkToMake>
-			<Mass>0.3</Mass>
+			<WorkToMake>1400</WorkToMake>
+			<MarketValue>150</MarketValue>
+			<Mass>0.453</Mass>
+			<Bulk>0.45</Bulk>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>GasOperation</researchPrerequisite>
@@ -57,7 +59,9 @@
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag_Drum</uiIconPath>
 		<statBases>
 			<WorkToMake>3000</WorkToMake>
-			<Mass>0.7</Mass>
+			<MarketValue>320</MarketValue>
+			<Mass>1.04</Mass>
+			<Bulk>0.95</Bulk>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>GasOperation</researchPrerequisite>
@@ -98,8 +102,10 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Muzzle_Choke</uiIconPath>
 		<statBases>
-			<WorkToMake>3000</WorkToMake>
-			<Mass>0.5</Mass>
+			<WorkToMake>1000</WorkToMake>
+			<MarketValue>180</MarketValue>
+			<Mass>0.06</Mass>
+			<Bulk>0.05</Bulk>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
@@ -135,7 +141,10 @@
 		</graphicData>
 		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Receiver_Component</uiIconPath>
 		<statBases>
+			<WorkToMake>1200</WorkToMake>
+			<MarketValue>180</MarketValue>
 			<Mass>0.1</Mass>
+			<Bulk>0</Bulk>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>GasOperation</researchPrerequisite>
@@ -151,12 +160,12 @@
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<notDrawInParent>true</notDrawInParent>
-				<verbPropertiesMultiplier>
+				<verbPropertiesOffseter>
 					<li>
 						<ticksBetweenBurstShots>-2</ticksBetweenBurstShots>
 						<burstShotCount>1</burstShotCount>
 					</li>
-				</verbPropertiesMultiplier>
+				</verbPropertiesOffseter>
 				<statMultiplier>
 				</statMultiplier>
 			</li>
