@@ -490,7 +490,7 @@
 				<verbPropertiesMultiplier>
 					<li>
 						<!-- <warmupTime>0.8</warmupTime> -->
-						<RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+						<warmupTime>0.75</warmupTime>
 					</li>
 				</verbPropertiesMultiplier>
 				<statMultiplier>
