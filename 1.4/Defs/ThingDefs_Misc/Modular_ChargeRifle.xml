@@ -136,12 +136,12 @@
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<notDrawInParent>true</notDrawInParent>
-				<verbPropertiesMultiplier>
+				<verbPropertiesOffseter>
 					<li>
 						<ticksBetweenBurstShots>-1</ticksBetweenBurstShots>
 						<burstShotCount>2</burstShotCount>
 					</li>
-				</verbPropertiesMultiplier>
+				</verbPropertiesOffseter>
 				<statMultiplier>
 				</statMultiplier>
 			</li>
