@@ -41,11 +41,11 @@
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMG_Magazine</PartTexPath>
-				<compPropertiesObjectPatch>
+				<compPropertiesOffseter>
 					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-						<magazineSize>30</magazineSize>
+						<magazineSize>29</magazineSize>
 					</il>
-				</compPropertiesObjectPatch>
+				</compPropertiesOffseter>
 				<verbPropertiesOffseter>
 					<li>
 						<burstShotCount>1</burstShotCount>
@@ -79,11 +79,11 @@
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMGCurved_Magazine</PartTexPath>
-				<compPropertiesObjectPatch>
+				<compPropertiesOffseter>
 					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
 						<magazineSize>30</magazineSize>
 					</il>
-				</compPropertiesObjectPatch>
+				</compPropertiesOffseter>
 				<statOffset>
 					<Bulk>0.5</Bulk>
 				</statOffset>
@@ -93,8 +93,8 @@
 
 	<ThingDef ParentName="HvySMGGunPartBase">
 		<defName>Module_HvySMGAngled_MagClip</defName>
-		<label>SMG magazine (curve, 30-rnd)</label>
-		<description>Angled 30 round curve magazine designed for SMGs and pistols which hold their magazine in the grip.</description>
+		<label>SMG magazine (Angled, 30-rnd)</label>
+		<description>Angled 30 round angled magazine designed for SMGs and pistols which hold their magazine in the grip.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
 		</graphicData>
@@ -119,19 +119,19 @@
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMGBack_Magazine</PartTexPath>
-				<compPropertiesObjectPatch>
+				<compPropertiesOffseter>
 					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-						<magazineSize>30</magazineSize>
+						<magazineSize>29</magazineSize>
 					</il>
-				</compPropertiesObjectPatch>
+				</compPropertiesOffseter>
 			</li>
 		</comps>
 	</ThingDef>
 
 		<ThingDef ParentName="HvySMGGunPartBase">
 		<defName>Module_HvySMGAngled15_MagClip</defName>
-		<label>SMG magazine (curve, 15 round)</label>
-		<description>Angled 15 round curve magazine designed for SMGs and pistols which hold their magazine in the grip.</description>
+		<label>SMG magazine (angled, 15 round)</label>
+		<description>Angled 15 round angled magazine designed for SMGs and pistols which hold their magazine in the grip.</description>
 		<graphicData>
 			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Pistol</texPath>
 		</graphicData>
@@ -156,11 +156,11 @@
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMGBack15_Magazine</PartTexPath>
-				<compPropertiesObjectPatch>
+				<compPropertiesOffseter>
 					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-						<magazineSize>15</magazineSize>
+						<magazineSize>14</magazineSize>
 					</il>
-				</compPropertiesObjectPatch>
+				</compPropertiesOffseter>
 				<verbPropertiesMultiplier>
 					<li>
 						<warmupTime>1.05</warmupTime>
@@ -170,8 +170,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="HvySMGGunPartBase">
-		<defName>Module_HvySNG_MagDrum</defName>
+	<ThingDef ParentName="HvySMGGunPartBase" Name="HvySNGMagDrum" Abstract="True">
 		<label>SMG drum magazine</label>
 		<description>100 round drum magazine provides better sustained firepower, at the cost of reload speed. It also affects the center of gravity of the gun, making it unwieldy.</description>
 		<graphicData>
@@ -196,6 +195,10 @@
 			<Mechanism>1</Mechanism>
 			<Weapon_Parts>2</Weapon_Parts>
 		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="HvySNGMagDrum">
+		<defName>Module_HvySNG_MagDrum</defName>
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMG_CartridgeDrum</PartTexPath>
@@ -204,11 +207,43 @@
 						<burstShotCount>5</burstShotCount>
 					</li> -->
 				</verbPropertiesObjectPatch>
-				<compPropertiesObjectPatch>
+				<compPropertiesOffseter>
 					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-						<magazineSize>100</magazineSize>
+						<magazineSize>99</magazineSize>
 					</il>
-				</compPropertiesObjectPatch>
+				</compPropertiesOffseter>
+				<compPropertiesMultiplier>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>1.5</reloadTime>
+					</il>
+				</compPropertiesMultiplier>
+				<verbPropertiesMultiplier>
+					<li>
+						<warmupTime>1.1</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<statMultiplier>
+					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="HvySNGMagDrum">
+		<defName>Module_HvySNG_MagDrumV</defName>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMG_CartridgeDrumV</PartTexPath>
+				<verbPropertiesObjectPatch>
+					<!-- <li>
+						<burstShotCount>5</burstShotCount>
+					</li> -->
+				</verbPropertiesObjectPatch>
+				<compPropertiesOffseter>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>99</magazineSize>
+					</il>
+				</compPropertiesOffseter>
 				<compPropertiesMultiplier>
 					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
 						<reloadTime>1.5</reloadTime>

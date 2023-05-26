@@ -24,12 +24,13 @@
 						<postion>(-0.137,-0.1,0.016)</postion>
 						<scale>(-1,0,1)</scale>
 						<defultThing>Module_HvySMGAngled15_MagClip</defultThing>
-						<allowEmpty>true</allowEmpty>
+						<allowEmpty>false</allowEmpty>
+						<!--<allowEmpty>true</allowEmpty>-->
 						<filter>
 							<thingDefs>
 								<li>Module_HvySMGAngled15_MagClip</li>
 								<li>Module_HvySMGAngled_MagClip</li>
-								<!-- <li>Module_HvySNG_MagDrum</li> -->
+								<li>Module_HvySNG_MagDrumV</li>
 							</thingDefs>
 						</filter>
 						<randomThingDefWeights>
@@ -131,11 +132,12 @@
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
 						<postion>(-0.117,-0.1,0.063)</postion>
 						<defultThing>Module_HvySMG_MagClip</defultThing>
-						<allowEmpty>true</allowEmpty>
+						<allowEmpty>false</allowEmpty>
+						<!--<allowEmpty>true</allowEmpty>-->
 						<filter>
 							<thingDefs>
 								<li>Module_HvySMG_MagClip</li>
-								<!-- <li>Module_HvySNG_MagDrum</li> -->
+								<li>Module_HvySNG_MagDrumV</li>
 							</thingDefs>
 						</filter>
 						<randomThingDefWeights>
@@ -236,11 +238,12 @@
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
 						<postion>(0.041,0.1,-0.01)</postion>
 						<defultThing>Module_HvySMG_MagClip</defultThing>
-						<allowEmpty>true</allowEmpty>
+						<allowEmpty>false</allowEmpty>
+						<!--<allowEmpty>true</allowEmpty>-->
 						<filter>
 							<thingDefs>
 								<li>Module_HvySMG_MagClip</li>
-								<!-- <li>Module_HvySNG_MagDrum</li> -->
+								<li>Module_HvySNG_MagDrumV</li>
 							</thingDefs>
 						</filter>
 						<randomThingDefWeights>
@@ -342,7 +345,8 @@
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
 						<postion>(-0.027,0.1,0.031)</postion>
 						<defultThing>Module_HvySMGAngled_MagClip</defultThing>
-						<allowEmpty>true</allowEmpty>
+						<allowEmpty>false</allowEmpty>
+						<!--<allowEmpty>true</allowEmpty>-->
 						<filter>
 							<thingDefs>
 								<li>Module_HvySMGAngled_MagClip</li>
@@ -462,7 +466,8 @@
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
 						<postion>(0.047,0.1,-0.004)</postion>
 						<defultThing>Module_HvySMG_MagClip</defultThing>
-						<allowEmpty>true</allowEmpty>
+						<allowEmpty>false</allowEmpty>
+						<!--<allowEmpty>true</allowEmpty>-->
 						<filter>
 							<thingDefs>
 								<li>Module_HvySMG_MagClip</li>
@@ -579,11 +584,12 @@
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
 						<postion>(0.031,0.1,0.004)</postion>
-						<!-- <defultThing>Module_HvySMGCurved_MagClip</defultThing> -->
-						<allowEmpty>true</allowEmpty>
+						<defultThing>Module_HvySMGCurved_MagClip</defultThing>
+						<allowEmpty>false</allowEmpty>
+						<!--<allowEmpty>true</allowEmpty>-->
 						<filter>
 							<thingDefs>
-								<!-- <li>Module_HvySMGCurved_MagClip</li> -->
+								<li>Module_HvySMGCurved_MagClip</li>
 								<li>Module_HvySNG_MagDrum</li>
 							</thingDefs>
 						</filter>
@@ -697,12 +703,13 @@
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
 						<postion>(-0.113,-0.1,0.074)</postion>
-						<!-- <defultThing>Module_HvySMG_MagClip</defultThing> -->
-						<allowEmpty>true</allowEmpty>
+						<defultThing>Module_HvySMG_MagClip</defultThing>
+						<allowEmpty>false</allowEmpty>
+						<!--<allowEmpty>true</allowEmpty>-->
 						<filter>
 							<thingDefs>
 								<li>Module_HvySMG_MagClip</li>
-								<!-- <li>Module_HvySNG_MagDrum</li> -->
+								<li>Module_HvySNG_MagDrum</li>
 							</thingDefs>
 						</filter>
 						<!-- <randomThingDefWeights>
@@ -803,7 +810,8 @@
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
 						<postion>(-0.004,0.1,0.051)</postion>
 						<defultThing>Module_HvySMGAngled_MagClip</defultThing>
-						<allowEmpty>true</allowEmpty>
+						<allowEmpty>false</allowEmpty>
+						<!--<allowEmpty>true</allowEmpty>-->
 						<filter>
 							<thingDefs>
 								<li>Module_HvySMGAngled_MagClip</li>
@@ -909,7 +917,8 @@
 						<postion>(0.051,-0.1,-0.012)</postion>
 						<scale>(-1,1,1)</scale>
 						<defultThing>Module_HvySMGAngled_MagClip</defultThing>
-						<allowEmpty>true</allowEmpty>
+						<allowEmpty>false</allowEmpty>
+						<!--<allowEmpty>true</allowEmpty>-->
 						<filter>
 							<thingDefs>
 								<li>Module_HvySMGAngled_MagClip</li>

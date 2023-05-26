@@ -36,7 +36,7 @@ Cons: No full auto</description>
 <Operation Class="PatchOperationReplace">
 	<xpath>Defs/ThingDef[defName="RF_Gun_93R"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath> 
 	<value>
-                <magazineSize>15</magazineSize>
+                <magazineSize>1</magazineSize>
 	</value>
 </Operation>
 
@@ -87,7 +87,7 @@ Cons: Difficult to use / Inaccurate if unskilled</description>
 <Operation Class="PatchOperationReplace">
 	<xpath>Defs/ThingDef[defName="RF_Gun_Tecnine"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath> 
 	<value>
-                <magazineSize>12</magazineSize>
+                <magazineSize>1</magazineSize>
 	</value>
 </Operation>
 
@@ -124,7 +124,7 @@ Cons: Very poor Range</description>
 <Operation Class="PatchOperationReplace">
 	<xpath>Defs/ThingDef[defName="RF_Gun_Skorpion"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath> 
 	<value>
-			<magazineSize>15</magazineSize>
+			<magazineSize>1</magazineSize>
 	</value>
 </Operation>
 
@@ -149,8 +149,8 @@ Cons: Slow reload</description>
 	<xpath>Defs/ThingDef[defName="RF_Gun_TMP"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]</xpath> 
 	<value>
 		<li Class="CombatExtended.CompProperties_AmmoUser">
-			<magazineSize>15</magazineSize>
-			<reloadTime>3.2</reloadTime>
+			<magazineSize>1</magazineSize>
+			<reloadTime>2.2</reloadTime>
 			<ammoSet>AmmoSet_9x19mmPara</ammoSet>
 		</li>
 	</value>
@@ -182,7 +182,7 @@ Cons: Below average accuracy and recoil control</description>
 <Operation Class="PatchOperationReplace">
 	<xpath>Defs/ThingDef[defName="Gun_MachinePistol"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath> 
 	<value>
-		<magazineSize>15</magazineSize>
+		<magazineSize>1</magazineSize>
 	</value>
 </Operation>
 
@@ -212,7 +212,7 @@ Cons: High production costs</description>
 <Operation Class="PatchOperationReplace">
 	<xpath>Defs/ThingDef[defName="Gun_MP5Gun"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath> 
 	<value>
-	        <magazineSize>30</magazineSize>
+	        <magazineSize>1</magazineSize>
 	</value>
 </Operation>
 
@@ -249,7 +249,7 @@ Cons: Poor accuracy / Limited mods</description>
 <Operation Class="PatchOperationReplace">
 	<xpath>Defs/ThingDef[defName="RF_Gun_GreaseGun"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath> 
 	<value>
-	        <magazineSize>15</magazineSize>
+	        <magazineSize>1</magazineSize>
 	</value>
 </Operation>
 
@@ -280,8 +280,8 @@ Cons: SLow reload / Below average range</description>
 	<xpath>Defs/ThingDef[defName="RF_Gun_Vector"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]</xpath> 
 	<value>
 		<li Class="CombatExtended.CompProperties_AmmoUser">
-			<magazineSize>15</magazineSize>
-			<reloadTime>3.5</reloadTime>
+			<magazineSize>1</magazineSize>
+			<reloadTime>2.5</reloadTime>
 			<ammoSet>AmmoSet_45ACP</ammoSet>
 		</li>
 	</value>
@@ -307,7 +307,7 @@ Cons: Low rate of fire / Limited magazine options</description>
 <Operation Class="PatchOperationReplace">
 	<xpath>Defs/ThingDef[defName="Gun_UMP45Gun"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath> 
 	<value>
-	        <magazineSize>15</magazineSize>
+	        <magazineSize>1</magazineSize>
 	</value>
 </Operation>
 <Operation Class="PatchOperationReplace">
@@ -342,7 +342,7 @@ Cons: High recoil / Steep learning curve</description>
 <Operation Class="PatchOperationReplace">
 	<xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath> 
 	<value>
-	        <magazineSize>15</magazineSize>
+	        <magazineSize>1</magazineSize>
 	</value>
 </Operation>
 

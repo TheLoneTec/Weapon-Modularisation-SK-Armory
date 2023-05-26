@@ -4,11 +4,11 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Module_ChainSG_MagClip"]/comps/li[@Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon"]</xpath>
 		<value>
-			<compPropertiesObjectPatch>
+			<compPropertiesOffseter>
 				<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-					<magazineSize>8</magazineSize>
+					<magazineSize>7</magazineSize>
 				</il>
-			</compPropertiesObjectPatch>
+			</compPropertiesOffseter>
 		</value>
 		<order>Append</order>
 	</Operation>
@@ -16,11 +16,16 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Module_ChainSG_MagDrum"]/comps/li[@Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon"]</xpath>
 		<value>
-			<compPropertiesObjectPatch>
+			<compPropertiesOffseter>
 				<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-					<magazineSize>20</magazineSize>
+					<magazineSize>19</magazineSize>
 				</il>
-			</compPropertiesObjectPatch>
+			</compPropertiesOffseter>
+			<compPropertiesMultiplier>
+				<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+					<reloadTime>1.2</reloadTime>
+				</li>
+			</compPropertiesMultiplier>
 		</value>
 		<order>Append</order>
 	</Operation>

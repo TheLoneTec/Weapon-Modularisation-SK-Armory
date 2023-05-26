@@ -144,16 +144,11 @@
 						<burstShotCount>3</burstShotCount>
 					</li> -->
 				</verbPropertiesObjectPatch>
-				<compPropertiesMultiplier>
-					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
-						<magazineSize>1.2</magazineSize>
-					</li>
-				</compPropertiesMultiplier>
-				<!--<compPropertiesOffseter>
+				<compPropertiesOffseter>
 					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
 						<magazineSize>12</magazineSize>
 					</li>	
-				</compPropertiesOffseter>-->
+				</compPropertiesOffseter>
 			</li>
 		</comps>
 	</ThingDef>
@@ -288,11 +283,11 @@
 						<warmupTime>1.1</warmupTime>
 					</li>
 				</verbPropertiesMultiplier>
-				<compPropertiesMultiplier>
+				<!--<compPropertiesMultiplier>
 					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
 						<magazineSize>2.0</magazineSize>
 					</il>
-				</compPropertiesMultiplier>
+				</compPropertiesMultiplier>-->
 				<compPropertiesOffseter>
 					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
 						<magazineSize>8</magazineSize>

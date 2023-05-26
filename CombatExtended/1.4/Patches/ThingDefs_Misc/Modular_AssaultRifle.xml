@@ -4,11 +4,14 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Module_AR_MagClip"]/comps/li[@Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon"]</xpath>
 		<value>
-			<compPropertiesObjectPatch>
+			<statOffset>
+					<Bulk>0.45</Bulk>
+			</statOffset>
+			<compPropertiesOffseter>
 				<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-					<magazineSize>30</magazineSize>
+					<magazineSize>29</magazineSize>
 				</il>
-			</compPropertiesObjectPatch>
+			</compPropertiesOffseter>
 		</value>
 		<order>Append</order>
 	</Operation>
@@ -16,12 +19,19 @@
 <Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Module_AR_Mag60Clip"]/comps/li[@Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon"]</xpath>
 		<value>
-			<compPropertiesObjectPatch>
+			<statOffset>
+					<Bulk>0.9</Bulk>
+			</statOffset>
+			<compPropertiesOffseter>
 				<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-					<reloadTime>4</reloadTime>
-					<magazineSize>60</magazineSize>
+					<magazineSize>59</magazineSize>
 				</il>
-			</compPropertiesObjectPatch>
+			</compPropertiesOffseter>
+			<compPropertiesMultiplier>
+				<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+					<reloadTime>1.5</reloadTime>
+				</li>
+			</compPropertiesMultiplier>
 		</value>
 		<order>Append</order>
 	</Operation>
@@ -31,12 +41,19 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Module_AR_MagDrum"]/comps/li[@Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon"]</xpath>
 		<value>
-			<compPropertiesObjectPatch>
+			<statOffset>
+					<Bulk>1.75</Bulk>
+			</statOffset>
+			<compPropertiesOffseter>
 				<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-					<reloadTime>6</reloadTime>
-					<magazineSize>100</magazineSize>
+					<magazineSize>99</magazineSize>
 				</il>
-			</compPropertiesObjectPatch>
+			</compPropertiesOffseter>
+			<compPropertiesMultiplier>
+				<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+					<reloadTime>2</reloadTime>
+				</li>
+			</compPropertiesMultiplier>
 		</value>
 		<order>Append</order>
 	</Operation>

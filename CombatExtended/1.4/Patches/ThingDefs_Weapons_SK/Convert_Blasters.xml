@@ -162,7 +162,7 @@
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
 						<verbPropertiesObjectPatchByChildPart Default="false" />
 						<allowEmpty>true</allowEmpty>
-						<postion>(0.0224,0.1,0.0378)</postion>
+						<postion>(0.0315,0.1,-0.0097)</postion>
 						<filter>
 							<thingDefs>
 								<li>Module_Bipod</li>
