@@ -33,7 +33,7 @@ Cons: Low magazine capacity</description>
 <Operation Class="PatchOperationReplace">
 	<xpath>Defs/ThingDef[defName="RF_Gun_USC"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath> 
 	<value>
-			<magazineSize>10</magazineSize>
+			<magazineSize>1</magazineSize>
 
 	</value>
 </Operation>
@@ -99,6 +99,12 @@ Cons: No full auto / Shorter range than M16.</description>
 </Operation>
 <Operation Class="PatchOperationRemove">
 	<xpath>Defs/ThingDef[defName="Gun_M4A1Gun"]/comps/li[@Class="CombatExtended.CompProperties_FireModes"]/aimedBurstShotCount</xpath> 
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="Gun_M4A1Gun"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath> 
+	<value>
+			<magazineSize>1</magazineSize>
+	</value>
 </Operation>
 
 

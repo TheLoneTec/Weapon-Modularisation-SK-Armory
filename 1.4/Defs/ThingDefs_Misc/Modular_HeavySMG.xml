@@ -55,7 +55,7 @@
 		</comps>
 	</ThingDef>
 
-		<!-- <ThingDef ParentName="HvySMGGunPartBase">
+		<ThingDef ParentName="HvySMGGunPartBase">
 		<defName>Module_HvySMGCurved_MagClip</defName>
 		<label>SMG magazine (curved)</label>
 		<description>Curved 30 round clip magazine designed for submachine guns and auto pistols.</description>
@@ -69,11 +69,12 @@
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
 		</recipeMaker>
-		<stuffCategories>
+		<!--<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>15</costStuffCount>
+		<costStuffCount>15</costStuffCount>-->
 		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<comps>
@@ -81,7 +82,7 @@
 				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMGCurved_Magazine</PartTexPath>
 				<compPropertiesOffseter>
 					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-						<magazineSize>30</magazineSize>
+						<magazineSize>29</magazineSize>
 					</il>
 				</compPropertiesOffseter>
 				<statOffset>
@@ -89,7 +90,7 @@
 				</statOffset>
 			</li>
 		</comps>
-	</ThingDef> -->
+	</ThingDef>
 
 	<ThingDef ParentName="HvySMGGunPartBase">
 		<defName>Module_HvySMGAngled_MagClip</defName>
@@ -113,7 +114,7 @@
 		</stuffCategories>
 		<costStuffCount>15</costStuffCount> -->
 		<costList>
-			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentIndustrial>1</ComponentIndustrial>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<comps>
