@@ -29,17 +29,17 @@
 			<SightsEfficiency>1</SightsEfficiency>
 			<ShotSpread>0.18</ShotSpread>
 			<SwayFactor>1.31</SwayFactor>
-			<Bulk>1</Bulk>
-			<Mass>0.5</Mass>
-			<RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
+			<Mass>1.36</Mass>
+			<Bulk>2.4</Bulk>
+			<RangedWeapon_Cooldown>0.67</RangedWeapon_Cooldown>
 		</statBases>
 
 		<Properties>
 			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 			<hasStandardCommand>True</hasStandardCommand>
 			<defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
-			<warmupTime>1</warmupTime>
-			<range>32</range>
+			<warmupTime>0.62</warmupTime>
+			<range>30</range>
 			<minRange>4</minRange>
 			<soundCast>Shot_Autopistol</soundCast>
 			<soundCastTail>GunTail_Light</soundCastTail>
@@ -71,21 +71,21 @@
 		<defName>Module_UBGLLight</defName>
 
 		<statBases>
-			<WorkToMake>3000</WorkToMake>
+			<WorkToMake>7200</WorkToMake>
 			<SightsEfficiency>1</SightsEfficiency>
 			<ShotSpread>0.18</ShotSpread>
 			<SwayFactor>1.31</SwayFactor>
-			<Bulk>1</Bulk>
-			<Mass>0.5</Mass>
-			<RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
+			<Mass>1.02</Mass>
+			<Bulk>2</Bulk>
+			<RangedWeapon_Cooldown>0.59</RangedWeapon_Cooldown>
 		</statBases>
 
 		<Properties>
 			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 			<hasStandardCommand>True</hasStandardCommand>
 			<defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
-			<warmupTime>1</warmupTime>
-			<range>30</range>
+			<warmupTime>0.54</warmupTime>
+			<range>28</range>
 			<minRange>4</minRange>
 			<soundCast>Shot_Autopistol</soundCast>
 			<soundCastTail>GunTail_Light</soundCastTail>

@@ -60,7 +60,7 @@ Cons: No magazine options / low range for a sniper</description>
 	<value>
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>8</magazineSize>
-                <reloadTime>4.5</reloadTime>
+                <reloadTime>1.5</reloadTime>
                 <ammoSet>AmmoSet_303British</ammoSet>
             </li>
 	</value>

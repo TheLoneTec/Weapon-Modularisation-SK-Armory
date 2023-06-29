@@ -50,11 +50,11 @@
 						<burstShotCount>3</burstShotCount>
 					</li> -->
 				</verbPropertiesObjectPatch>
-				<compPropertiesMultiplier>
+				<!--<compPropertiesMultiplier>
 					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
 						<magazineSize>1.5</magazineSize>
 					</li>
-				</compPropertiesMultiplier>
+				</compPropertiesMultiplier>-->
 			</li>
 		</comps>
 	</ThingDef>
@@ -95,11 +95,11 @@
 					<Mass>1</Mass>
 					<Bulk>1.5</Bulk>
 				</statOffset>
-				<compPropertiesMultiplier>
+				<!--<compPropertiesMultiplier>
 					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
 						<magazineSize>2.2</magazineSize>
 					</li>
-				</compPropertiesMultiplier>
+				</compPropertiesMultiplier>-->
 				<verbPropertiesMultiplier>
 					<li>
 						<warmupTime>1.1</warmupTime>

@@ -139,6 +139,12 @@ Cons: Advanced production costs</description>
                  <warmupTime>0.5</warmupTime>
         </value>
 </Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="Gun_TacticalShotgun"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath> 
+	<value>
+        <magazineSize>1</magazineSize>
+	</value>
+</Operation>
 
 
 <!-- 870 -->
@@ -239,9 +245,9 @@ Cons: Very heavy / Advanced production costs / Inaccurate</description>
                 <aimedBurstShotCount>3</aimedBurstShotCount>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
-                <magazineSize>18</magazineSize>
+                <magazineSize>11</magazineSize>
 				<reloadOneAtATime>false</reloadOneAtATime>
-                <reloadTime>3</reloadTime>
+                <reloadTime>3.2</reloadTime>
                 <ammoSet>AmmoSet_12Gauge</ammoSet>
             </li>
         </comps>
