@@ -69,7 +69,6 @@ Cons: Small proprietary clip / Slow to aim</description>
 				<TextureFilterMode>Point</TextureFilterMode>
 				<ExceedanceFactor>2</ExceedanceFactor>
 				<ExceedanceOffset>1</ExceedanceOffset>
-				<ForceNodeIdControl>true</ForceNodeIdControl>
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
@@ -228,7 +227,6 @@ Cons: Only average performance</description>
 				<TextureFilterMode>Point</TextureFilterMode>
 				<ExceedanceFactor>2</ExceedanceFactor>
 				<ExceedanceOffset>1</ExceedanceOffset>
-				<ForceNodeIdControl>true</ForceNodeIdControl>
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
