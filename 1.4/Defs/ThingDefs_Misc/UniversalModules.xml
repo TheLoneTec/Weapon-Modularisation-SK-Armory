@@ -47,6 +47,7 @@
 			<li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
 				<TextureSizeFactor>256</TextureSizeFactor>
 				<TextureFilterMode>Point</TextureFilterMode>
+				<VerbTrackerAllVerbRedictory>true</VerbTrackerAllVerbRedictory>
 			</li>
 		</comps>
 	</ThingDef>
