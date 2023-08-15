@@ -15,6 +15,7 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<drawOutlineOnRoot>true</drawOutlineOnRoot>
 				<attachmentProperties>
 					<li>
 						<id>ModHvySMG_Magazine</id>
@@ -123,6 +124,7 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<drawOutlineOnRoot>true</drawOutlineOnRoot>
 				<attachmentProperties>
 					<li>
 						<id>ModHvySMG_Magazine</id>
@@ -228,6 +230,7 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<drawOutlineOnRoot>true</drawOutlineOnRoot>
 				<attachmentProperties>
 					<li>
 						<id>ModHvySMG_Magazine</id>
@@ -334,6 +337,7 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<drawOutlineOnRoot>true</drawOutlineOnRoot>
 				<attachmentProperties>
 					<li>
 						<id>ModHvySMG_Magazine</id>
@@ -454,6 +458,7 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<drawOutlineOnRoot>true</drawOutlineOnRoot>
 				<attachmentProperties>
 					<li>
 						<id>ModHvySMG_Magazine</id>
@@ -572,6 +577,7 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<drawOutlineOnRoot>true</drawOutlineOnRoot>
 				<attachmentProperties>
 					<li>
 						<id>ModHvySMG_Magazine</id>
@@ -690,6 +696,7 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<drawOutlineOnRoot>true</drawOutlineOnRoot>
 				<attachmentProperties>
 					<li>
 						<id>ModHvySMG_Magazine</id>
@@ -795,6 +802,7 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<drawOutlineOnRoot>true</drawOutlineOnRoot>
 				<attachmentProperties>
 					<li>
 						<id>ModHvySMG_Magazine</id>
@@ -900,6 +908,7 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<drawOutlineOnRoot>true</drawOutlineOnRoot>
 				<attachmentProperties>
 					<li>
 						<id>ModHvySMG_Magazine</id>
