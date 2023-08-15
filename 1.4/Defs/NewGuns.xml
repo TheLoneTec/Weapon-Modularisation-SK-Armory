@@ -73,7 +73,6 @@ Cons: Small proprietary clip / Slow to aim</description>
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
-				<drawOutlineOnRoot>true</drawOutlineOnRoot>
 				<attachmentProperties>
 					<li>
 						<id>ModAR_Sight</id>
@@ -233,7 +232,6 @@ Cons: Only average performance</description>
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
-				<drawOutlineOnRoot>true</drawOutlineOnRoot>
 				<attachmentProperties>
 					<li>
 						<id>ModAP_Magazine</id>
