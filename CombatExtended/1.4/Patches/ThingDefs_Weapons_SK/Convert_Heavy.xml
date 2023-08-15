@@ -13,7 +13,6 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
-				<drawOutlineOnRoot>true</drawOutlineOnRoot>
 				<attachmentProperties>
 					<li>
 						<id>ModRF_Sight</id>
@@ -81,7 +80,6 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
-				<drawOutlineOnRoot>true</drawOutlineOnRoot>
 				<attachmentProperties>
 					<li>
 						<id>ModMP_Magazine</id>
@@ -164,7 +162,6 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
-				<drawOutlineOnRoot>true</drawOutlineOnRoot>
 				<attachmentProperties>
 					<li>
 						<id>ModMP_Magazine</id>
@@ -245,7 +242,6 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
-				<drawOutlineOnRoot>true</drawOutlineOnRoot>
 				<attachmentProperties>
 					<li>
 						<id>ModMP_Magazine</id>
@@ -342,7 +338,6 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
-				<drawOutlineOnRoot>true</drawOutlineOnRoot>
 				<attachmentProperties>
 					<li>
 						<id>ModMP_Magazine</id>
@@ -446,7 +441,6 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
-				<drawOutlineOnRoot>true</drawOutlineOnRoot>
 				<attachmentProperties>
 					<li>
 						<id>ModMP_Magazine</id>
