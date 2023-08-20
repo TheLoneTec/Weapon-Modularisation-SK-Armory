@@ -9,7 +9,6 @@
 				<TextureFilterMode>Point</TextureFilterMode>
 				<ExceedanceFactor>2</ExceedanceFactor>
 				<ExceedanceOffset>1</ExceedanceOffset>
-				<ForceNodeIdControl>true</ForceNodeIdControl>
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
@@ -21,7 +20,8 @@
 						<postion>(-0.06,-0.1,-0.043)</postion>
 						<scale>(1,0,1)</scale>
 						<defultThing>Module_ChainSG_MagClip</defultThing>
-						<allowEmpty>true</allowEmpty>
+						<allowEmpty>false</allowEmpty>
+						<!--<allowEmpty>true</allowEmpty>-->
 						<filter>
 							<thingDefs>
 								<li>Module_ChainSG_MagClip</li>
@@ -87,7 +87,6 @@
 				<TextureFilterMode>Point</TextureFilterMode>
 				<ExceedanceFactor>2</ExceedanceFactor>
 				<ExceedanceOffset>1</ExceedanceOffset>
-				<ForceNodeIdControl>true</ForceNodeIdControl>
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
@@ -97,8 +96,9 @@
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
 						<postion>(-0.094,-0.1,0.031)</postion>
-						<defultThing>Module_AR_MagClip</defultThing>
-						<allowEmpty>true</allowEmpty>
+						<defultThing>Module_ChainSG_MagClip</defultThing>
+						<allowEmpty>false</allowEmpty>
+						<!--<allowEmpty>true</allowEmpty>-->
 						<filter>
 							<thingDefs>
 								<li>Module_ChainSG_MagClip</li>
@@ -195,7 +195,6 @@
 				<TextureFilterMode>Point</TextureFilterMode>
 				<ExceedanceFactor>2</ExceedanceFactor>
 				<ExceedanceOffset>1</ExceedanceOffset>
-				<ForceNodeIdControl>true</ForceNodeIdControl>
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
@@ -303,7 +302,6 @@
 				<TextureFilterMode>Point</TextureFilterMode>
 				<ExceedanceFactor>2</ExceedanceFactor>
 				<ExceedanceOffset>1</ExceedanceOffset>
-				<ForceNodeIdControl>true</ForceNodeIdControl>
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
@@ -411,7 +409,6 @@
 				<TextureFilterMode>Point</TextureFilterMode>
 				<ExceedanceFactor>2</ExceedanceFactor>
 				<ExceedanceOffset>1</ExceedanceOffset>
-				<ForceNodeIdControl>true</ForceNodeIdControl>
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
@@ -478,7 +475,6 @@
 				<TextureFilterMode>Point</TextureFilterMode>
 				<ExceedanceFactor>2</ExceedanceFactor>
 				<ExceedanceOffset>1</ExceedanceOffset>
-				<ForceNodeIdControl>true</ForceNodeIdControl>
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
