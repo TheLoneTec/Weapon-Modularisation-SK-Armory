@@ -39,7 +39,6 @@
 		</value>
 	</Operation>
 
-
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Bullet_303British_FMJ"]/label</xpath>
 		<value>
@@ -71,14 +70,14 @@
 			<label>make .30-06 Springfield (AP) cartridge x80</label>
 		</value>
 	</Operation>
-		<Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/RecipeDef[defName="MakeAmmo_303British_HP"]/label</xpath>
 		<value>
 			<label>make .30-06 Springfield (HP) cartridge x80</label>
 		</value>
 	</Operation>
 
-		<Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/RecipeDef[defName="MakeAmmo_303British_FMJ"]/description</xpath>
 		<value>
 			<description>Craft 80 .30-06 Springfield (FMJ) cartridges.</description>
@@ -90,7 +89,7 @@
 			<description>Craft 80 .30-06 Springfield (AP) cartridges.</description>
 		</value>
 	</Operation>
-		<Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/RecipeDef[defName="MakeAmmo_303British_HP"]/description</xpath>
 		<value>
 			<description>Craft 80 .30-06 Springfield (HP) cartridges.</description>
@@ -109,11 +108,53 @@
 			<jobString>Making .30-06 Springdield (AP) cartridges.</jobString>
 		</value>
 	</Operation>
-		<Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/RecipeDef[defName="MakeAmmo_303British_HP"]/jobString</xpath>
 		<value>
 			<jobString>Making .30-06 Springdield (HP) cartridges.</jobString>
 		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Parabellum</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Ammo_303British_I"]/label</xpath>
+					<value>
+						<label>.30-06 Springfield cartridge (I)</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Bullet_303British_I"]/label</xpath>
+					<value>
+						<label>.30-06 Springfield bullet (i)</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeAmmo_303British_I"]/label</xpath>
+					<value>
+						<label>make .30-06 Springfield (I) cartridge x80</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeAmmo_303British_I"]/description</xpath>
+					<value>
+						<description>Craft 80 .30-06 Springfield (I) cartridges.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeAmmo_303British_I"]/jobString</xpath>
+					<value>
+						<jobString>Making .30-06 Springdield (I) cartridges.</jobString>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
 	</Operation>
 
 
