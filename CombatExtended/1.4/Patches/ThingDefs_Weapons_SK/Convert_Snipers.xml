@@ -10,7 +10,6 @@
 				<TextureFilterMode>Point</TextureFilterMode>
 				<ExceedanceFactor>2</ExceedanceFactor>
 				<ExceedanceOffset>1</ExceedanceOffset>
-				<ForceNodeIdControl>true</ForceNodeIdControl>
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
@@ -81,7 +80,6 @@
 				<TextureFilterMode>Point</TextureFilterMode>
 				<ExceedanceFactor>2</ExceedanceFactor>
 				<ExceedanceOffset>1</ExceedanceOffset>
-				<ForceNodeIdControl>true</ForceNodeIdControl>
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
@@ -160,7 +158,6 @@
 				<TextureFilterMode>Point</TextureFilterMode>
 				<ExceedanceFactor>2</ExceedanceFactor>
 				<ExceedanceOffset>1</ExceedanceOffset>
-				<ForceNodeIdControl>true</ForceNodeIdControl>
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
@@ -232,7 +229,6 @@
 				<TextureFilterMode>Point</TextureFilterMode>
 				<ExceedanceFactor>2</ExceedanceFactor>
 				<ExceedanceOffset>1</ExceedanceOffset>
-				<ForceNodeIdControl>true</ForceNodeIdControl>
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
@@ -319,7 +315,6 @@
 				<TextureFilterMode>Point</TextureFilterMode>
 				<ExceedanceFactor>2</ExceedanceFactor>
 				<ExceedanceOffset>1</ExceedanceOffset>
-				<ForceNodeIdControl>true</ForceNodeIdControl>
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
