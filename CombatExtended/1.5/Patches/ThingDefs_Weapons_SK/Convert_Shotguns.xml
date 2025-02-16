@@ -12,6 +12,8 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<outlineWidth>8</outlineWidth>
+				<outlineWidthInPixelSize>true</outlineWidthInPixelSize>
 				<attachmentProperties>
 					<li>
 						<id>ModChainSG_Magazine</id>
@@ -21,6 +23,7 @@
 						<scale>(1,0,1)</scale>
 						<defultThing>Module_ChainSG_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
+						<randomToEmptyWeight>0</randomToEmptyWeight>
 						<filter>
 							<thingDefs>
 								<li>Module_ChainSG_MagClip</li>
@@ -89,6 +92,8 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<outlineWidth>8</outlineWidth>
+				<outlineWidthInPixelSize>true</outlineWidthInPixelSize>
 				<attachmentProperties>
 					<li>
 						<id>ModChainSG_Magazine</id>
@@ -97,6 +102,7 @@
 						<postion>(-0.094,-0.1,0.031)</postion>
 						<defultThing>Module_AR_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
+						<randomToEmptyWeight>0</randomToEmptyWeight>
 						<filter>
 							<thingDefs>
 								<li>Module_ChainSG_MagClip</li>
@@ -137,6 +143,9 @@
 								<li>Module_AngledGrip</li>
 							</thingDefs>
 						</filter>
+						<allowedExtraCompType>
+							<li>CombatExtended.CompUnderBarrel</li>
+						</allowedExtraCompType>
 					</li>
 					<li>
 						<id>ModChainSG_Receiver</id>
@@ -196,6 +205,8 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<outlineWidth>8</outlineWidth>
+				<outlineWidthInPixelSize>true</outlineWidthInPixelSize>
 				<attachmentProperties>
 					<li>
 						<id>ModChainSG_Magazine</id>
@@ -204,6 +215,7 @@
 						<postion>(0, -0.1, 0.055)</postion>
 						<defultThing>Module_AR_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
+						<randomToEmptyWeight>0</randomToEmptyWeight>
 						<filter>
 							<thingDefs>
 								<li>Module_ChainSG_MagClip</li>
@@ -243,6 +255,9 @@
 								<li>Module_AngledGrip</li>
 							</thingDefs>
 						</filter>
+						<allowedExtraCompType>
+							<li>CombatExtended.CompUnderBarrel</li>
+						</allowedExtraCompType>
 					</li>
 					<li>
 						<id>ModChainSG_Receiver</id>
@@ -303,6 +318,8 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<outlineWidth>8</outlineWidth>
+				<outlineWidthInPixelSize>true</outlineWidthInPixelSize>
 				<attachmentProperties><!--
 					<li>
 						<id>ModChainSG_Magazine</id>
@@ -311,6 +328,7 @@
 						<postion>(-0.05,0.1,0.04)</postion>
 						<defultThing>Module_AR_MagClip</defultThing>
 						<allowEmpty>true</allowEmpty>
+						<randomToEmptyWeight>0</randomToEmptyWeight>
 						<filter>
 							<thingDefs>
 								<li>Module_ChainSG_MagClip</li>
@@ -351,6 +369,9 @@
 								<li>Module_AngledGrip</li>
 							</thingDefs>
 						</filter>
+						<allowedExtraCompType>
+							<li>CombatExtended.CompUnderBarrel</li>
+						</allowedExtraCompType>
 					</li>
 					<li>
 						<id>ModChainSG_Receiver</id>
@@ -410,6 +431,8 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<outlineWidth>8</outlineWidth>
+				<outlineWidthInPixelSize>true</outlineWidthInPixelSize>
 				<attachmentProperties>
 					<li>
 						<id>ModChainSG_Magazine</id>
@@ -417,6 +440,7 @@
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
 						<postion>(0, -0.1, 0)</postion>
 						<allowEmpty>true</allowEmpty>
+						<randomToEmptyWeight>0</randomToEmptyWeight>
 						<filter>
 							<thingDefs>
 								<li>Module_SG_Speedloadertube</li>
@@ -476,6 +500,8 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<outlineWidth>8</outlineWidth>
+				<outlineWidthInPixelSize>true</outlineWidthInPixelSize>
 				<attachmentProperties>
 					<li>
 						<id>ModChainSG_Magazine</id>
@@ -483,6 +509,7 @@
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
 						<postion>(0, -0.1, 0)</postion>
 						<allowEmpty>true</allowEmpty>
+						<randomToEmptyWeight>0</randomToEmptyWeight>
 						<filter>
 							<thingDefs>
 								<li>Module_SG_Speedloadertube</li>
@@ -537,6 +564,9 @@
 								<li>Module_AngledGrip</li>
 							</thingDefs>
 						</filter>
+						<allowedExtraCompType>
+							<li>CombatExtended.CompUnderBarrel</li>
+						</allowedExtraCompType>
 					</li>
 				</attachmentProperties>
 			</li>

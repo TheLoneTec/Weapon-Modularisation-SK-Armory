@@ -13,6 +13,8 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<outlineWidth>8</outlineWidth>
+				<outlineWidthInPixelSize>true</outlineWidthInPixelSize>
 				<attachmentProperties>
 					<li>
 						<id>ModRF_Sight</id>
@@ -80,6 +82,8 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<outlineWidth>8</outlineWidth>
+				<outlineWidthInPixelSize>true</outlineWidthInPixelSize>
 				<attachmentProperties>
 					<li>
 						<id>ModMP_Magazine</id>
@@ -88,6 +92,7 @@
 						<postion>(0.055,0.1,-0.011)</postion>
 						<defultThing>Module_HvySMG_MagClip</defultThing>
 						<allowEmpty>false</allowEmpty>
+						<randomToEmptyWeight>0</randomToEmptyWeight>
 						<filter>
 							<thingDefs>
 								<!-- <li>Module_AR_MagClip</li> -->
@@ -113,6 +118,10 @@
 								<li>Module_MasterKey</li>
 							</thingDefs>
 						</filter>
+						<allowedExtraCompType>
+							<li>CombatExtended.BipodComp</li>
+							<li>CombatExtended.CompUnderBarrel</li>
+						</allowedExtraCompType>
 					</li>
 					<li>
 						<id>ModRF_Muzzle</id>
@@ -142,8 +151,8 @@
 		  </li>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Gun_LMG"]/graphicData</xpath>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_LMG"]/graphicData/drawSize</xpath>
 		<value>
 			<drawSize>(1.15,1.15)</drawSize>
 		</value>
@@ -162,6 +171,8 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<outlineWidth>8</outlineWidth>
+				<outlineWidthInPixelSize>true</outlineWidthInPixelSize>
 				<attachmentProperties>
 					<li>
 						<id>ModMP_Magazine</id>
@@ -170,6 +181,7 @@
 						<postion>(-0.05,-0.1,0.0)</postion>
 						<!-- <defultThing>Module_HvySMG_MagClip</defultThing> -->
 						<allowEmpty>false</allowEmpty>
+						<randomToEmptyWeight>0</randomToEmptyWeight>
 						<filter>
 							<thingDefs>
 								<li>Module_AR_MagDrum</li>
@@ -242,6 +254,8 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<outlineWidth>8</outlineWidth>
+				<outlineWidthInPixelSize>true</outlineWidthInPixelSize>
 				<attachmentProperties>
 					<li>
 						<id>ModMP_Magazine</id>
@@ -250,6 +264,7 @@
 						<postion>(-0.005,0.1,0.052)</postion>
 						<defultThing>Module_HvySMG_MagClip</defultThing>
 						<allowEmpty>false</allowEmpty>
+						<randomToEmptyWeight>0</randomToEmptyWeight>
 						<filter>
 							<thingDefs>
 								<li>Module_LMG_MagBox</li>
@@ -338,6 +353,8 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<outlineWidth>8</outlineWidth>
+				<outlineWidthInPixelSize>true</outlineWidthInPixelSize>
 				<attachmentProperties>
 					<li>
 						<id>ModMP_Magazine</id>
@@ -346,6 +363,7 @@
 						<postion>(-0.136,-0.1,0.0325)</postion>
 						<defultThing>Module_HvySMG_MagClip</defultThing>
 						<allowEmpty>false</allowEmpty>
+						<randomToEmptyWeight>0</randomToEmptyWeight>
 						<filter>
 							<thingDefs>
 								<li>Module_AR_Mag60Clip</li>
@@ -390,6 +408,7 @@
 							</thingDefs>
 						</filter>
 						<allowedExtraCompType>
+							<li>CombatExtended.CompUnderBarrel</li>
 							<li>CombatExtended.BipodComp</li>
 						</allowedExtraCompType>
 					</li>
@@ -441,6 +460,8 @@
 			</li>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<outlineWidth>8</outlineWidth>
+				<outlineWidthInPixelSize>true</outlineWidthInPixelSize>
 				<attachmentProperties>
 					<li>
 						<id>ModMP_Magazine</id>
@@ -450,6 +471,7 @@
 						<scale>(1.3,0,1.1)</scale>
 						<defultThing>Module_HvySMG_MagClip</defultThing>
 						<allowEmpty>false</allowEmpty>
+						<randomToEmptyWeight>0</randomToEmptyWeight>
 						<filter>
 							<thingDefs>
 								<li>Module_AR_Mag60Clip</li>
